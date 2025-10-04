@@ -16,8 +16,18 @@ class RegressionRequest(BaseModel):
 
 
 MODELS_DIR = Path("healthai/models")
-CLASSIFY_MODEL = MODELS_DIR / "baseline_classification.pkl"
-REGRESS_MODEL = MODELS_DIR / "baseline_regression.pkl"
+# Try MIMIC models first, fallback to baseline
+CLASSIFY_MODEL = MODELS_DIR / "mimic_mortality_model.pkl"
+CLASSIFY_SCALER = MODELS_DIR / "mimic_mortality_scaler.pkl"
+CLASSIFY_FEATURES = MODELS_DIR / "mimic_mortality_features.pkl"
+
+REGRESS_MODEL = MODELS_DIR / "mimic_los_model.pkl"
+REGRESS_SCALER = MODELS_DIR / "mimic_los_scaler.pkl"
+REGRESS_FEATURES = MODELS_DIR / "mimic_los_features.pkl"
+
+# Fallback models
+BASELINE_CLASSIFY = MODELS_DIR / "baseline_classification.pkl"
+BASELINE_REGRESS = MODELS_DIR / "baseline_regression.pkl"
 
 
 @app.get("/health")
@@ -36,25 +46,58 @@ def _safe_load(path: Path):
 
 @app.post("/predict/classify")
 def predict_classify(req: ClassificationRequest):
+    # Try MIMIC mortality model first
     model = _safe_load(CLASSIFY_MODEL)
-    if model is None:
-        # Stub if model not available
-        return {"risk_class": "low", "proba": 0.12, "note": "baseline_classification.pkl not found; returning stub"}
-    X = np.array([req.features])
+    scaler = _safe_load(CLASSIFY_SCALER)
+    features = _safe_load(CLASSIFY_FEATURES)
+    
+    if model is None or scaler is None or features is None:
+        # Fallback to baseline model
+        model = _safe_load(BASELINE_CLASSIFY)
+        if model is None:
+            return {"prediction": 0, "proba": 0.12, "note": "No classification model found; returning stub"}
+        X = np.array([req.features])
+        scaler = None
+    else:
+        # Use MIMIC model with scaling
+        X = np.array([req.features])
+        X = scaler.transform(X)
+    
     pred = model.predict(X)[0]
     proba = None
     try:
         proba = float(model.predict_proba(X)[0, 1])
     except Exception:
         proba = None
-    return {"prediction": int(pred) if isinstance(pred, (np.integer,)) else pred, "proba": proba}
+    
+    return {
+        "prediction": int(pred) if isinstance(pred, (np.integer,)) else pred, 
+        "proba": proba,
+        "model_type": "mimic_mortality" if scaler is not None else "baseline"
+    }
 
 
 @app.post("/predict/regress")
 def predict_regress(req: RegressionRequest):
+    # Try MIMIC LOS model first
     model = _safe_load(REGRESS_MODEL)
-    if model is None:
-        return {"los_days": 3.7, "note": "baseline_regression.pkl not found; returning stub"}
-    X = np.array([req.features])
+    scaler = _safe_load(REGRESS_SCALER)
+    features = _safe_load(REGRESS_FEATURES)
+    
+    if model is None or scaler is None or features is None:
+        # Fallback to baseline model
+        model = _safe_load(BASELINE_REGRESS)
+        if model is None:
+            return {"prediction": 3.7, "note": "No regression model found; returning stub"}
+        X = np.array([req.features])
+        scaler = None
+    else:
+        # Use MIMIC model with scaling
+        X = np.array([req.features])
+        X = scaler.transform(X)
+    
     pred = float(model.predict(X)[0])
-    return {"prediction": pred} 
+    return {
+        "prediction": pred,
+        "model_type": "mimic_los" if scaler is not None else "baseline"
+    } 
