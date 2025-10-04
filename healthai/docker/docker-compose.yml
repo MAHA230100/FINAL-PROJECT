@@ -1,0 +1,26 @@
+services:
+  api:
+    build:
+      context: ../..              # go up 2 levels → FINAL PROJECT/
+      dockerfile: healthai/docker/api/Dockerfile
+    image: healthai-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../../healthai:/app/healthai
+      - ../../requirements.txt:/app/requirements.txt:ro
+
+  ui:
+    build:
+      context: ../..
+      dockerfile: healthai/docker/ui/Dockerfile
+    image: healthai-ui
+    environment:
+      - API_BASE_URL=http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    volumes:
+      - ../../healthai:/app/healthai
+      - ../../requirements.txt:/app/requirements.txt:ro

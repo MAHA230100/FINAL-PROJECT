@@ -1,0 +1,43 @@
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+seaborn
+xgboost
+imbalanced-learn
+statsmodels
+mlxtend
+hdbscan
+scikit-image
+pillow
+opencv-python
+
+# Deep learning
+torch
+torchvision
+torchaudio
+# tensorflow (optional)
+
+# NLP / Transformers
+transformers
+datasets
+tokenizers
+sentencepiece
+spacy
+nltk
+
+# Serving & Apps
+fastapi
+uvicorn
+pydantic
+streamlit
+
+# Experiment tracking
+mlflow
+
+# Retrieval/RAG (optional)
+faiss-cpu
+
+# Explainability
+shap 
