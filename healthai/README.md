@@ -39,7 +39,17 @@ python scripts/eda_clean.py
 ```
 Outputs go to `data/processed/`.
 
-### 2.3) Train baseline models (tabular)
+### 2.3) Process MIMIC-IV Clinical Data (Optional)
+For real clinical data, run these scripts in order:
+```bash
+cd healthai/data
+python extract_mimic_data.py    # Extract from compressed files
+python clean_mimic_data.py      # Clean and create ML datasets
+python process_mimic_data.py    # Train models
+```
+See `healthai/data/README_MIMIC.md` for detailed instructions.
+
+### 2.4) Train baseline models (tabular)
 - Classification (breast cancer dataset; target: `target`):
 ```
 python -m healthai.src.models.tabular.baseline classification healthai/data/raw/classification_breast_cancer.csv --target target
@@ -50,7 +60,7 @@ python -m healthai.src.models.tabular.baseline regression healthai/data/raw/regr
 ```
 Models will be saved under `healthai/models/`.
 
-### 2.4) Evaluate saved model
+### 2.5) Evaluate saved model
 ```
 python -m healthai.src.models.tabular.evaluate healthai/models/baseline_classification.pkl healthai/data/raw/classification_breast_cancer.csv --target target --task classification
 ```
