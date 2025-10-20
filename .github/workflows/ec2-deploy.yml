@@ -62,6 +62,7 @@ jobs:
             fi
 
             # Navigate to Docker folder
+            pwd
             cd $DOCKER_DIR
 
             # Build and start containers
