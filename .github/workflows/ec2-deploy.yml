@@ -63,7 +63,7 @@ jobs:
 
             # Navigate to Docker folder
             pwd
-            cd $DOCKER_DIR
+            cd /home/app/healthai/healthai/docker
 
             # Build and start containers
             echo "🚀 Building and starting containers..."
