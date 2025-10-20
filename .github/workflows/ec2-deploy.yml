@@ -1,4 +1,4 @@
-name: Deploy to EC2
+name: Deploy to EC2 with Docker
 
 on:
   push:
@@ -10,45 +10,59 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - name: Set up SSH
-      uses: webfactory/ssh-agent@v0.8.0
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Add EC2 to known hosts
-      run: |
-        mkdir -p ~/.ssh
-        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+      - name: Add EC2 to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Copy files to EC2
-      run: |
-        rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
-          --exclude '.git' \
-          --exclude '.github' \
-          --exclude '.gitignore' \
-          --exclude '.idea' \
-          --exclude 'venv' \
-          --exclude '__pycache__' \
-          --exclude '.pytest_cache' \
-          ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:${{ secrets.PROJECT_DIR }}
+      - name: Copy code to EC2
+        run: |
+          rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.gitignore' \
+            --exclude '.idea' \
+            --exclude '__pycache__' \
+            --exclude '.pytest_cache' \
+            ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:${{ secrets.PROJECT_DIR }}
 
-    - name: Run deployment script on EC2
-      run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} \
-          "cd ${{ secrets.PROJECT_DIR }} && \
-           chmod +x deployment/scripts/setup_server.sh && \
-           ./deployment/scripts/setup_server.sh"
+      - name: Deploy using Docker Compose
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
+            cd $PROJECT_DIR
 
-    - name: Restart application
-      run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} \
-          "cd ${{ secrets.PROJECT_DIR }} && \
-           chmod +x deployment/scripts/deploy.sh && \
-           ./deployment/scripts/deploy.sh"
+            # Ensure Docker is installed
+            if ! command -v docker >/dev/null 2>&1; then
+              echo "🛠 Installing Docker..."
+              curl -fsSL https://get.docker.com -o get-docker.sh
+              sh get-docker.sh
+              sudo usermod -aG docker $USER
+            fi
+
+            # Ensure Docker Compose is installed
+            if ! command -v docker-compose >/dev/null 2>&1; then
+              echo "🛠 Installing Docker Compose..."
+              sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+              sudo chmod +x /usr/local/bin/docker-compose
+            fi
+
+            # Build and run containers
+            echo "🚀 Building and starting containers..."
+            docker compose down --remove-orphans
+            docker compose up -d --build
+
+            # Optional: prune unused images to save space
+            docker system prune -f
+          EOF
