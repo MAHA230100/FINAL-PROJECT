@@ -41,7 +41,10 @@ jobs:
       - name: Deploy using Docker Compose
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
-            cd $PROJECT_DIR
+            set -e
+
+            PROJECT_DIR=$PROJECT_DIR
+            DOCKER_DIR=$PROJECT_DIR/healthai/docker
 
             # Ensure Docker is installed
             if ! command -v docker >/dev/null 2>&1; then
@@ -58,11 +61,18 @@ jobs:
               sudo chmod +x /usr/local/bin/docker-compose
             fi
 
-            # Build and run containers
+            # Navigate to Docker folder
+            cd $DOCKER_DIR
+
+            # Build and start containers
             echo "🚀 Building and starting containers..."
             docker compose down --remove-orphans
             docker compose up -d --build
 
             # Optional: prune unused images to save space
             docker system prune -f
+
+            # Print logs from all containers
+            echo "📜 Showing container logs..."
+            docker compose logs --tail 50 -f
           EOF
