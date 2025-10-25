@@ -1,8 +1,0 @@
-__pycache__/
-*.pyc
-.venv/
-.env
-models/
-data/processed/
-*.pkl
-.DS_Store 

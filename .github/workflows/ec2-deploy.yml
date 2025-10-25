@@ -36,6 +36,17 @@ jobs:
             --exclude '.idea' \
             --exclude '__pycache__' \
             --exclude '.pytest_cache' \
+            --exclude '*.pyc' \
+            --exclude '*.pyo' \
+            --exclude '*.pyd' \
+            --exclude '.env' \
+            --exclude 'venv/' \
+            --exclude 'env/' \
+            --exclude '.venv/' \
+            --exclude 'node_modules/' \
+            --exclude '*.log' \
+            --exclude '.DS_Store' \
+            --exclude 'Thumbs.db' \
             ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:${{ secrets.PROJECT_DIR }}
 
       - name: Deploy using Docker Compose
@@ -43,8 +54,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
             set -e
 
-            PROJECT_DIR=$PROJECT_DIR
-            DOCKER_DIR=$PROJECT_DIR/healthai/docker
+            PROJECT_DIR=${{ secrets.PROJECT_DIR }}
 
             # Ensure Docker is installed
             if ! command -v docker >/dev/null 2>&1; then
@@ -61,19 +71,29 @@ jobs:
               sudo chmod +x /usr/local/bin/docker-compose
             fi
 
-            # Navigate to Docker folder
+            # Navigate to project root (where docker-compose.yml is located)
+            echo "📁 Navigating to project directory: $PROJECT_DIR"
+            cd $PROJECT_DIR
             pwd
-            cd /home/app/healthai/healthai/docker
+            ls -la
 
             # Build and start containers
             echo "🚀 Building and starting containers..."
             docker compose down --remove-orphans
             docker compose up -d --build
 
+            # Wait for services to be ready
+            echo "⏳ Waiting for services to start..."
+            sleep 30
+
+            # Check if services are running
+            echo "🔍 Checking container status..."
+            docker compose ps
+
             # Optional: prune unused images to save space
             docker system prune -f
 
             # Print logs from all containers
             echo "📜 Showing container logs..."
-            docker compose logs --tail 50 -f
+            docker compose logs --tail 50
           EOF
