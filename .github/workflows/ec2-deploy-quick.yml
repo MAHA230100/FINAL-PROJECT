@@ -1,0 +1,75 @@
+name: Quick Deploy to EC2
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for deployment'
+        required: true
+        default: 'Quick deployment of latest changes'
+
+jobs:
+  quick-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add EC2 to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Copy code to EC2
+        run: |
+          rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.gitignore' \
+            --exclude '.idea' \
+            --exclude '__pycache__' \
+            --exclude '.pytest_cache' \
+            --exclude '*.pyc' \
+            --exclude '*.pyo' \
+            --exclude '*.pyd' \
+            --exclude '.env' \
+            --exclude 'venv/' \
+            --exclude 'env/' \
+            --exclude '.venv/' \
+            --exclude 'node_modules/' \
+            --exclude '*.log' \
+            --exclude '.DS_Store' \
+            --exclude 'Thumbs.db' \
+            ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:${{ secrets.PROJECT_DIR }}
+
+      - name: Quick Deploy
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
+            set -e
+            PROJECT_DIR=${{ secrets.PROJECT_DIR }}
+            cd $PROJECT_DIR
+            
+            echo "🚀 Starting quick deployment..."
+            
+            # Stop and recreate containers without rebuilding
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml down
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+            
+            # Wait for services to be ready
+            echo "⏳ Waiting for services to start..."
+            sleep 10
+            
+            # Check container status
+            echo "🔍 Checking container status..."
+            docker compose ps
+            
+            # Show recent logs
+            echo "📜 Showing recent logs..."
+            docker compose logs --tail 20
+          EOF

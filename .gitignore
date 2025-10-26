@@ -94,7 +94,6 @@ yarn.lock
 # CI/CD
 .ci/
 .circleci/
-.github/
 !.github/workflows/
 
 # Logs
