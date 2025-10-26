@@ -13,6 +13,8 @@ scikit-image
 pillow
 opencv-python
 
+python-multipart
+
 # Deep learning
 torch
 torchvision

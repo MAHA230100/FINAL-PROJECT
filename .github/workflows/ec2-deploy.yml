@@ -77,10 +77,10 @@ jobs:
             pwd
             ls -la
 
-            # Build and start containers
-            echo "🚀 Building and starting containers..."
-            docker compose down --remove-orphans
-            docker compose up -d --build
+            # Build and start containers in production mode
+            echo "🚀 Building and starting production containers..."
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml down --remove-orphans
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 
             # Wait for services to be ready
             echo "⏳ Waiting for services to start..."

@@ -5,8 +5,14 @@ services:
       dockerfile: docker/api/Dockerfile
     platform: linux/amd64
     image: healthai-api
+    volumes:
+      - ${PWD}/api:/app/api
+      - ${PWD}/data:/app/data
     ports:
       - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
 
   ui:
     build:
@@ -14,9 +20,16 @@ services:
       dockerfile: docker/ui/Dockerfile
     platform: linux/amd64
     image: healthai-ui
+    volumes:
+      - ${PWD}/ui:/app/ui
+      - ${PWD}/data:/app/data
     environment:
       - API_BASE_URL=http://api:8000
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
     ports:
       - "8501:8501"
     depends_on:
       - api
+    stdin_open: true
+    tty: true

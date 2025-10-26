@@ -1,14 +1,18 @@
+import os
+import sys
 import streamlit as st
 import requests
 import numpy as np
-import os
+
+# Add the parent directory to the path so we can import our modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Import components and pages
-from .components.sidebar import show_sidebar
-from .pages.data_display import show_data_display
-from .pages.eda_visualization import show_eda_visualization
-from .pages.model_results import show_model_results
-from .pages.ai_tools_demo import show_ai_tools_demo
+from ui.components.sidebar import show_sidebar
+from ui.pages.data_display import show_data_display
+from ui.pages.eda_visualization import show_eda_visualization
+from ui.pages.model_results import show_model_results
+from ui.pages.ai_tools_demo import show_ai_tools_demo
 
 st.set_page_config(page_title="HealthAI Dashboard", layout="wide")
 
