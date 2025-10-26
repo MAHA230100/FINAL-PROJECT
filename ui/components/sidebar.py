@@ -3,7 +3,7 @@ import os
 
 def show_sidebar():
     """Create the sidebar navigation with improved layout"""
-    # Custom CSS for better styling
+    # Custom CSS styles for better styling
     st.markdown("""
     <style>
         .status-online {
