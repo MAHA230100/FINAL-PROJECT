@@ -1,4 +1,4 @@
-name: Deploy to EC2 with Docker
+name: Clean Deploy to EC2 (Full Rebuild)
 
 on:
   push:
@@ -8,8 +8,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  clean-deploy:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
 
     steps:
       - name: Checkout code
@@ -77,10 +78,22 @@ jobs:
             pwd
             ls -la
 
-            # Build and start containers in production mode
-            echo "🚀 Building and starting production containers..."
+            # Clean up Docker to free up disk space
+            echo "🧹 Cleaning up Docker system..."
+            docker system prune -af
+            docker volume prune -f
+            docker builder prune -af
+            
+            # Check disk space
+            echo "💾 Disk space after cleanup:"
+            df -h
+
+            # Build and start containers in production mode with clean build
+            echo "🚀 Building and starting production containers (clean build)..."
             docker compose -f docker-compose.yml -f docker-compose.prod.yml down --remove-orphans
-            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+            # Force clean build with --no-cache and pull latest base images
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml build --no-cache --pull
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 
             # Wait for services to be ready
             echo "⏳ Waiting for services to start..."
