@@ -77,6 +77,16 @@ jobs:
             pwd
             ls -la
 
+            # Clean up Docker to free up disk space
+            echo "🧹 Cleaning up Docker system..."
+            docker system prune -af
+            docker volume prune -f
+            docker builder prune -af
+            
+            # Check disk space
+            echo "💾 Disk space after cleanup:"
+            df -h
+
             # Build and start containers in production mode with clean build
             echo "🚀 Building and starting production containers (clean build)..."
             docker compose -f docker-compose.yml -f docker-compose.prod.yml down --remove-orphans
