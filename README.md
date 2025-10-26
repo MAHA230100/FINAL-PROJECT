@@ -57,13 +57,16 @@ project/
 
 ### Running the Application
 
+#### Development Mode (with hot-reload)
+
 1. **Clone and navigate to the project:**
    ```bash
    cd /path/to/FINAL-PROJECT
    ```
 
-2. **Start the application:**
+2. **Start the development environment:**
    ```bash
+   # Uses docker-compose.yml + docker-compose.override.yml
    docker-compose up
    ```
 
@@ -71,6 +74,26 @@ project/
    - **Frontend (Streamlit)**: http://localhost:8501
    - **Backend API**: http://localhost:8000
    - **API Documentation**: http://localhost:8000/docs
+
+#### Production Deployment
+
+```bash
+# Build and start production containers
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+```
+
+#### Local Testing (without development overrides)
+
+```bash
+# Uses only docker-compose.yml (no hot-reload, no development tools)
+docker-compose -f docker-compose.yml up
+```
+
+### Docker Compose Files Overview
+
+- **`docker-compose.yml`**: Base configuration with service definitions
+- **`docker-compose.override.yml`**: Development-specific settings (auto-loaded in dev)
+- **`docker-compose.prod.yml`**: Production-specific settings (must be explicitly included)
 
 ## 🎯 Features
 
@@ -80,6 +103,7 @@ project/
 - **EDA**: `/eda/analyze`, `/eda/visualizations`
 - **Models**: `/model/train/{type}`, `/model/results/{type}`
 - **AI Tools**: `/ai-tools/summarize`, `/ai-tools/classify`
+- **Health Check**: `/health`
 
 ### Frontend UI (Streamlit)
 - **🏠 Home**: Dashboard with quick access
@@ -90,12 +114,14 @@ project/
 - **📈 EDA Visualization**: Exploratory data analysis
 - **🤖 Model Results**: Model performance metrics
 - **🛠️ AI Tools Demo**: AI utilities demonstration
+- **🔍 Health Check**: System status and monitoring
 
 ### Data Science Pipeline
 - **Data Cleaning**: Automated data preprocessing
 - **EDA**: Exploratory data analysis with visualizations
 - **Model Training**: Classification, regression, clustering
 - **Model Serving**: Real-time predictions via API
+- **Monitoring**: Health checks and performance metrics
 
 ### AI Tools Integration
 - **Text Summarization**: Extract key information from documents

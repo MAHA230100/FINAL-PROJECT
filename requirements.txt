@@ -13,6 +13,8 @@ scikit-image
 pillow
 opencv-python
 
+python-multipart
+
 # Deep learning
 torch
 torchvision
@@ -40,3 +42,7 @@ faiss-cpu
 
 # Explainability
 shap
+
+# Additional Dependencies for EDA and Visualization
+plotly
+kaleido

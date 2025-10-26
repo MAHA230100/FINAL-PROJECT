@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/api/Dockerfile
+      target: development
+    volumes:
+      - ${PWD}/api:/app/api
+      - api_venv:/opt/venv
+      - ${PWD}/data:/app/data
+    environment:
+      - ENVIRONMENT=development
+      - PYTHONUNBUFFERED=1
+    command: >
+      bash -c "python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  ui:
+    build:
+      context: .
+      dockerfile: docker/ui/Dockerfile
+      target: development
+    volumes:
+      - ${PWD}/ui:/app/ui
+      - ui_venv:/opt/venv
+      - ${PWD}/data:/app/data
+    environment:
+      - ENVIRONMENT=development
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true
+    command: >
+      bash -c "streamlit run ui/dashboard.py --server.port=8501 --server.address=0.0.0.0"
+
+volumes:
+  api_venv:
+  ui_venv:
