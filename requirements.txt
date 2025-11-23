@@ -34,6 +34,15 @@ uvicorn
 pydantic
 streamlit
 
+# Protocol Buffers (required by Streamlit)
+protobuf>=3.20,<6
+googleapis-common-protos
+protobuf
+google
+google-api-core
+google-cloud-storage
+google-cloud-aiplatform
+
 # Experiment tracking
 mlflow
 
