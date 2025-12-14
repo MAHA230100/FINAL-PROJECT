@@ -13,15 +13,15 @@ def show_model_results():
     st.markdown("View performance metrics, visualizations, and explanations for trained models.")
     
     # Check for model results
-    models_path = Path("models")
-    eda_results_path = Path("eda_results")
+    models_path = Path("data/models")  # Using data/models for Docker volume consistency
+    eda_results_path = Path("data/eda_results")  # Also updating EDA path for consistency
     
     if not models_path.exists():
         st.warning("⚠️ Model results not found. Please train models first.")
         st.info("Run: `python scripts/train_models.py` to train models.")
         
         # Show API-based model training as fallback
-        show_api_model_training()
+        # show_api_model_training()
         return
     
     # Load model results
@@ -275,32 +275,55 @@ def show_model_results():
     # Model visualizations
     st.subheader("📊 Model Visualizations")
     
-    viz_path = models_path / "visualizations"
-    if viz_path.exists():
-        if (viz_path / "classification_performance.png").exists():
-            st.image(str(viz_path / "classification_performance.png"), caption="Classification Model Performance")
+    # Check both possible locations for visualizations
+    viz_dirs = [
+        models_path / "visualizations",  # New location
+        models_path / "classification" / "visualizations"  # Old location
+    ]
+    
+    found_visualizations = False
+    
+    for viz_path in viz_dirs:
+        if viz_path.exists():
+            if (viz_path / "classification_performance.png").exists():
+                st.image(str(viz_path / "classification_performance.png"), 
+                        caption="Classification Model Performance")
+                found_visualizations = True
+            
+            if (viz_path / "regression_performance.png").exists():
+                st.image(str(viz_path / "regression_performance.png"), 
+                        caption="Regression Model Performance")
+                found_visualizations = True
+            
+            if found_visualizations:
+                break
+    
+    if not found_visualizations:
+        st.warning("""
+        Model visualizations not found. This could be because:
+        1. Model training hasn't completed successfully
+        2. The visualization files were not generated
+        3. The files are in an unexpected location
         
-        if (viz_path / "regression_performance.png").exists():
-            st.image(str(viz_path / "regression_performance.png"), caption="Regression Model Performance")
-    else:
-        st.info("Model visualizations not found. Run model training to generate them.")
+        Please run the training pipeline and check the logs for any errors.
+        """)
     
     # Action buttons
-    st.subheader("🔧 Actions")
+    # st.subheader("🔧 Actions")
     
-    col1, col2, col3 = st.columns(3)
+    # col1, col2, col3 = st.columns(3)
     
-    with col1:
-        if st.button("🔄 Refresh Model Results"):
-            st.rerun()
+    # with col1:
+    #     if st.button("🔄 Refresh Model Results"):
+    #         st.rerun()
     
-    with col2:
-        if st.button("🤖 Train New Models"):
-            st.info("Run: `python scripts/train_models.py` to train new models")
+    # with col2:
+    #     if st.button("🤖 Train New Models"):
+    #         st.info("Run: `python scripts/train_models.py` to train new models")
     
-    with col3:
-        if st.button("💾 Download Model Results"):
-            st.info("Model results are saved in the 'models' directory")
+    # with col3:
+    #     if st.button("💾 Download Model Results"):
+    #         st.info("Model results are saved in the 'models' directory")
 
 
 def show_api_model_training():

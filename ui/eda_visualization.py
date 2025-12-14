@@ -16,7 +16,7 @@ def show_eda_visualization():
     st.markdown("Comprehensive exploratory data analysis and visualization of healthcare insights.")
     
     # Check if EDA results exist
-    eda_results_path = Path("eda_results")
+    eda_results_path = Path("data/eda_results")
     if not eda_results_path.exists():
         st.warning("⚠️ EDA results not found. Please run the EDA analysis first.")
         st.info("Run: `python scripts/run_comprehensive_eda.py` to generate EDA results.")
@@ -69,73 +69,7 @@ def show_eda_visualization():
             st.write(f"• Average Blood Pressure: {insights['clinical_metrics']['average_bp']:.1f}")
             st.write(f"• Average Heart Rate: {insights['clinical_metrics']['average_hr']:.1f}")
             st.write(f"• Average Lab Results: {insights['clinical_metrics']['average_lab_results']:.1f}")
-    
-    # Visualization tabs
-    st.subheader("📈 Visualizations")
-    
-    tab1, tab2, tab3, tab4 = st.tabs(["Demographics", "Correlations", "Outcomes", "Interactive"])
-    
-    with tab1:
-        st.write("### Patient Demographics and Health Metrics")
-        
-        # Check for distribution plots
-        dist_path = eda_results_path / "distributions"
-        if dist_path.exists():
-            if (dist_path / "demographics.png").exists():
-                st.image(str(dist_path / "demographics.png"), caption="Patient Demographics")
-            
-            if (dist_path / "age_analysis.png").exists():
-                st.image(str(dist_path / "age_analysis.png"), caption="Age Group Analysis")
-        else:
-            st.info("Distribution plots not found. Run EDA analysis to generate them.")
-    
-    with tab2:
-        st.write("### Correlation Analysis")
-        
-        corr_path = eda_results_path / "correlations"
-        if corr_path.exists():
-            if (corr_path / "correlation_heatmap.png").exists():
-                st.image(str(corr_path / "correlation_heatmap.png"), caption="Correlation Matrix")
-            
-            if (corr_path / "pairplot.png").exists():
-                st.image(str(corr_path / "pairplot.png"), caption="Pairwise Relationships")
-        else:
-            st.info("Correlation plots not found. Run EDA analysis to generate them.")
-    
-    with tab3:
-        st.write("### Outcome Analysis")
-        
-        outcomes_path = eda_results_path / "outcomes"
-        if outcomes_path.exists():
-            if (outcomes_path / "outcome_analysis.png").exists():
-                st.image(str(outcomes_path / "outcome_analysis.png"), caption="Outcome Analysis")
-            
-            if (outcomes_path / "risk_analysis.png").exists():
-                st.image(str(outcomes_path / "risk_analysis.png"), caption="Risk Analysis")
-        else:
-            st.info("Outcome analysis plots not found. Run EDA analysis to generate them.")
-    
-    with tab4:
-        st.write("### Interactive Visualizations")
-        
-        interactive_path = eda_results_path / "interactive"
-        if interactive_path.exists():
-            interactive_files = list(interactive_path.glob("*.html"))
-            
-            if interactive_files:
-                st.write("**Available Interactive Plots:**")
-                for i, file in enumerate(interactive_files):
-                    st.write(f"{i+1}. {file.stem.replace('_', ' ').title()}")
-                
-                # Display first interactive plot
-                if (interactive_path / "age_vs_los_interactive.html").exists():
-                    with open(interactive_path / "age_vs_los_interactive.html", 'r') as f:
-                        st.components.v1.html(f.read(), height=600)
-            else:
-                st.info("Interactive plots not found. Run EDA analysis to generate them.")
-        else:
-            st.info("Interactive plots not found. Run EDA analysis to generate them.")
-    
+
     # Risk Analysis Section
     if insights_path.exists():
         st.subheader("⚠️ Risk Analysis")
@@ -156,23 +90,174 @@ def show_eda_visualization():
             st.write(f"• Age: {risk_correlations['age_risk_correlation']:.3f}")
             st.write(f"• Length of Stay: {risk_correlations['los_risk_correlation']:.3f}")
             st.write(f"• Blood Pressure: {risk_correlations['bp_risk_correlation']:.3f}")
+
+    # Visualization tabs
+    st.subheader("📈 Visualizations")
     
+    tab1, tab2, tab3, tab4 = st.tabs(["Demographics", "Correlations", "Outcomes", "Interactive"])
+    
+    with tab1:
+        st.write("### Data Distributions")
+        
+        # Check for distribution plots in the health_dataset/plots directory
+        plots_path = eda_results_path / "health_dataset" / "plots"
+        if plots_path.exists():
+            plot_files = sorted(os.listdir(plots_path))
+            found_plots = False
+            
+            # Show distribution plots for numerical variables
+            for plot_file in plot_files:
+                if plot_file.endswith('_distribution.png'):
+                    var_name = plot_file.replace('_distribution.png', '').replace('_', ' ').title()
+                    st.image(str(plots_path / plot_file), 
+                            caption=f"{var_name} Distribution and Box Plot")
+                    found_plots = True
+            
+            # Show categorical analysis plots
+            for plot_file in plot_files:
+                if plot_file.endswith('_analysis.png'):
+                    var_name = plot_file.replace('_analysis.png', '').replace('_', ' ').title()
+                    st.image(str(plots_path / plot_file), 
+                            caption=f"{var_name} Analysis")
+                    found_plots = True
+            
+            if not found_plots:
+                st.info("No distribution plots found. Run EDA analysis to generate them.")
+        else:
+            st.info("Plots directory not found. Run EDA analysis to generate them.")
+    
+    with tab2:
+        st.write("### Correlation Analysis")
+        
+        plots_path = eda_results_path / "health_dataset" / "plots"
+        if plots_path.exists():
+            plot_files = os.listdir(plots_path)
+            found_heatmap = False
+            found_pairplot = False
+            
+            # Show correlation heatmap if it exists
+            for plot_file in plot_files:
+                if 'correlation_heatmap' in plot_file.lower():
+                    st.image(str(plots_path / plot_file), 
+                            caption="Correlation Heatmap of Numerical Variables")
+                    found_heatmap = True
+                    break
+            
+            # Show pairplot if it exists
+            for plot_file in plot_files:
+                if 'pairplot' in plot_file.lower():
+                    st.image(str(plots_path / plot_file), 
+                            caption="Pairwise Relationships")
+                    found_pairplot = True
+                    break
+            
+            if not (found_heatmap or found_pairplot):
+                st.info("No correlation plots found. Run EDA analysis to generate them.")
+        else:
+            st.info("Plots directory not found. Run EDA analysis to generate them.")
+    
+    with tab3:
+        st.write("### Data Analysis")
+        
+        plots_path = eda_results_path / "health_dataset" / "plots"
+        if plots_path.exists():
+            plot_files = os.listdir(plots_path)
+            found_plots = False
+            
+            # Show any remaining plots that haven't been shown yet
+            for plot_file in plot_files:
+                if (not plot_file.endswith('_distribution.png') and 
+                    not plot_file.endswith('_analysis.png') and
+                    'correlation' not in plot_file.lower() and
+                    'pairplot' not in plot_file.lower() and
+                    plot_file.endswith('.png')):
+                    
+                    caption = plot_file.replace('_', ' ').replace('.png', '').title()
+                    st.image(str(plots_path / plot_file), caption=caption)
+                    found_plots = True
+            
+            if not found_plots:
+                st.info("No additional analysis plots found. Check other tabs for visualizations.")
+        else:
+            st.info("Plots directory not found. Run EDA analysis to generate them.")
+    
+    # Interactive Visualizations Tab
+    with tab4:
+        st.write("### Interactive Visualizations")
+        
+        plots_path = eda_results_path / "health_dataset" / "plots"
+        if plots_path.exists():
+            plot_files = os.listdir(plots_path)
+            interactive_files = [f for f in plot_files if f.endswith('.html')]
+            
+            if interactive_files:
+                st.write("**Available Interactive Plots:**")
+                
+                # Display a dropdown to select which plot to view
+                selected_plot = st.selectbox(
+                    "Select a plot to view:",
+                    interactive_files,
+                    format_func=lambda x: x.replace('_', ' ').replace('.html', '').title()
+                )
+                
+                # Display the selected interactive plot
+                with open(plots_path / selected_plot, 'r', encoding='utf-8') as f:
+                    st.components.v1.html(f.read(), height=600, scrolling=True)
+            else:
+                st.info("No interactive plots found. Interactive visualizations will be available in a future update.")
+                
+                # Optional: Add a button to generate sample interactive plots
+                if st.button("Generate Sample Interactive Plot"):
+                    try:
+                        # Create a sample interactive plot using Plotly
+                        import plotly.express as px
+                        from plotly.subplots import make_subplots
+                        
+                        # Sample data
+                        np.random.seed(42)
+                        df = pd.DataFrame({
+                            'Age': np.random.normal(45, 15, 1000),
+                            'BloodPressure': np.random.normal(120, 20, 1000),
+                            'HeartRate': np.random.normal(75, 10, 1000),
+                            'RiskScore': np.random.uniform(0, 1, 1000)
+                        })
+                        
+                        # Create an interactive scatter plot
+                        fig = px.scatter(
+                            df, x='Age', y='BloodPressure', 
+                            color='RiskScore',
+                            title='Sample Interactive Plot: Age vs Blood Pressure',
+                            labels={'Age': 'Age (years)', 'BloodPressure': 'Blood Pressure (mmHg)'},
+                            color_continuous_scale='Viridis'
+                        )
+                        
+                        # Save as HTML
+                        os.makedirs(plots_path, exist_ok=True)
+                        fig.write_html(str(plots_path / 'sample_interactive_plot.html'))
+                        st.success("Sample interactive plot generated! Refresh the page to view it.")
+                        st.rerun()
+                        
+                    except Exception as e:
+                        st.error(f"Failed to generate sample plot: {str(e)}")
+        else:
+            st.info("Plots directory not found. Run EDA analysis to generate visualizations.")
+
     # Action buttons
-    st.subheader("🔧 Actions")
+    # st.subheader("🔧 Actions")
     
-    col1, col2, col3 = st.columns(3)
+    # col1, col2, col3 = st.columns(3)
     
-    with col1:
-        if st.button("🔄 Refresh EDA Results"):
-            st.rerun()
+    # with col1:
+    #     if st.button("🔄 Refresh EDA Results"):
+    #         st.rerun()
     
-    with col2:
-        if st.button("📊 Run New EDA Analysis"):
-            st.info("Run: `python scripts/run_comprehensive_eda.py` in terminal")
+    # with col2:
+    #     if st.button("📊 Run New EDA Analysis"):
+    #         st.info("Run: `python scripts/run_comprehensive_eda.py` in terminal")
     
-    with col3:
-        if st.button("💾 Download Results"):
-            st.info("EDA results are saved in the 'eda_results' directory")
+    # with col3:
+    #     if st.button("💾 Download Results"):
+    #         st.info("EDA results are saved in the 'eda_results' directory")
 
 
 def show_api_eda():

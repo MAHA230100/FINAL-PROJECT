@@ -11,7 +11,7 @@ def show_data_display():
     
     # Check for processed data
     cleaned_data_path = Path("data/cleaned")
-    eda_results_path = Path("eda_results")
+    eda_results_path = Path("data/eda_results")
     
     # # API-based data operations
     # st.subheader("🌐 API Data Operations")

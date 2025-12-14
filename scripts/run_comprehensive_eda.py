@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 def load_health_dataset():
     """Load the health AI dataset"""
     try:
-        dataset_path = "data/raw/health_ai_dataset_500_patients.csv"
+        dataset_path = "data/raw/healthcare_ai_dataset_500_patients.csv"
         if os.path.exists(dataset_path):
             df = pd.read_csv(dataset_path)
             print(f"✅ Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")

@@ -347,7 +347,9 @@ def create_model_visualizations(results: dict, output_dir: Path):
     """Create visualizations for model results."""
     logger.info("Creating model visualizations...")
     
-    viz_dir = output_dir / 'visualizations'
+    # Create visualizations in the parent directory of the model type directory
+    # e.g., data/models/visualizations/ instead of data/models/classification/visualizations/
+    viz_dir = output_dir.parent / 'visualizations'
     viz_dir.mkdir(parents=True, exist_ok=True)
     
     # Classification results
@@ -398,7 +400,7 @@ def main():
     parser = argparse.ArgumentParser(description='Train ML models on healthcare dataset')
     parser.add_argument('--input', '-i', type=str, default='data/raw/healthcare_ai_dataset_500_patients.csv',
                        help='Input data file path')
-    parser.add_argument('--output', '-o', type=str, default='models',
+    parser.add_argument('--output', '-o', type=str, default='data/models',
                        help='Output directory for models')
     parser.add_argument('--verbose', '-v', action='store_true',
                        help='Enable verbose logging')
