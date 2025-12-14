@@ -1,0 +1,26 @@
+{
+    "dataset_summary": {
+        "total_patients": 500,
+        "total_features": 21,
+        "data_quality": "Good"
+    },
+    "key_findings": [
+        "Average patient age: 52.9 years",
+        "Average length of stay: 10.2 days"
+    ],
+    "recommendations": [
+        "Implement risk stratification protocols",
+        "Optimize length of stay management",
+        "Enhance patient monitoring systems",
+        "Develop predictive models for early intervention"
+    ],
+    "model_performance": {
+        "classification": null,
+        "regression": {
+            "rmse": 5.967583388592068,
+            "mae": 5.126024,
+            "r2_score": -0.11596130951565331
+        },
+        "training_date": "2025-12-14T17:44:06.808352"
+    }
+}

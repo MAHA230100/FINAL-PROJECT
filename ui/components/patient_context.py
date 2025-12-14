@@ -1,23 +1,56 @@
 import streamlit as st
 import requests
-import os
+from typing import Optional, Dict, Any
 
-def patient_context(api_base_default="http://localhost:8000"):
-    """Universal patient selection and loader (puts into st.session_state)"""
-    api_base = st.sidebar.text_input("API base URL", api_base_default, key="api_base_url_global")
-    patient_id = st.sidebar.text_input("Patient ID", value=st.session_state.get("patient_id", ""), key="sidebar_patient_id")
-    load_patient = st.sidebar.button("Load Patient", key="btn_load_patient")
-    if load_patient or (patient_id and "patient" not in st.session_state):
-        try:
-            response = requests.get(f"{api_base}/patients/{patient_id}", timeout=10)
-            if response.status_code == 200:
-                st.session_state["patient_id"] = patient_id
-                st.session_state["patient"] = response.json()
-                st.success(f"Loaded patient {patient_id}")
-            else:
-                st.session_state.pop("patient", None)
-                st.error(f"Patient not found for ID: {patient_id}")
-        except Exception as e:
-            st.session_state.pop("patient", None)
-            st.error(f"Failed to fetch patient: {e}")
-    return api_base, st.session_state.get("patient_id"), st.session_state.get("patient")
+def get_all_patients(api_base: str) -> list:
+    """Fetch all patients for the dropdown."""
+    try:
+        resp = requests.get(f"{api_base}/patients")
+        if resp.status_code == 200:
+            return resp.json()
+        return []
+    except Exception:
+        return []
+
+def render_patient_selector(api_base: str):
+    """
+    Renders a selectbox in the sidebar to choose a patient.
+    Updates st.session_state['current_patient'] with the full patient dict.
+    """
+    st.sidebar.markdown("### 👤 Patient Context")
+    
+    # 1. Load patient list
+    patients = get_all_patients(api_base)
+    if not patients:
+        st.sidebar.warning("No patients found in DB.")
+        st.session_state['current_patient'] = None
+        return
+
+    # 2. Prepare options
+    # Format: "Name (ID)"
+    patient_options = {f"{p['name']} ({p['patient_id']})": p for p in patients}
+    
+    # 3. Determine default index
+    current = st.session_state.get('current_patient')
+    index = 0
+    if current:
+        current_label = f"{current['name']} ({current['patient_id']})"
+        if current_label in patient_options:
+            keys = list(patient_options.keys())
+            index = keys.index(current_label)
+
+    # 4. Selectbox
+    selected_label = st.sidebar.selectbox(
+        "Select Patient",
+        options=list(patient_options.keys()),
+        index=index,
+        key="patient_selector_box"
+    )
+    
+    # 5. Update session state
+    if selected_label:
+        st.session_state['current_patient'] = patient_options[selected_label]
+        
+        # Display mini info
+        p = patient_options[selected_label]
+        st.sidebar.info(f"**Age:** {p.get('age')} | **Gender:** {p.get('gender')}")

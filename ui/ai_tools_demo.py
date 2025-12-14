@@ -28,35 +28,34 @@ def show_ai_tools_demo():
         st.error(f"❌ Cannot connect to AI Tools: {e}")
         return
     
-    # Sample patient data
-    sample_patient_data = {
-        "patient_id": "P001",
-        "age": 65,
-        "gender": "Male",
-        "comorbidities": "Hypertension, Diabetes, Heart Disease",
-        "vitals_bp": 150,
-        "vitals_hr": 85,
-        "temperature": 98.6,
-        "oxygen_saturation": 96,
-        "respiratory_rate": 18,
-        "medications": ["Lisinopril", "Metformin", "Aspirin", "Atorvastatin"],
-        "diagnosis": "Heart Failure",
-        "admission_date": "2024-01-01",
-        "length_of_stay": 5,
-        "discharge_disposition": "Home",
-        "follow_up_scheduled": True,
-        "icu_stay": False,
-        "isolation": False,
-        "ventilator": False,
-        "immunocompromised": False,
-        "cognitive_impairment": False,
-        "caregiver_support": True,
-        "lab_values": {
-            "creatinine": 1.2,
-            "glucose": 140,
-            "wbc": 8000
+    # Patient Selection / Context
+    current_patient = st.session_state.get('current_patient')
+    
+    common_req_body = {}
+    
+    if current_patient:
+        st.info(f"Analyzing Selected Patient: **{current_patient['name']}** (ID: {current_patient['patient_id']})")
+        common_req_body = {
+            "patient_id": current_patient['patient_id']
         }
-    }
+        # For display purposes (demo info)
+        display_data = current_patient
+    else:
+        st.warning("No patient selected. Using Demo/Sample data.")
+        # Sample patient data (Fallback)
+        sample_demo_data = {
+            "patient_id": "DEMO-001",
+            "age": 65,
+            "gender": "Male",
+            "comorbidities": "Hypertension",
+            "vitals_bp": 150,
+            "vitals_hr": 85,
+            "medications": ["Lisinopril", "Metformin"],
+        }
+        common_req_body = {
+            "patient_data": sample_demo_data
+        }
+        display_data = sample_demo_data
     
     # AI Tools Selection
     st.subheader("🔧 Available AI Tools")
@@ -99,7 +98,7 @@ def show_ai_tools_demo():
         try:
             response = requests.post(
                 f"{API_BASE}/ai-tools/clinical-guidance",
-                json={"patient_data": sample_patient_data, "consultation_type": "general"},
+                json={**common_req_body, "consultation_type": "general"},
                 timeout=30
             )
             if response.status_code == 200:
@@ -118,7 +117,7 @@ def show_ai_tools_demo():
             response = requests.post(
                 f"{API_BASE}/ai-tools/risk-assessment",
                 json={
-                    "patient_data": sample_patient_data,
+                    **common_req_body,
                     "risk_types": ["mortality", "readmission", "infection"]
                 },
                 timeout=30
@@ -138,7 +137,7 @@ def show_ai_tools_demo():
         try:
             response = requests.post(
                 f"{API_BASE}/ai-tools/medication-analysis",
-                json={"patient_data": sample_patient_data, "analysis_type": "comprehensive"},
+                json={**common_req_body, "analysis_type": "comprehensive"},
                 timeout=30
             )
             if response.status_code == 200:
@@ -156,7 +155,7 @@ def show_ai_tools_demo():
         try:
             response = requests.post(
                 f"{API_BASE}/ai-tools/patient-monitoring",
-                json={"patient_data": sample_patient_data, "monitoring_type": "comprehensive"},
+                json={**common_req_body, "monitoring_type": "comprehensive"},
                 timeout=30
             )
             if response.status_code == 200:
@@ -180,7 +179,7 @@ def show_ai_tools_demo():
         try:
             health_response = requests.post(
                 f"{API_BASE}/ai-tools/health-analysis",
-                json={"patient_data": sample_patient_data},
+                json=common_req_body,
                 timeout=30
             )
             if health_response.status_code == 200:
@@ -192,7 +191,7 @@ def show_ai_tools_demo():
         try:
             clinical_response = requests.post(
                 f"{API_BASE}/ai-tools/clinical-guidance",
-                json={"patient_data": sample_patient_data, "consultation_type": "general"},
+                json={**common_req_body, "consultation_type": "general"},
                 timeout=30
             )
             if clinical_response.status_code == 200:
@@ -205,7 +204,7 @@ def show_ai_tools_demo():
             risk_response = requests.post(
                 f"{API_BASE}/ai-tools/risk-assessment",
                 json={
-                    "patient_data": sample_patient_data,
+                    **common_req_body,
                     "risk_types": ["mortality", "readmission", "infection"]
                 },
                 timeout=30
@@ -219,7 +218,7 @@ def show_ai_tools_demo():
         try:
             medication_response = requests.post(
                 f"{API_BASE}/ai-tools/medication-analysis",
-                json={"patient_data": sample_patient_data, "analysis_type": "comprehensive"},
+                json={**common_req_body, "analysis_type": "comprehensive"},
                 timeout=30
             )
             if medication_response.status_code == 200:
@@ -231,7 +230,7 @@ def show_ai_tools_demo():
         try:
             monitoring_response = requests.post(
                 f"{API_BASE}/ai-tools/patient-monitoring",
-                json={"patient_data": sample_patient_data, "monitoring_type": "comprehensive"},
+                json={**common_req_body, "monitoring_type": "comprehensive"},
                 timeout=30
             )
             if monitoring_response.status_code == 200:

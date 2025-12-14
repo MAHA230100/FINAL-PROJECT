@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+from ui.components.patient_context import render_patient_selector
 
 def show_sidebar():
     """Create the sidebar navigation with improved layout"""
@@ -55,8 +56,16 @@ def show_sidebar():
     </div>
     """, unsafe_allow_html=True)
     
-    # API Configuration - moved below navigation
+    # API Configuration
     _default_api = os.getenv("API_BASE_URL", "http://localhost:8000")
+    
+    # Allow user to override API base immediately so we can use it for patient fetching
+    api_base = st.sidebar.text_input(
+        "API Base URL", 
+        _default_api, 
+        key="api_base_url_global",
+        help="Enter the base URL for the API endpoints"
+    )
     
     # Navigation
     st.sidebar.markdown("### Navigation")
@@ -99,7 +108,7 @@ def show_sidebar():
         ("📝", "Notes Summarizer", "notes_summarizer"), 
         ("🖼️", "Image Diagnostics", "image_diagnostics"),
         ("💬", "Feedback Analysis", "feedback_analysis"),
-        ("⚙️", "Admin Dashboard", "admin_dashboard")
+        ("🤖", "HealthAI Assistant", "ai_chat_bot")
     ]
     
     for icon, name, key in ai_tools:
@@ -110,15 +119,14 @@ def show_sidebar():
             help=f"Open {name} tool"
         ):
             selected_page = f"ai_tool_{key}"
+            st.session_state['last_selected_page'] = selected_page
     
+    # Patient Context Section
+    st.sidebar.markdown("### Patient Context")
+    render_patient_selector(api_base)
+
     st.sidebar.markdown("---")
     
-    # API Configuration at the bottom
-    api_base = st.sidebar.text_input(
-        "API Base URL", 
-        _default_api, 
-        key="api_base_url_global",
-        help="Enter the base URL for the API endpoints"
-    )
+    # API Configuration moved to top
     
     return selected_page, api_base

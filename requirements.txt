@@ -14,6 +14,7 @@ pillow
 opencv-python
 
 python-multipart
+python-dotenv
 
 # Deep learning
 torch
@@ -42,6 +43,7 @@ google
 google-api-core
 google-cloud-storage
 google-cloud-aiplatform
+google-generativeai
 
 # Experiment tracking
 mlflow

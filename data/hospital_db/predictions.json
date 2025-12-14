@@ -1246,5 +1246,310 @@
     "date": "2023-04-05",
     "model": "CohortTagger",
     "result": "Low Risk"
+  },
+  {
+    "id": "5ec54add-3de6-4ce7-93aa-8a1a6d5fa75e",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessor",
+    "result": {
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        }
+      },
+      "risk_summary": {
+        "patient_id": "HCkUCHFb",
+        "overall_risk_score": 0.123,
+        "overall_risk_level": "Low",
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        },
+        "infection_risk": {
+          "risk_score": 0.0,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Basic infection control",
+            "Patient education on hygiene",
+            "Standard monitoring"
+          ]
+        },
+        "assessment_date": "2025-12-14T13:11:08.950781",
+        "recommendations": {
+          "immediate_actions": [
+            "Routine monitoring",
+            "Standard care protocols"
+          ],
+          "monitoring_plan": [
+            "Standard vital sign monitoring",
+            "Routine assessments"
+          ],
+          "follow_up_plan": [
+            "Standard follow-up",
+            "Routine assessments"
+          ]
+        }
+      }
+    },
+    "timestamp": "2025-12-14T13:11:08.953797"
+  },
+  {
+    "id": "ad71d756-e2d8-4520-a899-d11eab21ccbf",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:29.894011"
+  },
+  {
+    "id": "6954f8a0-799f-4f43-a1ab-47b5d89e0779",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:43.882734"
+  },
+  {
+    "id": "0c878ccb-247c-4051-a597-e838fc736eb2",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf nothign to say...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:53.843508"
+  },
+  {
+    "id": "2b4e9254-c105-441b-aee9-847ee84c5830",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf nothign to say...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:54.667954"
+  },
+  {
+    "id": "e73ab215-e775-4b80-b03a-e6bf412170d5",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf nothign to say...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:55.100034"
+  },
+  {
+    "id": "cba1323b-ecee-4a95-bf13-db1df33d4dcc",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "No acute abnormalities detected",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "Left Lower Lobe",
+        "Cardiac Silhouette"
+      ]
+    },
+    "timestamp": "2025-12-14T13:12:39.049334"
+  },
+  {
+    "id": "921950a2-354d-4574-be52-09ea64c63de8",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "sentiment": "Positive",
+      "score": 0.85,
+      "topics": [
+        "Nurse Attitude",
+        "Wait Time"
+      ]
+    },
+    "timestamp": "2025-12-14T13:13:08.134490"
+  },
+  {
+    "id": "d79cef0d-ae1a-45bf-910e-291232424132",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:43:24.251954"
+  },
+  {
+    "id": "a351af08-4c22-498e-a668-f5983181a313",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessor",
+    "result": {
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        }
+      },
+      "risk_summary": {
+        "patient_id": "HCkUCHFb",
+        "overall_risk_score": 0.123,
+        "overall_risk_level": "Low",
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        },
+        "infection_risk": {
+          "risk_score": 0.0,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Basic infection control",
+            "Patient education on hygiene",
+            "Standard monitoring"
+          ]
+        },
+        "assessment_date": "2025-12-14T13:45:10.114871",
+        "recommendations": {
+          "immediate_actions": [
+            "Routine monitoring",
+            "Standard care protocols"
+          ],
+          "monitoring_plan": [
+            "Standard vital sign monitoring",
+            "Routine assessments"
+          ],
+          "follow_up_plan": [
+            "Standard follow-up",
+            "Routine assessments"
+          ]
+        }
+      }
+    },
+    "timestamp": "2025-12-14T13:45:10.116186"
+  },
+  {
+    "id": "5d3351f4-9c42-41fb-97b9-07fce4ab43f1",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:45:38.915478"
   }
 ]

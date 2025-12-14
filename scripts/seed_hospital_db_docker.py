@@ -6,11 +6,11 @@ from datetime import datetime, timedelta
 
 def get_db_path():
     # For docker, detect folder relative to this script
-    docker_db_path = '/app/hospital_db'  # docker working directory path
+    docker_db_path = '/app/data/hospital_db'  # docker working directory path
     if os.path.exists(docker_db_path):
         return docker_db_path
     # fallback to relative for local
-    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'hospital_db')
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data/hospital_db')
 
 DB_PATH = get_db_path()
 TABLES = [
