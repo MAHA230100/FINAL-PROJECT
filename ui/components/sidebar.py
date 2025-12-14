@@ -75,13 +75,20 @@ def show_sidebar():
     
     # Create navigation items with better styling
     selected_page = None
+    navigation_clicked = False
     for page_name, page_id in pages.items():
         if st.sidebar.button(page_name, key=f"nav_{page_id}", use_container_width=True):
             selected_page = page_id
-    
-    # If no page selected (first load), default to home
-    if selected_page is None:
+            navigation_clicked = True
+
+    # Remember last selected page using session state
+    if navigation_clicked:
+        st.session_state['last_selected_page'] = selected_page
+    elif 'last_selected_page' in st.session_state:
+        selected_page = st.session_state['last_selected_page']
+    else:
         selected_page = pages["🏠 Home"]
+
     
     st.sidebar.markdown("---")
     

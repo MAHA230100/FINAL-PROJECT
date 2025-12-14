@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Import route modules
 from .routes import predictions, data, eda, models, ai_tools
+from .routes.patients import router as patients_router
 
 app = FastAPI(title="HealthAI API", version="0.1.0")
 
@@ -21,12 +22,11 @@ app.include_router(data.router)
 app.include_router(eda.router)
 app.include_router(models.router)
 app.include_router(ai_tools.router)
-
+app.include_router(patients_router)  # ADDED: patient endpoints
 
 @app.get("/health")
 def health():
     return {"status": "ok", "message": "HealthAI API is running"}
-
 
 @app.get("/")
 def root():
@@ -39,6 +39,7 @@ def root():
             "data": "/data", 
             "eda": "/eda",
             "models": "/model",
-            "ai_tools": "/ai-tools"
+            "ai_tools": "/ai-tools",
+            "patients": "/patients"  # now in endpoint map
         }
     }

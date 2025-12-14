@@ -43,51 +43,45 @@ if selected_page == "home":
         st.metric("System Status", "Online", "✅")
     
     st.markdown("---")
-    
-    # Quick access tabs
-    st.subheader("Quick Access")
-    tabs = st.tabs([
-        "🔬 Disease Prediction",
-        "📈 LOS Prediction", 
-        "👥 Patient Clustering",
-        "🛠️ AI Tools"
-    ])
-    
-    with tabs[0]:
-        st.subheader("Disease Risk Classification")
-        features = st.text_input("Enter features (comma-separated)", key="cls_features")
-        if st.button("Predict risk", key="predict_risk"):
-            vals = parse_features(features)
-            if not vals:
-                st.error("Provide numeric features, comma-separated")
+
+    st.markdown("## Admit New Patient")
+    with st.form("admit_patient_form"):
+        name = st.text_input("Name")
+        gender = st.selectbox("Gender", ["M", "F"])
+        age = st.number_input("Age", min_value=0, max_value=120, value=30)
+        dob = st.date_input("Date of Birth")
+        address = st.text_input("Address")
+        contact = st.text_input("Contact")
+        submit = st.form_submit_button("Admit New Patient")
+        if submit:
+            payload = {
+                "name": name,
+                "gender": gender,
+                "age": int(age),
+                "dob": str(dob),
+                "address": address,
+                "contact": contact
+            }
+            try:
+                res = requests.post(f"{API_BASE}/patients", json=payload, timeout=10)
+                st.success(f"Patient admitted! Patient ID: {res.json()['patient_id']}")
+            except Exception as e:
+                st.error(f"Failed to admit patient: {e}")
+
+    st.markdown("## Lookup Existing Patient")
+    lookup_id = st.text_input("Enter Patient ID", key="lookup_patient_id")
+    if st.button("Load Patient Profile"):
+        try:
+            res = requests.get(f"{API_BASE}/patients/{lookup_id}", timeout=10)
+            if res.status_code == 200:
+                st.json(res.json())
             else:
-                try:
-                    res = requests.post(f"{API_BASE}/predict/classify", json={"features": vals}, timeout=10)
-                    st.json(res.json())
-                except Exception as e:
-                    st.error(f"Request failed: {e}")
+                st.error("Patient not found")
+        except Exception as e:
+            st.error(f"Failed to load patient: {e}")
 
-    with tabs[1]:
-        st.subheader("Length of Stay Prediction")
-        features = st.text_input("Enter features (comma-separated)", key="reg_features")
-        if st.button("Predict LOS", key="predict_los"):
-            vals = parse_features(features)
-            if not vals:
-                st.error("Provide numeric features, comma-separated")
-            else:
-                try:
-                    res = requests.post(f"{API_BASE}/predict/regress", json={"features": vals}, timeout=10)
-                    st.json(res.json())
-                except Exception as e:
-                    st.error(f"Request failed: {e}")
-
-    with tabs[2]:
-        st.subheader("Patient Clustering")
-        st.info("Stub: visualize clusters and profiles")
-
-    with tabs[3]:
-        st.subheader("AI Tools")
-        st.info("Quick access to AI tools and utilities")
+    st.markdown("---")
+    # Quick access section removed per instructions.
 
 elif selected_page == "disease_prediction":
     st.title("🔬 Disease Prediction")

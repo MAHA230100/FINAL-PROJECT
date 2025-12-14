@@ -13,6 +13,75 @@ def show_data_display():
     cleaned_data_path = Path("data/cleaned")
     eda_results_path = Path("eda_results")
     
+    # # API-based data operations
+    # st.subheader("🌐 API Data Operations")
+    
+    # _default_api = os.getenv("API_BASE_URL", "http://localhost:8000")
+    # API_BASE = st.sidebar.text_input("API base URL", _default_api, key="api_base_url_data")
+    
+    # col1, col2 = st.columns(2)
+    
+    # with col1:
+    #     st.subheader("Raw Data API")
+    #     if st.button("Load Raw Data via API", key="load_raw_api"):
+    #         try:
+    #             response = requests.get(f"{API_BASE}/data/raw", timeout=10)
+    #             data = response.json()
+    #             st.success("Raw data loaded successfully!")
+    #             st.json(data)
+    #         except Exception as e:
+    #             st.error(f"Failed to load raw data: {e}")
+    
+    # with col2:
+    #     st.subheader("Cleaned Data API")
+    #     if st.button("Load Cleaned Data via API", key="load_cleaned_api"):
+    #         try:
+    #             response = requests.get(f"{API_BASE}/data/cleaned", timeout=10)
+    #             data = response.json()
+    #             st.success("Cleaned data loaded successfully!")
+    #             st.json(data)
+    #         except Exception as e:
+    #             st.error(f"Failed to load cleaned data: {e}")
+    
+    # # Data cleaning section
+    # st.subheader("🧹 Data Cleaning Operations")
+    # dataset_name = st.text_input("Dataset Name", value="healthcare_ai_dataset", key="clean_dataset")
+    # cleaning_options = {
+    #     "remove_duplicates": st.checkbox("Remove Duplicates", value=True),
+    #     "handle_missing": st.checkbox("Handle Missing Values", value=True),
+    #     "normalize": st.checkbox("Normalize Data", value=False)
+    # }
+    
+    # if st.button("Clean Data via API", key="clean_data_api"):
+    #     try:
+    #         response = requests.post(
+    #             f"{API_BASE}/data/clean",
+    #             json={"dataset_name": dataset_name, "cleaning_options": cleaning_options},
+    #             timeout=30
+    #         )
+    #         result = response.json()
+    #         st.success("Data cleaning completed!")
+    #         st.json(result)
+    #     except Exception as e:
+    #         st.error(f"Data cleaning failed: {e}")
+    
+    # # Action buttons
+    # st.subheader("🔧 Actions")
+    
+    # col1, col2, col3 = st.columns(3)
+    
+    # with col1:
+    #     if st.button("🔄 Refresh Data"):
+    #         st.rerun()
+    
+    # with col2:
+    #     if st.button("📊 Run Data Analysis"):
+    #         st.info("Run: `python scripts/run_comprehensive_eda.py` to generate analysis")
+    
+    # with col3:
+    #     if st.button("💾 Export Data"):
+    #         st.info("Data files are available in the 'data' directory")
+
     data_tabs = st.tabs(["Raw Data", "Cleaned Data", "Data Summary", "Data Quality"])
 
     with data_tabs[0]:
@@ -203,72 +272,3 @@ def show_data_display():
                 st.write(f"• {check}: {result}")
         else:
             st.info("Data quality analysis not found. Run EDA analysis to generate insights.")
-    
-    # API-based data operations
-    st.subheader("🌐 API Data Operations")
-    
-    _default_api = os.getenv("API_BASE_URL", "http://localhost:8000")
-    API_BASE = st.sidebar.text_input("API base URL", _default_api, key="api_base_url_data")
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.subheader("Raw Data API")
-        if st.button("Load Raw Data via API", key="load_raw_api"):
-            try:
-                response = requests.get(f"{API_BASE}/data/raw", timeout=10)
-                data = response.json()
-                st.success("Raw data loaded successfully!")
-                st.json(data)
-            except Exception as e:
-                st.error(f"Failed to load raw data: {e}")
-    
-    with col2:
-        st.subheader("Cleaned Data API")
-        if st.button("Load Cleaned Data via API", key="load_cleaned_api"):
-            try:
-                response = requests.get(f"{API_BASE}/data/cleaned", timeout=10)
-                data = response.json()
-                st.success("Cleaned data loaded successfully!")
-                st.json(data)
-            except Exception as e:
-                st.error(f"Failed to load cleaned data: {e}")
-    
-    # Data cleaning section
-    st.subheader("🧹 Data Cleaning Operations")
-    dataset_name = st.text_input("Dataset Name", value="healthcare_ai_dataset", key="clean_dataset")
-    cleaning_options = {
-        "remove_duplicates": st.checkbox("Remove Duplicates", value=True),
-        "handle_missing": st.checkbox("Handle Missing Values", value=True),
-        "normalize": st.checkbox("Normalize Data", value=False)
-    }
-    
-    if st.button("Clean Data via API", key="clean_data_api"):
-        try:
-            response = requests.post(
-                f"{API_BASE}/data/clean",
-                json={"dataset_name": dataset_name, "cleaning_options": cleaning_options},
-                timeout=30
-            )
-            result = response.json()
-            st.success("Data cleaning completed!")
-            st.json(result)
-        except Exception as e:
-            st.error(f"Data cleaning failed: {e}")
-    
-    # Action buttons
-    st.subheader("🔧 Actions")
-    
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        if st.button("🔄 Refresh Data"):
-            st.rerun()
-    
-    with col2:
-        if st.button("📊 Run Data Analysis"):
-            st.info("Run: `python scripts/run_comprehensive_eda.py` to generate analysis")
-    
-    with col3:
-        if st.button("💾 Export Data"):
-            st.info("Data files are available in the 'data' directory")
