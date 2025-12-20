@@ -23,7 +23,8 @@ def render_patient_selector(api_base: str):
     patients = get_all_patients(api_base)
     if not patients:
         st.sidebar.warning("No patients found in DB.")
-        st.session_state['current_patient'] = None
+        # Don't reset current_patient, just return. 
+        # This prevents flaking API from wiping context.
         return
 
     # 2. Prepare options
@@ -40,17 +41,28 @@ def render_patient_selector(api_base: str):
             index = keys.index(current_label)
 
     # 4. Selectbox
+    # Prepare key for session state syncing
+    selectbox_key = "patient_selector_box"
+    
+    # Sync widget state with current_patient if set externally
+    if current:
+        current_label = f"{current['name']} ({current['patient_id']})"
+        if current_label in patient_options and st.session_state.get(selectbox_key) != current_label:
+            st.session_state[selectbox_key] = current_label
+
     selected_label = st.sidebar.selectbox(
         "Select Patient",
         options=list(patient_options.keys()),
         index=index,
-        key="patient_selector_box"
+        key=selectbox_key
     )
     
     # 5. Update session state
     if selected_label:
-        st.session_state['current_patient'] = patient_options[selected_label]
+        new_patient = patient_options[selected_label]
+        # Only update if changed to avoid unnecessary re-runs or state churn
+        if not current or current.get('patient_id') != new_patient.get('patient_id'):
+            st.session_state['current_patient'] = new_patient
         
         # Display mini info
-        p = patient_options[selected_label]
-        st.sidebar.info(f"**Age:** {p.get('age')} | **Gender:** {p.get('gender')}")
+        st.sidebar.info(f"**Age:** {new_patient.get('age')} | **Gender:** {new_patient.get('gender')}")

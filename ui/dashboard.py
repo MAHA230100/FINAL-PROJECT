@@ -233,6 +233,8 @@ if selected_page == "home":
             
             if st.button("🚀 Set as Active Patient Context", key="btn_activate_lookup", type="primary", use_container_width=True):
                 st.session_state['current_patient'] = temp_patient
+                # Sync sidebar widget key immediately
+                st.session_state['patient_selector_box'] = f"{temp_patient['name']} ({temp_patient['patient_id']})"
                 st.session_state['temp_lookup_patient'] = None
                 st.rerun()
 
