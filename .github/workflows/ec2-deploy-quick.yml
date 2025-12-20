@@ -29,9 +29,18 @@ jobs:
       - name: Fix data directory permissions
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << 'ENDPERM'
+            # Create project dir if it doesn't exist
+            mkdir -p ${{ secrets.PROJECT_DIR }}
             cd ${{ secrets.PROJECT_DIR }}
+            
             echo "🔧 Fixing data directory permissions for rsync..."
-            sudo chown -R $USER:$USER data/ 2>/dev/null || true
+            if [ -d "data" ]; then
+              sudo chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/
+              sudo chmod -R 755 data/
+            else
+              mkdir -p data
+              chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/
+            fi
             echo "✅ Permissions fixed"
           ENDPERM
 
