@@ -11,6 +11,10 @@ def show_ai_chat_bot():
     st.header("🤖 HealthAI Assistant")
     st.markdown("ask me anything about the system or the current patient.")
     
+    current_patient = st.session_state.get('current_patient')
+    if current_patient:
+        st.info(f"👤 Patient Context: **{current_patient['name']}** (ID: {current_patient['patient_id']})")
+    
     # Initialize chat history
     if "messages" not in st.session_state:
         st.session_state.messages = []

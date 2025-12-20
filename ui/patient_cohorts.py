@@ -8,7 +8,7 @@ def show_patient_cohorts(api_base: str):
     # 1. Context
     patient = st.session_state.get('current_patient')
     if patient:
-        st.success(f"Context: {patient.get('name')} (ID: {patient.get('patient_id')})")
+        st.info(f"👤 Patient Context: **{patient.get('name')}** (ID: {patient.get('patient_id')})")
     else:
         st.info("No patient selected.")
         

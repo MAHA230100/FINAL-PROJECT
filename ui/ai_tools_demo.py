@@ -34,7 +34,7 @@ def show_ai_tools_demo():
     common_req_body = {}
     
     if current_patient:
-        st.info(f"Analyzing Selected Patient: **{current_patient['name']}** (ID: {current_patient['patient_id']})")
+        st.info(f"👤 Patient Context: **{current_patient['name']}** (ID: {current_patient['patient_id']})")
         common_req_body = {
             "patient_id": current_patient['patient_id']
         }

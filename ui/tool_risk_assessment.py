@@ -10,7 +10,7 @@ def show_risk_assessment(api_base: str):
         st.warning("Please select a patient from the sidebar first.")
         patient_id = st.text_input("Or enter Patient ID manually")
     else:
-        st.success(f"Analysing Risk for: **{current_patient['name']}**")
+        st.info(f"👤 Patient Context: **{current_patient['name']}** (ID: {current_patient['patient_id']})")
         patient_id = current_patient['patient_id']
 
     st.markdown("### Configuration")

@@ -9,8 +9,16 @@ def show_data_display():
     st.title("📊 Data Display")
     st.markdown("Explore your raw and cleaned datasets with comprehensive insights.")
     
-    # Standardize data root
-    DATA_ROOT = Path("/app/data") if os.getenv("ENVIRONMENT") == "production" else Path("data")
+    # Standardize data root discovery
+    DATA_ROOT = None
+    possible_roots = [Path("/app/data"), Path("../data"), Path("data")]
+    for root in possible_roots:
+        if root.exists():
+            DATA_ROOT = root
+            break
+            
+    if not DATA_ROOT:
+        DATA_ROOT = Path("data") # Final fallback
     
     # Check for processed data
     cleaned_data_path = DATA_ROOT / "cleaned"

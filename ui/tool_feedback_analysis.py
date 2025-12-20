@@ -12,7 +12,7 @@ def show_feedback_analysis(api_base: str):
     patient_id = current_patient.get('patient_id')
     
     if current_patient and current_patient.get('name'):
-        st.success(f"Context: {current_patient.get('name')} (ID: {patient_id})")
+        st.info(f"👤 Patient Context: **{current_patient.get('name')}** (ID: {patient_id})")
     else:
         st.info("No patient selected. Analysis will be generic.")
     

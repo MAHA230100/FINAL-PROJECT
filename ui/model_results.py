@@ -12,12 +12,16 @@ def show_model_results():
     st.title("📈 Model Results")
     st.markdown("View performance metrics, visualizations, and explanations for trained models.")
     
+    # Standardize data root
+    DATA_ROOT = Path("/app/data") if os.getenv("ENVIRONMENT") == "production" else Path("data")
+    
     # Check for model results
-    models_path = Path("data/models")  # Using data/models for Docker volume consistency
-    eda_results_path = Path("data/eda_results")  # Also updating EDA path for consistency
+    models_path = DATA_ROOT / "models"
+    eda_results_path = DATA_ROOT / "eda_results"
     
     if not models_path.exists():
-        st.warning("⚠️ Model results not found. Please train models first.")
+        st.warning("⚠️ Model results directory not found.")
+        st.info(f"Checked path: {models_path.absolute()}")
         st.info("Run: `python scripts/train_models.py` to train models.")
         
         # Show API-based model training as fallback

@@ -8,7 +8,7 @@ def show_notes_summarizer(api_base: str):
     patient_id = current_patient['patient_id'] if current_patient else None
     
     if current_patient:
-        st.info(f"Patient: **{current_patient['name']}**")
+        st.info(f"👤 Patient Context: **{current_patient['name']}** (ID: {current_patient['patient_id']})")
     
     # Auto-load notes from DB if available
     current_patient = st.session_state.get('current_patient')

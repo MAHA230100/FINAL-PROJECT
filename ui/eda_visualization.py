@@ -15,8 +15,12 @@ def show_eda_visualization():
     st.title("📈 EDA Visualization")
     st.markdown("Comprehensive exploratory data analysis and visualization of healthcare insights.")
     
+    # Standardize data root
+    DATA_ROOT = Path("/app/data") if os.getenv("ENVIRONMENT") == "production" else Path("data")
+    
     # Check if EDA results exist
-    eda_results_path = Path("data/eda_results")
+    eda_results_path = DATA_ROOT / "eda_results"
+    
     if not eda_results_path.exists():
         st.warning("⚠️ EDA results not found. Please run the EDA analysis first.")
         st.info("Run: `python scripts/run_comprehensive_eda.py` to generate EDA results.")
@@ -25,11 +29,28 @@ def show_eda_visualization():
         show_api_eda()
         return
     
-    # Load summary statistics
+    # Load summary statistics (checking multiple possible filenames)
     summary_path = eda_results_path / "summary_statistics.json"
+    comp_path = eda_results_path / "health_dataset" / "comprehensive_eda_results.json"
+    
+    summary = None
     if summary_path.exists():
         with open(summary_path, 'r') as f:
             summary = json.load(f)
+    elif comp_path.exists():
+        with open(comp_path, 'r') as f:
+            comp_data = json.load(f)
+            # Map comprehensive results to the summary format the UI expects
+            summary = {
+                'dataset_overview': {
+                    'total_patients': comp_data['summary_stats']['total_patients'],
+                    'total_features': comp_data['summary_stats']['total_features'],
+                    'missing_values': comp_data['summary_stats']['missing_values_total'],
+                    'duplicate_rows': comp_data['summary_stats']['duplicate_rows']
+                }
+            }
+    
+    if summary:
         
         # Display dataset overview
         st.subheader("📊 Dataset Overview")

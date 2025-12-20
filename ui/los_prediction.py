@@ -31,7 +31,7 @@ def show_los_prediction(api_base: str):
     d_risk = current_patient.get('risk_score', 0.5)
 
     if current_patient:
-        st.success(f"Context Loaded: {current_patient.get('name')} (ID: {current_patient.get('patient_id')})")
+        st.info(f"👤 Patient Context: **{current_patient.get('name')}** (ID: {current_patient.get('patient_id')})")
     
     with st.form("los_rich_form"):
         st.subheader("Demographics & Social")

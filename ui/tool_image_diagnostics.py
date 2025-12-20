@@ -6,6 +6,9 @@ def show_image_diagnostics(api_base: str):
     
     current_patient = st.session_state.get('current_patient')
     patient_id = current_patient['patient_id'] if current_patient else None
+    
+    if current_patient:
+        st.info(f"👤 Patient Context: **{current_patient['name']}** (ID: {patient_id})")
 
     uploaded_file = st.file_uploader("Upload Medical Image (X-Ray, MRI)", type=['png', 'jpg', 'jpeg'])
     

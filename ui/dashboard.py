@@ -44,7 +44,7 @@ if selected_page == "home":
     
     if current_patient:
         # Patient Snapshot View
-        st.success(f"👤 Currently Viewing: **{current_patient.get('name', 'Unknown')}**")
+        st.info(f"👤 Patient Context: **{current_patient.get('name', 'Unknown')}** (ID: {current_patient.get('patient_id')})")
         
         col1, col2, col3 = st.columns(3)
         
