@@ -111,6 +111,7 @@ jobs:
             sudo rm -f data/.env
             echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" | sudo tee data/.env > /dev/null
             echo "API_BASE_URL=http://localhost:8000" | sudo tee -a data/.env > /dev/null
+            sudo chown ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/.env
             sudo chmod 600 data/.env
             echo "✅ data/.env created"
 
@@ -119,6 +120,7 @@ jobs:
             sudo rm -f .env
             echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" | sudo tee .env > /dev/null
             echo "API_BASE_URL=http://localhost:8000" | sudo tee -a .env > /dev/null
+            sudo chown ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} .env
             sudo chmod 600 .env
             echo "✅ root .env created"
 
