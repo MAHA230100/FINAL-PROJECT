@@ -66,31 +66,65 @@ def show_disease_prediction(api_base: str):
         with c13: prev_adm = st.number_input("Previous Admissions", value=int(d_prev))
         with c14: r_score = st.slider("Calculated Risk Score", 0.0, 1.0, value=float(d_risk))
         
-        submit = st.form_submit_button("Run Prediction (AI)")
+        submit = st.form_submit_button("Run Prediction")
         
     if submit:
-        # Construct JSON payload
-        payload = {
-            "age": age,
-            "gender": gender,
-            "admission_type": admit_type,
-            "admission_location": admit_loc,
-            "insurance": insurance,
-            "language": language,
-            "marital_status": marital,
-            "drg_type": drg,
-            "comorbidities": comorbs,
-            "lab_results": lab_res,
-            "vitals_bp": bp,
-            "vitals_hr": hr,
-            "previous_admissions": prev_adm,
-            "risk_score": r_score
-        }
+        # Progressive loading with status updates
+        status_container = st.empty()
+        progress_bar = st.progress(0)
         
         try:
+            import time
+            
+            # Step 1: Collecting data
+            status_container.info("📋 Collecting patient data...")
+            progress_bar.progress(20)
+            time.sleep(0.4)
+            
+            # Construct JSON payload
+            payload = {
+                "age": age,
+                "gender": gender,
+                "admission_type": admit_type,
+                "admission_location": admit_loc,
+                "insurance": insurance,
+                "language": language,
+                "marital_status": marital,
+                "drg_type": drg,
+                "comorbidities": comorbs,
+                "lab_results": lab_res,
+                "vitals_bp": bp,
+                "vitals_hr": hr,
+                "previous_admissions": prev_adm,
+                "risk_score": r_score
+            }
+            
+            # Step 2: Loading AI model
+            status_container.info("🤖 Loading AI prediction model...")
+            progress_bar.progress(40)
+            time.sleep(0.4)
+            
+            # Step 3: Running prediction
+            status_container.info("⚙️ Running disease risk prediction...")
+            progress_bar.progress(60)
+            
             res = requests.post(f"{api_base}/predict/classify", json=payload, timeout=15)
+            
+            # Step 4: Generating insights
+            status_container.info("📊 Generating insights...")
+            progress_bar.progress(80)
+            time.sleep(0.3)
+            
             if res.status_code == 200:
                 data = res.json()
+                
+                # Complete
+                progress_bar.progress(100)
+                status_container.success("✅ Prediction complete!")
+                time.sleep(0.5)
+                status_container.empty()
+                progress_bar.empty()
+                
                 st.markdown("---")
                 st.markdown("### 📊 Prediction Results")
                 
@@ -106,9 +140,13 @@ def show_disease_prediction(api_base: str):
                 with col_res2:
                     st.info(f"AI Reasoning: {data.get('reasoning', 'Analysis based on clinical features.')}")
                     
-                with st.expander("Feature Data Sent"):
+                with st.expander("📋 Feature Data Sent"):
                     st.json(payload)
             else:
+                progress_bar.empty()
+                status_container.empty()
                 st.error(f"Error: {res.text}")
         except Exception as e:
+            progress_bar.empty()
+            status_container.empty()
             st.error(f"Request failed: {e}")

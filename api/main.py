@@ -17,6 +17,7 @@ else:
 # Import route modules
 from .routes import predictions, data, eda, models, ai_tools
 from .routes.patients import router as patients_router
+from .ai import router as ai_router_v2 
 
 app = FastAPI(title="HealthAI API", version="0.1.0")
 
@@ -36,6 +37,7 @@ app.include_router(eda.router)
 app.include_router(models.router)
 app.include_router(ai_tools.router)
 app.include_router(patients_router)  # ADDED: patient endpoints
+app.include_router(ai_router_v2)  # ADDED: AI v2 endpoints
 
 @app.get("/health")
 def health():

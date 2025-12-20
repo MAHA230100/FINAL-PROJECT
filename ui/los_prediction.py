@@ -62,43 +62,89 @@ def show_los_prediction(api_base: str):
         with c13: prev_adm = st.number_input("Previous Admissions", value=int(d_prev))
         with c14: r_score = st.slider("Calculated Risk Score", 0.0, 1.0, value=float(d_risk))
         
-        submit = st.form_submit_button("Predict LOS (AI)")
+        submit = st.form_submit_button("Predict LOS")
         
     if submit:
-        # Construct JSON payload
-        payload = {
-            "age": age,
-            "gender": gender,
-            "admission_type": admit_type,
-            "admission_location": admit_loc,
-            "insurance": insurance,
-            "language": language,
-            "marital_status": marital,
-            "drg_type": drg,
-            "comorbidities": comorbs,
-            "lab_results": lab_res,
-            "vitals_bp": bp,
-            "vitals_hr": hr,
-            "previous_admissions": prev_adm,
-            "risk_score": r_score
-        }
+        # Progressive loading with status updates
+        status_container = st.empty()
+        progress_bar = st.progress(0)
         
         try:
+            import time
+            
+            # Step 1: Collecting data
+            status_container.info("📋 Collecting patient data...")
+            progress_bar.progress(20)
+            time.sleep(0.4)
+            
+            # Construct JSON payload
+            payload = {
+                "age": age,
+                "gender": gender,
+                "admission_type": admit_type,
+                "admission_location": admit_loc,
+                "insurance": insurance,
+                "language": language,
+                "marital_status": marital,
+                "drg_type": drg,
+                "comorbidities": comorbs,
+                "lab_results": lab_res,
+                "vitals_bp": bp,
+                "vitals_hr": hr,
+                "previous_admissions": prev_adm,
+                "risk_score": r_score
+            }
+            
+            # Step 2: Loading AI model
+            status_container.info("🤖 Loading AI regression model...")
+            progress_bar.progress(40)
+            time.sleep(0.4)
+            
+            # Step 3: Running prediction
+            status_container.info("⚙️ Calculating length of stay...")
+            progress_bar.progress(60)
+            
             res = requests.post(f"{api_base}/predict/regress", json=payload, timeout=15)
+            
+            # Step 4: Generating report
+            status_container.info("📊 Generating LOS report...")
+            progress_bar.progress(80)
+            time.sleep(0.3)
+            
             if res.status_code == 200:
                 data = res.json()
+                
+                # Complete
+                progress_bar.progress(100)
+                status_container.success("✅ Prediction complete!")
+                time.sleep(0.5)
+                status_container.empty()
+                progress_bar.empty()
+                
                 st.markdown("---")
-                st.markdown("### 📊 Prediction Results")
+                st.markdown("### 📊 Length of Stay Prediction")
                 
-                days = data.get('prediction', 0)
-                st.metric("Predicted Length of Stay", f"{days:.1f} Days")
-                
-                if 'model_type' in data:
-                    st.caption(f"Engine: {data['model_type']}")
+                col_res1, col_res2 = st.columns(2)
+                with col_res1:
+                    predicted_los = data.get('predicted_value', 0)
+                    st.metric("Predicted LOS", f"{predicted_los:.1f} days")
                     
-                with st.expander("Feature Data Sent"):
+                with col_res2:
+                    model_type = data.get('model_type', 'AI Model')
+                    st.info(f"Model: {model_type}")
+                
+                # Show reasoning if available
+                if 'reasoning' in data:
+                    st.markdown("### 🤖 AI Analysis")
+                    st.markdown(data['reasoning'])
+                    
+                with st.expander("📋 Input Features"):
                     st.json(payload)
             else:
+                progress_bar.empty()
+                status_container.empty()
                 st.error(f"Error: {res.text}")
         except Exception as e:
+            progress_bar.empty()
+            status_container.empty()
             st.error(f"Request failed: {e}")
