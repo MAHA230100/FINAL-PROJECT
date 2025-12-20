@@ -9,7 +9,7 @@
 3. Click **"New repository secret"**
 4. Add:
    - **Name:** `GOOGLE_API_KEY`
-   - **Value:** `AIzaSyBhfLkkSTE4HttztiyyqNKguZ6k30nN7D4` (your API key)
+   - **Value:** `***` (your API key)
 5. Click **"Add secret"**
 
 ### Step 2: Update Deployment Workflow
