@@ -26,6 +26,15 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Fix data directory permissions
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << 'ENDPERM'
+            cd ${{ secrets.PROJECT_DIR }}
+            echo "🔧 Fixing data directory permissions for rsync..."
+            sudo chown -R $USER:$USER data/ 2>/dev/null || true
+            echo "✅ Permissions fixed"
+          ENDPERM
+
       - name: Copy code to EC2
         run: |
           rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
@@ -78,7 +87,7 @@ jobs:
             export GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}"
             export API_BASE_URL="http://localhost:8000"
             
-            # Stop and recreate containers without rebuilding
+            # Stop and recreate containers
             docker compose -f docker-compose.yml -f docker-compose.prod.yml down
             docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
             
