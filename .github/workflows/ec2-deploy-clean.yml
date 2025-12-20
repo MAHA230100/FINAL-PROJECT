@@ -105,6 +105,25 @@ jobs:
             echo "💾 Disk space after cleanup:"
             df -h
 
+            # Create data directory and .env file
+            echo "🔐 Setting up environment variables in data/.env..."
+            mkdir -p data
+            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > data/.env
+            echo "API_BASE_URL=http://localhost:8000" >> data/.env
+            chmod 600 data/.env
+            echo "✅ data/.env created"
+
+            # Create root .env file
+            echo "🔐 Setting up environment variables in root .env..."
+            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > .env
+            echo "API_BASE_URL=http://localhost:8000" >> .env
+            chmod 600 .env
+            echo "✅ root .env created"
+
+            # Export variables for this session
+            export GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}"
+            export API_BASE_URL="http://localhost:8000"
+
             # Build and start containers in production mode with clean build
             echo "🚀 Building and starting production containers (clean build)..."
             docker compose -f docker-compose.yml -f docker-compose.prod.yml down --remove-orphans
