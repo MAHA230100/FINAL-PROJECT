@@ -28,9 +28,26 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Fix data directory permissions
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << 'ENDPERM'
+            echo "🔧 Ensuring project directory exists and has correct ownership..."
+            sudo mkdir -p ${{ secrets.PROJECT_DIR }}
+            sudo chown ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} ${{ secrets.PROJECT_DIR }}
+            
+            cd ${{ secrets.PROJECT_DIR }}
+            if [ -d "data" ]; then
+              echo "🔧 Resetting data directory permissions..."
+              sudo chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/
+              sudo chmod -R 775 data/
+            fi
+            echo "✅ Permissions fixed"
+          ENDPERM
+
       - name: Copy code to EC2
         run: |
           rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
+            --rsync-path="sudo rsync" \
             --exclude '.git' \
             --exclude '.github' \
             --exclude '.gitignore' \
