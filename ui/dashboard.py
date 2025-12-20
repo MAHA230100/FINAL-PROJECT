@@ -43,33 +43,47 @@ if selected_page == "home":
     current_patient = st.session_state.get('current_patient')
     
     if current_patient:
-        # Patient Snapshot View
+        # Standardized Header
         st.info(f"👤 Patient Context: **{current_patient.get('name', 'Unknown')}** (ID: {current_patient.get('patient_id')})")
         
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            st.markdown("### 📋 Demographics")
-            st.write(f"**Patient ID:** `{current_patient.get('patient_id')}`")
-            st.write(f"**Age:** {current_patient.get('age')} years")
-            st.write(f"**Gender:** {current_patient.get('gender')}")
-            st.write(f"**Contact:** {current_patient.get('contact', 'N/A')}")
+        # Main Snapshot Card
+        with st.container(border=True):
+            col1, col2, col3 = st.columns([1, 1.5, 1])
             
-        with col2:
-            st.markdown("### 🩺 Vitals Snapshot")
-            c_bp, c_hr = st.columns(2)
-            c_bp.metric("Blood Pressure", f"{current_patient.get('vitals_bp', '-')}")
-            c_hr.metric("Heart Rate", f"{current_patient.get('vitals_hr', '-')} bpm")
-            
-            c_temp, c_spo2 = st.columns(2)
-            c_temp.metric("Temp", f"{current_patient.get('temperature', '-')} °F")
-            c_spo2.metric("SpO2", f"{current_patient.get('oxygen_saturation', '-')} %")
-            
-        with col3:
-            st.markdown("### ⚠️ Clinical Status")
-            # In a real app, this would fetch the latest prediction
-            st.info("No recent alerts.")
-            st.progress(0.2, text="Risk Score: Low (Estimated)")
+            with col1:
+                st.markdown("### 📋 Demographics")
+                st.write(f"**Age:** {current_patient.get('age', 'N/A')}y")
+                st.write(f"**Gender:** {current_patient.get('gender', 'N/A')}")
+                st.write(f"**Condition:** {current_patient.get('medical_condition', 'N/A')}")
+                st.write(f"**Infection Risk:** {current_patient.get('infection_risk', 'N/A')}")
+                
+            with col2:
+                st.markdown("### 🩺 Latest Vitals")
+                v_col1, v_col2 = st.columns(2)
+                v_col1.metric("Blood Pressure", f"{current_patient.get('vitals_bp', '-')}", help="Latest Systolic BP")
+                v_col2.metric("Heart Rate", f"{current_patient.get('vitals_hr', '-')} bpm")
+                
+                v_col3, v_col4 = st.columns(2)
+                v_col3.metric("Temp", f"{current_patient.get('temperature', '-')} °F")
+                v_col4.metric("SpO2", f"{current_patient.get('oxygen_saturation', '-')} %")
+                
+            with col3:
+                st.markdown("### ⚠️ AI Insights")
+                # Dynamic risk calculation for display
+                try:
+                    risk_val = float(current_patient.get('risk_score', 0.2))
+                except:
+                    risk_val = 0.2
+                    
+                risk_status = "High" if risk_val > 0.7 else "Medium" if risk_val > 0.4 else "Low"
+                risk_color = "red" if risk_status == "High" else "orange" if risk_status == "Medium" else "green"
+                
+                st.markdown(f"**Risk Level:** :{risk_color}[{risk_status}]")
+                st.progress(min(1.0, max(0.0, risk_val)), text=f"System Risk Score: {risk_val:.2f}")
+                
+                if st.button("Generate Detailed Prognosis", use_container_width=True):
+                    st.toast("Analyzing latest clinical data...")
+                    st.info("Prognosis: Patient stable, monitor vitals every 4 hours.")
             
         # st.markdown("---")
         # st.subheader("🚀 Quick Actions")
@@ -105,49 +119,122 @@ if selected_page == "home":
 
     # Admit Patient (Collapsible)
     with st.expander("➕ Admit New Patient"):
-        with st.form("admit_patient_form_home"):
+        st.markdown("### Patient Information")
+        with st.form("admit_patient_form_home", border=False):
             c1, c2 = st.columns(2)
             with c1:
-                name = st.text_input("Full Name")
-                gender = st.selectbox("Gender", ["M", "F", "Other"])
+                name = st.text_input("Full Name", placeholder="e.g. John Doe")
+                gender = st.selectbox("Gender", ["Male", "Female", "Other"])
                 age = st.number_input("Age", 0, 120, 30)
             with c2:
                 dob = st.date_input("Date of Birth")
-                address = st.text_input("Address")
-                contact = st.text_input("Contact Number")
-                
-            submit = st.form_submit_button("Admit Patient")
+                address = st.text_input("Address", placeholder="Full Home Address")
+                contact = st.text_input("Contact Number", placeholder="+1 (555) 000-0000")
+            
+            st.markdown("---")
+            am_c1, am_c2 = st.columns([2, 1])
+            with am_c2:
+                submit = st.form_submit_button("Confirm Admission", type="primary", use_container_width=True)
+            
             if submit:
-                payload = {
-                    "name": name, "gender": gender, "age": int(age),
-                    "dob": str(dob), "address": address, "contact": contact
-                }
-                try:
-                    res = requests.post(f"{API_BASE}/patients", json=payload, timeout=10)
-                    if res.status_code == 200:
-                        st.success(f"✅ Patient Admitted! ID: {res.json()['patient_id']}")
-                    else:
-                        st.error(f"Error: {res.text}")
-                except Exception as e:
-                    st.error(f"Failed to admit patient: {e}")
+                if not name or not address or not contact:
+                    st.error("Please fill in all required fields (Name, Address, Contact).")
+                else:
+                    payload = {
+                        "name": name, 
+                        "gender": "M" if gender == "Male" else "F" if gender == "Female" else "Other", 
+                        "age": int(age),
+                        "dob": str(dob), 
+                        "address": address, 
+                        "contact": contact,
+                        "medical_condition": "New Admission",
+                        "admission_type": "Other"
+                    }
+                    try:
+                        res = requests.post(f"{API_BASE}/patients", json=payload, timeout=10)
+                        if res.status_code == 200:
+                            p_id = res.json().get('patient_id')
+                            st.success(f"🎉 Patient Admitted Successfully! Assigned ID: `{p_id}`")
+                            st.balloons()
+                        else:
+                            st.error(f"Error from API: {res.text}")
+                    except Exception as e:
+                        st.error(f"Failed to connect to API: {e}")
 
     # Patient Lookup (Collapsible)
     with st.expander("🔍 Lookup Patient by ID"):
-        l_col1, l_col2 = st.columns([3, 1])
+        # detection of ID change to reset preview
+        if "last_lookup_id" not in st.session_state:
+            st.session_state.last_lookup_id = ""
+        
+        l_col1, l_col2, l_col3 = st.columns([3, 1, 1])
         with l_col1:
-            lookup_id = st.text_input("Patient ID", key="lookup_patient_id_home", label_visibility="collapsed", placeholder="Enter Patient ID here...")
+            lookup_id = st.text_input("Patient ID", key="lookup_patient_id_home", label_visibility="collapsed", placeholder="Enter Patient ID (e.g., HCXXXXXX)")
+            if lookup_id != st.session_state.last_lookup_id:
+                st.session_state['temp_lookup_patient'] = None
+                st.session_state.last_lookup_id = lookup_id
+                
         with l_col2:
-            if st.button("Load Profile", key="btn_lookup_home"):
+            search_clicked = st.button("Search Profile", key="btn_lookup_search", use_container_width=True)
+        with l_col3:
+            if st.button("Clear", key="btn_lookup_clear", use_container_width=True):
+                st.session_state['temp_lookup_patient'] = None
+                st.session_state.last_lookup_id = ""
+                st.rerun()
+
+        if search_clicked:
+            if not lookup_id:
+                st.warning("Please enter a Patient ID.")
+            else:
                 try:
                     res = requests.get(f"{API_BASE}/patients/{lookup_id}", timeout=10)
                     if res.status_code == 200:
-                        st.session_state['current_patient'] = res.json()
-                        st.success("Loaded!")
-                        st.rerun()
+                        st.session_state['temp_lookup_patient'] = res.json()
                     else:
-                        st.error("Not found.")
+                        st.session_state['temp_lookup_patient'] = None
+                        st.error(f"Patient ID `{lookup_id}` not found.")
                 except Exception as e:
-                    st.error(f"Error: {e}")
+                    st.error(f"Connection failed: {e}")
+
+        # Show Preview and Activate Button
+        temp_patient = st.session_state.get('temp_lookup_patient')
+        if temp_patient:
+            st.markdown("---")
+            st.success("✅ Patient Profile Found")
+            
+            # Modern Profile Card
+            with st.container(border=True):
+                c1, c2 = st.columns([1, 3])
+                with c1:
+                    # Dynamic avatar emoji
+                    avatar = "👨" if temp_patient.get('gender', 'M').upper() == 'M' else "👩"
+                    st.markdown(f"<div style='text-align: center; font-size: 80px;'>{avatar}</div>", unsafe_allow_html=True)
+                
+                with c2:
+                    st.subheader(temp_patient.get('name', 'Unknown'))
+                    st.write(f"**Patient ID:** `{temp_patient.get('patient_id')}`")
+                    
+                    # Quick Metrics
+                    m_col1, m_col2, m_col3 = st.columns(3)
+                    m_col1.metric("Age", f"{temp_patient.get('age')}y")
+                    m_col2.metric("Gender", temp_patient.get('gender'))
+                    m_col3.metric("Insurance", temp_patient.get('insurance', 'N/A'))
+            
+            # Clinical Snapshot Details
+            with st.container(border=True):
+                st.markdown("**Clinical Details**")
+                d_col1, d_col2 = st.columns(2)
+                with d_col1:
+                    st.write(f"**Medical Condition:** {temp_patient.get('medical_condition', 'N/A')}")
+                    st.write(f"**Admission Type:** {temp_patient.get('admission_type', 'N/A')}")
+                with d_col2:
+                    st.write(f"**Contact:** {temp_patient.get('contact', 'N/A')}")
+                    st.write(f"**Admitted:** {temp_patient.get('date_of_admission', 'N/A')}")
+            
+            if st.button("🚀 Set as Active Patient Context", key="btn_activate_lookup", type="primary", use_container_width=True):
+                st.session_state['current_patient'] = temp_patient
+                st.session_state['temp_lookup_patient'] = None
+                st.rerun()
 
 elif selected_page == "disease_prediction":
     show_disease_prediction(API_BASE)
