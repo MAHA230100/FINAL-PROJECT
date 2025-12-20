@@ -10,6 +10,7 @@ services:
       - ${PWD}/api:/app/api
       - api_venv:/opt/venv
       - ${PWD}/data:/app/data
+      - ${PWD}/.env:/app/data/.env
     environment:
       - ENVIRONMENT=development
       - PYTHONUNBUFFERED=1

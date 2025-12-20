@@ -1,8 +1,18 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
+import os
 
-load_dotenv()
+# Try loading from data directory first (for Docker), then root
+if os.path.exists('/app/data/.env'):
+    load_dotenv('/app/data/.env')
+    print("✅ Loaded .env from /app/data/.env")
+elif os.path.exists('data/.env'):
+    load_dotenv('data/.env')
+    print("✅ Loaded .env from data/.env")
+else:
+    load_dotenv()  # Try default locations
+    print("ℹ️ Loaded .env from default location")
 
 # Import route modules
 from .routes import predictions, data, eda, models, ai_tools

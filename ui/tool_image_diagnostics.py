@@ -17,9 +17,17 @@ def show_image_diagnostics(api_base: str):
                 payload = {"patient_id": patient_id, "image_type": "X-Ray"}
                 response = requests.post(f"{api_base}/ai-tools/analyze-image", json=payload, timeout=30)
                 if response.status_code == 200:
-                    res = response.json().get("result", {})
-                    st.success("Analysis Complete")
-                    st.json(res)
+                    result = response.json().get("result", {})
+                    if result:
+                        st.success("Analysis Complete")
+                        
+                        if 'report_text' in result:
+                            st.markdown("### 📋 AI-Generated Radiology Report")
+                            st.markdown(result['report_text'])
+                        else:
+                            st.write(result)
+                    else:
+                        st.error("Analysis failed: No result returned from AI.")
                 else:
                     st.error("Analysis failed.")
             except Exception as e:

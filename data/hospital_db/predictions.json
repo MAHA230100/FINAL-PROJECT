@@ -1551,5 +1551,526 @@
       "sentiment": "Neutral"
     },
     "timestamp": "2025-12-14T13:45:38.915478"
+  },
+  {
+    "id": "648eea9e-da97-408c-be30-edd5529cffa4",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T14:23:45.304258"
+  },
+  {
+    "id": "e85a3676-85f3-4f94-8cf1-27d78537f137",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "Analysis Complete",
+      "report_text": "[MOCK] Processing query for the patient: 'Generate a detailed, clinically plausible simulated X-Ray report for Patient David Brown, 24 years old.. Assume findings consistent with their history/diagnoses if any. Provide sections: Clinical Indication, Technique, Findings, Impression.'. (Simulated response - Add GOOGLE_API_KEY to enable Real AI)",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "lungs",
+        "heart"
+      ]
+    },
+    "timestamp": "2025-12-14T16:19:58.211440"
+  },
+  {
+    "id": "9ecdf734-0825-479b-9364-0166ea516b8d",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "[MOCK] Feedback Analysis: Sentiment is positive. Key detail: 'Analyze the sentimen...'.",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-14T16:20:24.463410"
+  },
+  {
+    "id": "957bf1fe-4156-4eb2-b621-ba8f0dabd028",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "[MOCK] Feedback Analysis: Sentiment is positive. Key detail: 'Analyze the sentimen...'.",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-14T16:20:41.473470"
+  },
+  {
+    "id": "37c66a44-e9aa-4621-b195-7b832b4d4b36",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-15T09:50:48.917997"
+  },
+  {
+    "id": "75e26f5d-70d1-40eb-b135-15e60d4b87ab",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:50:57.702490"
+  },
+  {
+    "id": "fb796a8f-96d6-43f5-9424-bc7e10223100",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:11.947850"
+  },
+  {
+    "id": "f623e96c-f9e6-4d71-aa3d-fd6f4f16a791",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:12.815095"
+  },
+  {
+    "id": "6fc26085-b686-4b68-b7e4-269138739140",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:13.243081"
+  },
+  {
+    "id": "c3b1589f-1ffe-4cb8-9499-2f36c5f23510",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:13.749567"
+  },
+  {
+    "id": "55bafd76-592e-4c8f-8783-e38522832dd1",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "[MOCK] Feedback Analysis: Sentiment is positive. Key detail: 'Analyze the sentimen...'.",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-15T09:51:19.371550"
+  },
+  {
+    "id": "1628520c-2ece-4a40-9ca8-207225bbe729",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-20T13:41:11.472698"
+  },
+  {
+    "id": "0018f13e-8dc9-4b91-8169-6e220932fc10",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-20T13:41:34.750389"
+  },
+  {
+    "id": "2b85ca80-48f6-4545-b8c6-a1ada6c473ed",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-20T13:41:35.547040"
+  },
+  {
+    "id": "d47862d4-dc09-4197-a2e3-65f9051bc19e",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 50,
+      "overall_risk_score": 50,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for mortality details"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for readmission details"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 50,
+        "overall_risk_level": "Medium",
+        "total_factors": 2
+      },
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "mortality",
+        "readmission"
+      ]
+    },
+    "timestamp": "2025-12-20T13:44:33.769377"
+  },
+  {
+    "id": "b4f7d630-cc43-40ee-b38b-1cd2e4266e07",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 50,
+      "overall_risk_score": 50,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for mortality details"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for readmission details"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 50,
+        "overall_risk_level": "Medium",
+        "total_factors": 2
+      },
+      "analysis": "[MOCK] Risk Assessment for Bob Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "mortality",
+        "readmission"
+      ]
+    },
+    "timestamp": "2025-12-20T13:44:41.801993"
+  },
+  {
+    "id": "98f071a8-9a55-4861-85cc-d7c6000269b3",
+    "patient_id": "CC2Q8IHm",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 50,
+      "overall_risk_score": 50,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for mortality details"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for readmission details"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 50,
+        "overall_risk_level": "Medium",
+        "total_factors": 2
+      },
+      "analysis": "[MOCK] Risk Assessment for John Martinez: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "mortality",
+        "readmission"
+      ]
+    },
+    "timestamp": "2025-12-20T13:44:46.305225"
+  },
+  {
+    "id": "4f46eaeb-7581-46e0-abc7-d202ae34d940",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 30,
+      "overall_risk_score": 30,
+      "overall_risk_level": "Low",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for mortality specific guidance"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for readmission specific guidance"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 30,
+        "overall_risk_level": "Low",
+        "total_factors": 2,
+        "key_factors": [
+          "Abnormal BP (0)",
+          "Existing comorbidities"
+        ]
+      },
+      "analysis": "**CLINICAL RISK ASSESSMENT REPORT**\n\n**Patient:** David Brown  \n**Age/Gender:** 24 / Female (Note: Potential demographic data discrepancy)  \n**Date of Assessment:** October 26, 2023  \n**Base Risk Score:** 30/100 (Low)\n\n---\n\n### 1. Clinical Analysis of Risk Profile\nThe patient presents a highly irregular clinical profile characterized by a significant discrepancy between vital sign data and historical data. \n*   **The Primary Clinical Red Flag:** The recorded Blood Pressure of **0 mmHg**. This is physiologically inconsistent with a heart rate of 99 bpm in an ambulatory setting. Clinically, a BP of 0 indicates either a state of pulseless electrical activity (PEA)/cardiac arrest or, more likely, a **critical data entry error or equipment failure**. \n*   **Laboratory Trends:** The patient has a history of fluctuating CBC results (Normal to High) and a recent \"High\" Lipid Panel. In a 24-year-old, persistent \"High\" CBC results (likely leukocytosis or erythrocytosis) and early-onset dyslipidemia require diagnostic clarity to rule out inflammatory conditions or familial hypercholesterolemia.\n*   **Overall Status:** Despite the \"Low\" base risk score, the technical anomalies (BP 0) and lab abnormalities suggest an incomplete clinical picture that may mask underlying risks.\n\n---\n\n### 2. Contribution of Risk Factors\n\n*   **Age (24):** Acts as a significant protective factor. Young patients typically have higher physiological reserves and lower baseline mortality risks for chronic conditions.\n*   **Vitals (BP 0, HR 99):** \n    *   **BP:** As recorded, this is the highest possible risk indicator (incompatible with life). However, if treated as a data error, it indicates a lack of reliable hemodynamic monitoring.\n    *   **HR:** 99 bpm is at the ceiling of the normal resting range (60-100 bpm). This may indicate pain, anxiety, dehydration, or early systemic compensation.\n*   **Previous Admissions (0):** Strong negative predictor for readmission. A \"clean\" hospital history suggests no chronic, poorly managed conditions requiring frequent acute stabilization.\n*   **Comorbidities (None Known):** Lower mortality risk; however, the \"High\" Lipid Panel suggests a developing comorbidity (Dyslipidemia) that is not yet formally diagnosed.\n*   **Lab Results:** The transition of CBC from High to Normal and back to High suggests an intermittent inflammatory process or a reactive hematologic response.\n\n---\n\n### 3. Risk-Specific Recommendations\n\n#### **Mortality Risk (Assessment: Low - *Pending Vital Correction*)**\n*   **Immediate Action:** Re-measure Blood Pressure manually using a calibrated sphygmomanometer. If BP remains critically low (hypotension/shock), immediate ICU transfer is required.\n*   **Cardiac Screening:** Given the \"High\" Lipid Panel at age 24, perform a baseline EKG to assess for any secondary effects of potential cardiovascular stress.\n\n#### **Readmission Risk (Assessment: Low)**\n*   **Diagnostic Completion:** Ensure the \"Unknown\" admission type is clarified. If this visit is for an acute issue related to the \"High\" CBC (e.g., infection or blood disorder), ensure a full course of treatment is established before discharge to prevent a \"bounce-back.\"\n*   **Care Coordination:** Update the patient\u2019s record to resolve the gender/name discrepancy to ensure appropriate gender-specific screenings and reference ranges for future labs.\n\n---\n\n### 4. Preventive Measures and Monitoring Protocols\n\n*   **Hemodynamic Monitoring:** Implement Q4H (every 4 hours) vital sign checks until a stable, physiological BP baseline is established.\n*   **Hematologic Investigation:** Order a CBC with Differential to determine which cell line is \"High\" (Neutrophils? Red Cells? Platelets?). This will differentiate between infection, stress, or a primary bone marrow issue.\n*   **Metabolic Management:** \n    *   Initiate dietary counseling (Therapeutic Lifestyle Changes) for the High Lipid Panel.\n    *   Calculate a 10-year CVD risk score (though usually applied to older patients, it helps frame the lipid urgency).\n*   **Data Integrity Protocol:** Flag the medical record for \"Data Quality Review\" to correct the non-physiological BP entry and demographic inconsistencies.\n\n---\n\n### 5. Estimated Timeline for Follow-Up\n\n*   **Immediate (Within 1 Hour):** Re-assessment of vitals (BP and Orthostatics).\n*   **Short-Term (24\u201348 Hours):** Review of CBC with Differential and metabolic panel.\n*   **Mid-Term (1\u20132 Weeks):** Outpatient follow-up with a Primary Care Physician (PCP) to discuss the lipid panel results and initiate a long-term management plan for dyslipidemia.\n*   **Long-Term (3 Months):** Repeat Lipid Panel and CBC to assess the efficacy of interventions or the persistence of abnormalities.",
+      "factors": [
+        "Abnormal BP (0)",
+        "Existing comorbidities"
+      ],
+      "patient_snapshot": {
+        "age": 24,
+        "vitals_bp": 0,
+        "vitals_hr": 99,
+        "previous_admissions": 0,
+        "comorbidity_count": 1
+      }
+    },
+    "timestamp": "2025-12-20T15:22:13.340354"
+  },
+  {
+    "id": "bec4ef31-ff9b-43de-8e70-8702d285bf1b",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 30,
+      "overall_risk_score": 30,
+      "overall_risk_level": "Low",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for mortality specific guidance"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for readmission specific guidance"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 30,
+        "overall_risk_level": "Low",
+        "total_factors": 2,
+        "key_factors": [
+          "Abnormal BP (0)",
+          "Existing comorbidities"
+        ]
+      },
+      "analysis": "**CLINICAL RISK ASSESSMENT**\n\n**Patient:** David Brown\n**Age/Gender:** 24 / Female\n**Risk Score:** 30/100 (Low-Intermediate)\n**Date of Assessment:** October 26, 2023\n\n---\n\n### 1. Detailed Clinical Analysis\nThe patient\u2019s profile presents a paradoxical clinical picture. While the calculated risk score is low (30/100), primarily driven by young age and a lack of chronic comorbidities, there are critical data anomalies and acute indicators that require immediate attention. \n\nThe most significant finding is a recorded **Blood Pressure of 0 mmHg** alongside a **Heart Rate of 99 bpm**. In a clinical setting, a BP of 0 in a conscious patient with a detectable pulse indicates either a catastrophic medical emergency (e.g., profound shock) or, more likely, a significant data entry error or equipment failure. Furthermore, the history of a \"High\" CBC (Leukocytosis) and \"High\" Lipids in a 24-year-old suggests an underlying inflammatory process or a genetic predisposition to cardiovascular disease (e.g., Familial Hypercholesterolemia).\n\n---\n\n### 2. Risk Factor Contribution Analysis\n\n*   **Age (24 Years):** Acts as a significant protective factor. Physiologic reserve is generally high, which contributes to the \"Low\" base risk score.\n*   **Vitals (BP 0 / HR 99):** \n    *   **BP:** If accurate, this indicates pulseless electrical activity or profound circulatory collapse. If inaccurate, it represents a \"data quality risk,\" which can lead to inappropriate clinical decision-making.\n    *   **HR:** 99 bpm is borderline tachycardic. In the context of the reported low BP, this may be a compensatory mechanism to maintain cardiac output.\n*   **Previous Admissions (0):** This lowers the statistical likelihood of readmission, as it suggests no history of chronic, brittle conditions requiring frequent stabilization.\n*   **Comorbidities (None Known):** Contributes to a low mortality risk profile but may also indicate a \"healthy user bias\" or a lack of recent primary care screening.\n*   **Lab Trends:** The transition of CBC from \"Normal\" to \"High\" (May 2023) suggests an acute or subacute event (infection, inflammation, or hematologic stress) that warrants investigation.\n\n---\n\n### 3. Risk Type Recommendations\n\n#### **Mortality Risk: Low (Statistical) / Critical (Clinical)**\n*   **Assessment:** Statistically, mortality is low due to age. However, the reported BP of 0 mmHg necessitates an immediate \"Code Blue\" or Rapid Response assessment until the data is verified.\n*   **Recommendation:** Immediate manual verification of blood pressure using a sphygmomanometer. Assess for signs of perfusion (capillary refill, mental status, skin temperature).\n\n#### **Readmission Risk: Low**\n*   **Assessment:** Without a primary diagnosis or previous admission history, the risk of returning within 30 days is low. \n*   **Recommendation:** Ensure the \"Unknown\" admission type is clarified. If the patient is being admitted for the first time for a \"High CBC\" or hypertensive/hypotensive crisis, establish a clear transition-of-care plan to prevent a secondary admission.\n\n---\n\n### 4. Preventive Measures and Monitoring Protocols\n\n*   **Immediate Monitoring:**\n    *   **Continuous Cardiac Monitoring:** To evaluate the heart rate of 99 bpm and screen for arrhythmias.\n    *   **Orthostatic Vitals:** Once a baseline BP is established, check for orthostatic hypotension to explain the \"0 mmHg\" reading (potentially a syncopal episode).\n*   **Diagnostic Follow-up:**\n    *   **Repeat CBC with Differential:** To determine if the \"High\" result is due to neutrophils (infection), eosinophils (allergy/parasites), or other cell lines.\n    *   **Repeat Lipid Panel (Fasting):** Given the patient\u2019s young age, \"High\" lipids require a cardiovascular risk assessment and potentially a screening for genetic lipid disorders.\n*   **Preventive Measure:** Counseling on lifestyle modifications if the lipid panel remains high, and screening for secondary causes of hypertension/hypotension.\n\n---\n\n### 5. Estimated Timeline for Follow-up\n\n*   **Vital Sign Re-verification:** **Immediately (Within minutes).**\n*   **Acute Lab Review (CBC):** Within **24\u201348 hours** to ensure the inflammatory process is resolving.\n*   **Outpatient Primary Care:** Within **2 weeks** to discuss the high lipid panel and establish a baseline for blood pressure management.\n*   **Cardiology Referral:** Within **4 weeks** if lipid levels remain high or if the BP anomaly is determined to be a cardiovascular syncopal event.\n\n***\n\n**AI Disclaimer:** *This assessment is based on provided data and should be reviewed by a licensed medical professional. A recorded blood pressure of 0 mmHg is a clinical emergency.*",
+      "factors": [
+        "Abnormal BP (0)",
+        "Existing comorbidities"
+      ],
+      "patient_snapshot": {
+        "age": 24,
+        "vitals_bp": 0,
+        "vitals_hr": 99,
+        "previous_admissions": 0,
+        "comorbidity_count": 1
+      }
+    },
+    "timestamp": "2025-12-20T15:22:42.286540"
+  },
+  {
+    "id": "1c014169-99c6-41e6-95ff-13020e3f37c6",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 40,
+      "overall_risk_score": 40,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 40,
+          "recommendations": [
+            "See comprehensive analysis for mortality specific guidance"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 40,
+          "recommendations": [
+            "See comprehensive analysis for readmission specific guidance"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 40,
+        "overall_risk_level": "Medium",
+        "total_factors": 2,
+        "key_factors": [
+          "Abnormal BP (0)",
+          "Existing comorbidities"
+        ]
+      },
+      "analysis": "### Clinical Risk Assessment: Bob Brown (Ref: 4Lun7P5043)\n\n**Date of Assessment:** October 26, 2023\n**Clinical Status:** Acute/Critical (Pending Vitals Verification)\n**Overall Risk Score:** 40/100 (Medium - *Note: Subject to immediate escalation based on vital signs*)\n\n---\n\n### 1. Detailed Clinical Analysis of Risk Profile\nThe patient, a 54-year-old female, presents with a paradoxical clinical profile. While the patient has no recorded history of hospital admissions or known comorbidities, the current physiological data is highly alarming. \n\nThe primary clinical concern is a **recorded Blood Pressure (BP) of 0 mmHg**. Clinically, a BP of 0 is incompatible with life (asystole or extreme shock), yet the heart rate is documented as a stable 80 bpm. This suggests one of two scenarios:\n1.  **Technical/Data Entry Error:** A failure in the sphygmomanometer or an error in manual entry.\n2.  **Critical Hemodynamic Collapse:** Non-pulsatile flow (rare) or a state of profound shock requiring immediate emergency intervention.\n\nDespite the \"Normal\" HbA1c (indicating glycemic control), the \"Medium\" risk score of 40/100 is likely driven by the severity of the BP reading and the unknown nature of the current admission.\n\n---\n\n### 2. Risk Factor Contribution Analysis\n\n*   **Age (54 years):** Puts the patient in a demographic where the incidence of cardiovascular disease and metabolic syndrome increases. However, without comorbidities, age alone contributes only moderately to the risk score.\n*   **Vital Signs (BP 0 mmHg / HR 80 bpm):** \n    *   The **BP of 0** is the most significant risk driver. If accurate, mortality risk is 100%. If an error, it represents a failure in clinical monitoring protocols.\n    *   The **HR of 80** is normal, which contradicts the BP reading, suggesting the patient is likely stable but improperly monitored.\n*   **Previous Admissions (0):** This is a strong negative predictor for readmission. A \"clean\" hospital history usually suggests a higher baseline of health and lower frailty.\n*   **Comorbidities:** The profile states \"None Known,\" yet the \"Calculated Risk Factors\" identify \"Existing comorbidities.\" This discrepancy suggests there may be undocumented conditions (e.g., undiagnosed hypertension or silent ischemia) that the AI model is flagging based on the current acute presentation.\n\n---\n\n### 3. Specific Recommendations by Risk Type\n\n#### **Mortality Risk: HIGH (Pending Verification)**\n*   **Immediate Action:** Perform an manual BP check (auscultation) immediately to rule out equipment failure.\n*   **Diagnostic Escalation:** If BP remains critically low despite a normal HR, assess for obstructive shock (e.g., pulmonary embolism) or distributive shock.\n*   **Cardiac Monitoring:** Place the patient on continuous 3-lead or 12-lead ECG monitoring to evaluate cardiac rhythm stability.\n\n#### **Readmission Risk: LOW to MODERATE**\n*   **Data Clarification:** The \"Unknown\" admission type must be clarified. If this is an elective procedure, readmission risk is low. If this is an emergency department visit for syncope (fainting), the risk of readmission within 30 days is significantly higher.\n*   **Social Determinants:** Assess the patient's home support system, as this is the first recorded clinical interaction.\n\n---\n\n### 4. Preventive Measures and Monitoring Protocols\n\n*   **Hemodynamic Stabilization:** \n    *   Establish large-bore IV access immediately.\n    *   Initiate orthostatic vital sign checks once the patient is stabilized to assess for autonomic dysfunction.\n*   **Comprehensive Screening:** Given the age of 54, perform a baseline lipid panel, renal function test (Creatinine/GFR), and a screening EKG to ensure the \"None Known\" comorbidity status is accurate.\n*   **Digital Health Integration:** If the BP of 0 was a data entry error, implement automated vitals syncing from the monitor to the Electronic Health Record (EHR) to prevent \"alert fatigue\" or false risk scoring in the future.\n\n---\n\n### 5. Estimated Timeline for Follow-up\n\n*   **Immediate (0\u201330 minutes):** Re-measurement of all vital signs and physical assessment for signs of perfusion (capillary refill, mental status).\n*   **Short-term (24\u201348 hours):** If the patient is stable, conduct a full internal medicine review to identify any \"hidden\" comorbidities that contributed to the 40/100 risk score.\n*   **Long-term (2\u20134 weeks):** Primary care follow-up to establish a baseline for blood pressure and cardiovascular health maintenance, given the HbA1c was last checked in August.\n\n**Disclaimer:** *This assessment is based on provided data. The BP reading of 0 mmHg is a critical value that requires immediate human clinical verification.*",
+      "factors": [
+        "Abnormal BP (0)",
+        "Existing comorbidities"
+      ],
+      "patient_snapshot": {
+        "age": 54,
+        "vitals_bp": 0,
+        "vitals_hr": 80,
+        "previous_admissions": 0,
+        "comorbidity_count": 1
+      }
+    },
+    "timestamp": "2025-12-20T15:23:04.436077"
+  },
+  {
+    "id": "e86196d2-d194-4842-a0b9-72421c60710a",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Here is the summary and extraction of key medical terms from the note:\n\n**Summary:**\nThe patient is advised to engage in daily walking as part of their physical activity routine.\n\n**Key Medical Terms:**\n*   **Walking (Ambulation):** The act of moving from place to place by foot.\n*   **Daily (Frequency):** The prescribed interval for the activity.\n*   **Patient:** The individual receiving medical care or advice.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-20T15:23:43.393333"
+  },
+  {
+    "id": "4a57932c-2a89-4d92-b182-9d895e192230",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Here is a summary and the key medical terms from the clinical note provided:\n\n**Summary**\nThe patient has been advised to engage in a daily regimen of walking as part of their physical activity plan.\n\n**Key Medical Terms**\n*   **Ambulation:** The medical term for the act of walking or moving about.\n*   **Physical Activity:** Body movement that expends energy, often prescribed for cardiovascular or metabolic health.\n*   **Frequency (Daily):** The prescribed rate at which the activity should be performed.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-20T15:24:08.303980"
+  },
+  {
+    "id": "6e31371d-22c3-4103-bc30-db3809d23435",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "Analysis Complete",
+      "report_text": "This is a simulated medical report for educational and illustrative purposes.\n\n***\n\n**DEPARTMENT OF RADIOLOGY: DIAGNOSTIC IMAGING**\n\n**PATIENT NAME:** Brown, Bob\n**PATIENT ID:** #8821-BB\n**AGE:** 54 years\n**DATE OF EXAM:** October 26, 2023\n**EXAMINATION:** X-ray Chest, PA and Lateral (2 Views)\n\n**CLINICAL INDICATION:**\nA 54-year-old male with a history of hypertension and a persistent non-productive cough lasting three weeks. Patient reports a 30 pack-year history of cigarette smoking. Evaluate for acute infiltrate, malignancy, or signs of chronic obstructive pulmonary disease (COPD).\n\n**TECHNIQUE:**\nStandard posteroanterior (PA) and lateral projections of the chest were obtained at full inspiration. \n\n**FINDINGS:**\n\n*   **Lungs and Airways:** The lungs are hyperinflated, evidenced by flattening of the hemidiaphragms and an increased retrosternal clear space on the lateral view. There is a mild increase in interstitial markings bilaterally, particularly in the lower lobes. No focal consolidation, suspicious pulmonary nodules, or masses are identified. The trachea is midline and the bronchial tree is patent.\n*   **Cardiac and Mediastinum:** The cardiomediastinal silhouette is within the upper limits of normal in size. The transverse diameter of the heart is borderline enlarged (cardiothoracic ratio of approximately 52%). The aorta appears mildly ectatic with calcification noted along the aortic arch, consistent with atherosclerotic change. The hila are not enlarged.\n*   **Pleura:** The costophrenic angles are sharp and clear. There is no evidence of pleural effusion or pneumothorax.\n*   **Osseous Structures and Soft Tissues:** Mild degenerative changes are noted in the visualized thoracic spine, characterized by small anterior osteophytes. The visualized ribs and clavicles are intact. No suspicious soft tissue abnormalities are identified.\n\n**IMPRESSION:**\n\n1.  **No acute cardiopulmonary process.** There is no evidence of pneumonia, pulmonary edema, or tension pneumothorax.\n2.  **Chronic Pulmonary Changes:** Lung hyperinflation and increased interstitial markings are suggestive of underlying chronic obstructive pulmonary disease (COPD)/emphysema, correlating with the patient's clinical history.\n3.  **Atherosclerotic Disease:** Mild aortic ectasia and calcification of the aortic arch, common in the setting of the patient\u2019s known hypertension.\n4.  **Cardiomegaly:** Borderline enlargement of the cardiac silhouette; clinical correlation for signs of congestive heart failure is recommended, though no acute pulmonary vascular congestion is present currently.\n\n**ELECTRONICALLY SIGNED BY:**\n*Jonathan R. Miller, MD*\nBoard Certified Radiologist\nDate: 10/26/2023, 14:45 EST\n\n***\n\n**Disclaimer:** *This document is a simulation created for a persona and does not represent a real medical diagnosis or a real patient. If you or someone you know is experiencing medical symptoms, please consult a licensed healthcare professional.*",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "lungs",
+        "heart"
+      ]
+    },
+    "timestamp": "2025-12-20T15:24:25.437318"
+  },
+  {
+    "id": "e94487fb-705e-45fe-93e7-6f10df9cd300",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "```json\n{\n  \"sentiment\": \"Positive\",\n  \"score\": 0.85,\n  \"topics\": [\n    \"Room service\",\n    \"Hospitality\"\n  ]\n}\n```",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-20T15:25:20.190111"
   }
 ]

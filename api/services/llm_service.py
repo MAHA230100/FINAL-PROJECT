@@ -12,15 +12,42 @@ class LLMService:
         self.client = None
         self.model = None
         
+        # Debug: Print what we're getting
+        print(f"🔍 Debug: GOOGLE_API_KEY value: {self.api_key[:10] + '...' if self.api_key else 'None'}")
+        print(f"🔍 Debug: genai module: {'Available' if genai else 'Not available'}")
+        
         if self.api_key and genai:
             try:
                 genai.configure(api_key=self.api_key)
-                self.model = genai.GenerativeModel('gemini-pro')
-                print("✅ Gemini LLM Initialized")
+                
+                # Try multiple model names in order of preference
+                # gemini-3-flash-preview: Confirmed working via Postman test
+                model_names = [
+                    'gemini-3-flash-preview',
+                    'gemini-flash-latest',
+                    'gemini-2.5-flash',
+                    'gemini-2.5-pro'
+                ]
+                
+                for model_name in model_names:
+                    try:
+                        self.model = genai.GenerativeModel(model_name)
+                        print(f"✅ Gemini LLM Initialized ({model_name})")
+                        break
+                    except Exception as model_err:
+                        print(f"⚠️ Failed to load {model_name}: {str(model_err)[:100]}")
+                        continue
+                
+                if not self.model:
+                    print("❌ All model attempts failed. Using Mock Mode.")
+                    
             except Exception as e:
-                print(f"⚠️ Gemini Init Failed: {e}")
+                print(f"⚠️ Gemini Setup Failed: {e}")
         else:
-            print("ℹ️ Google API Key not found or library missing. Using Mock Mode.")
+            if not self.api_key:
+                print("ℹ️ Google API Key not found. Using Mock Mode.")
+            elif not genai:
+                print("ℹ️ google-generativeai library not installed. Using Mock Mode.")
 
     def is_active(self) -> bool:
         return self.model is not None

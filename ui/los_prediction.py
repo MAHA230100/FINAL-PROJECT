@@ -3,76 +3,101 @@ import requests
 
 def show_los_prediction(api_base: str):
     st.title("📈 LOS Prediction")
-    st.subheader("Length of Stay Prediction")
+    st.markdown("### comprehensive 14-Factor Analysis")
     
-    # 1. Access Patient Context
-    patient = st.session_state.get('current_patient')
+    # 1. Access Patient Context (Auto-fill)
+    current_patient = st.session_state.get('current_patient')
+    if current_patient is None:
+        current_patient = {}
     
-    # Defaults
-    default_age = 45
-    default_gender_ix = 0
+    # Defaults (Auto-fill)
+    d_age = current_patient.get('age', 45)
+    d_gender = current_patient.get('gender', 'Male')
+    d_admit = current_patient.get('admission_type', 'Emergency')
+    d_loc = current_patient.get('admission_location', 'Emergency Room')
+    d_ins = current_patient.get('insurance', 'Medicare')
+    d_lang = current_patient.get('language', 'English')
+    d_mar = current_patient.get('marital_status', 'Married')
+    d_drg = current_patient.get('drg_type', 'DRG-A')
     
-    if patient:
-        st.success(f"Context: {patient.get('name')} (ID: {patient.get('patient_id')})")
-        val_age = patient.get('age', 45)
-        try:
-            default_age = int(val_age)
-        except:
-            default_age = 45
-            
-        val_gender = patient.get('gender', 'F')
-        if val_gender.upper().startswith('M'):
-            default_gender_ix = 1
-        else:
-            default_gender_ix = 0
-    else:
-        st.info("No patient selected. Using manual entry.")
+    # Flatten complex lists for display defaults
+    d_comorb = current_patient.get('comorbidities', [])
+    if isinstance(d_comorb, list): d_comorb_str = ", ".join(d_comorb)
+    else: d_comorb_str = str(d_comorb)
 
-    # 2. Enhanced Form
-    with st.form("los_pred_form"):
-        col1, col2 = st.columns(2)
-        with col1:
-            age = st.number_input("Age", value=default_age)
-            admission_type = st.selectbox("Admission Type", ["Emergency", "Elective", "Urgent"])
-        with col2:
-            gender = st.selectbox("Gender", ["F", "M"], index=default_gender_ix)
-            num_diagnoses = st.number_input("Number of Diagnoses", value=1, min_value=1)
-            
-        st.markdown("**Vitals & Labs**")
-        c1, c2, c3 = st.columns(3)
-        with c1:
-            bmi = st.number_input("BMI", value=25.0)
-        with c2:
-            wbc = st.number_input("White Blood Cells", value=8.0)
-        with c3:
-            creatinine = st.number_input("Creatinine", value=1.0)
-            
-        submit = st.form_submit_button("Predict LOS")
+    d_bp = current_patient.get('vitals_bp', 120)
+    d_hr = current_patient.get('vitals_hr', 75)
+    d_prev = current_patient.get('previous_admissions', 0)
+    d_risk = current_patient.get('risk_score', 0.5)
+
+    if current_patient:
+        st.success(f"Context Loaded: {current_patient.get('name')} (ID: {current_patient.get('patient_id')})")
+    
+    with st.form("los_rich_form"):
+        st.subheader("Demographics & Social")
+        c1, c2, c3, c4 = st.columns(4)
+        with c1: age = st.number_input("Age", value=int(d_age))
+        with c2: gender = st.selectbox("Gender", ["Male", "Female", "Other"], index=0 if d_gender.upper().startswith('M') else 1)
+        with c3: marital = st.selectbox("Marital Status", ["Single", "Married", "Divorced", "Widowed"], index=["Single", "Married", "Divorced", "Widowed"].index(d_mar) if d_mar in ["Single", "Married", "Divorced", "Widowed"] else 1)
+        with c4: language = st.selectbox("Language", ["English", "Spanish", "Other"], index=0)
+
+        st.subheader("Admission Details")
+        c5, c6, c7, c8 = st.columns(4)
+        with c5: admit_type = st.selectbox("Type", ["Emergency", "Urgent", "Elective"], index=["Emergency", "Urgent", "Elective"].index(d_admit) if d_admit in ["Emergency", "Urgent", "Elective"] else 0)
+        with c6: admit_loc = st.selectbox("Location", ["Emergency Room", "Physician Referral", "Clinic Referral"], index=0)
+        with c7: insurance = st.selectbox("Insurance", ["Medicare", "Medicaid", "Private", "Self-pay"], index=["Medicare", "Medicaid", "Private", "Self-pay"].index(d_ins) if d_ins in ["Medicare", "Medicaid", "Private", "Self-pay"] else 2)
+        with c8: drg = st.text_input("DRG Code", value=str(d_drg))
+
+        st.subheader("Clinical Factors")
+        c9, c10 = st.columns(2)
+        with c9: 
+            comorbs = st.text_input("Comorbidities", value=d_comorb_str, help="Comma separated")
+        with c10:
+            lab_res = st.selectbox("Lab Results Summary", ["Normal", "Abnormal", "Critical"], index=1 if "Abnormal" in str(current_patient.get('lab_results')) else 0)
         
-    # 3. Handle Submission
+        st.subheader("Vitals & History")
+        c11, c12, c13, c14 = st.columns(4)
+        with c11: bp = st.number_input("Systolic BP", value=int(d_bp))
+        with c12: hr = st.number_input("Heart Rate", value=int(d_hr))
+        with c13: prev_adm = st.number_input("Previous Admissions", value=int(d_prev))
+        with c14: r_score = st.slider("Calculated Risk Score", 0.0, 1.0, value=float(d_risk))
+        
+        submit = st.form_submit_button("Predict LOS (AI)")
+        
     if submit:
-        # Mapping: Age, Gender, AdmType(encoded), NumDiag, BMI, WBC, Creatinine
-        gender_num = 1 if gender == "M" else 0
-        adm_map = {"Emergency": 1, "Urgent": 2, "Elective": 0}
-        
-        features = [
-            float(age),
-            float(gender_num),
-            float(adm_map[admission_type]),
-            float(num_diagnoses),
-            float(bmi),
-            float(wbc),
-            float(creatinine)
-        ]
+        # Construct JSON payload
+        payload = {
+            "age": age,
+            "gender": gender,
+            "admission_type": admit_type,
+            "admission_location": admit_loc,
+            "insurance": insurance,
+            "language": language,
+            "marital_status": marital,
+            "drg_type": drg,
+            "comorbidities": comorbs,
+            "lab_results": lab_res,
+            "vitals_bp": bp,
+            "vitals_hr": hr,
+            "previous_admissions": prev_adm,
+            "risk_score": r_score
+        }
         
         try:
-            res = requests.post(f"{api_base}/predict/regress", json={"features": features}, timeout=10)
+            res = requests.post(f"{api_base}/predict/regress", json=payload, timeout=15)
             if res.status_code == 200:
-                result = res.json()
-                pred = result.get('prediction', 0)
-                st.markdown("### Results")
-                st.metric("Predicted Length of Stay", f"{pred:.1f} days")
-                st.caption(f"Model used: {result.get('model_type', 'unknown')}")
+                data = res.json()
+                st.markdown("---")
+                st.markdown("### 📊 Prediction Results")
+                
+                days = data.get('prediction', 0)
+                st.metric("Predicted Length of Stay", f"{days:.1f} Days")
+                
+                if 'model_type' in data:
+                    st.caption(f"Engine: {data['model_type']}")
+                    
+                with st.expander("Feature Data Sent"):
+                    st.json(payload)
             else:
                 st.error(f"Error: {res.text}")
         except Exception as e:
