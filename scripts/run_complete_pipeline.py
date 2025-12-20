@@ -10,6 +10,7 @@ import json
 from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
+from scripts.train_models import main as train_models
 
 # Add the project root to the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -18,7 +19,7 @@ def load_health_dataset():
     """Load the health AI dataset"""
     try:
         # Try to load from the data/raw directory
-        dataset_path = "data/raw/health_ai_dataset_500_patients.csv"
+        dataset_path = "data/raw/healthcare_ai_dataset_500_patients.csv"
         if os.path.exists(dataset_path):
             df = pd.read_csv(dataset_path)
             print(f"✅ Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")
@@ -111,7 +112,18 @@ def train_models(df):
     # Prepare features and targets
     # For classification: predict a categorical outcome
     # For regression: predict a numerical outcome
-    
+
+    try:
+        # Train models using the cleaned data
+        train_models(
+            input_path="data/cleaned/cleaned_health_data.csv",
+            output_dir="data/models"
+        )
+        print("✅ Model training completed successfully\n")
+    except Exception as e:
+        print(f"❌ Error during model training: {str(e)}\n")
+        raise
+        
     # Classification model - predict if patient has high risk
     if 'risk_score' in df.columns:
         # Use risk_score as target for classification
@@ -228,6 +240,9 @@ def generate_insights(df, eda_results, model_metrics):
         "Enhance patient monitoring systems",
         "Develop predictive models for early intervention"
     ]
+    
+    # Create insights directory if it doesn't exist
+    os.makedirs("data/insights", exist_ok=True)
     
     # Save insights
     with open("data/insights/health_insights.json", "w") as f:

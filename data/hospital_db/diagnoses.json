@@ -1,0 +1,1108 @@
+[
+  {
+    "diagnosis_id": "DJNyNVHfFdJN",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "56CPhLotgw",
+    "date": "2023-12-23",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "1wVK5fvsXQsK",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "56CPhLotgw",
+    "date": "2023-08-04",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "LE4sT1UisKz6",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "1pXz5soydZ",
+    "date": "2023-12-08",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "tDLIUebGDo9L",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "1pXz5soydZ",
+    "date": "2023-10-22",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "NpjUCEyF92qk",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-03-24",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "ar8Xtzunhgsw",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-08-27",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "XsnCD5EN7IgH",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "MVagKVU8oS",
+    "date": "2023-05-07",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "0Hpf44S4uLJP",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "WRPUTASaYM",
+    "date": "2023-11-03",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "zl33XK9r41XX",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "WRPUTASaYM",
+    "date": "2023-02-19",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "1VMXTc9PAAEv",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-04-15",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "gxVixPaTNkLE",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-08-30",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "WnClg2pofxUr",
+    "patient_id": "uoVe8nmL",
+    "visit_id": "4LdvyHdeGj",
+    "date": "2023-02-23",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "XyldT7TyMigy",
+    "patient_id": "uoVe8nmL",
+    "visit_id": "4LdvyHdeGj",
+    "date": "2023-11-28",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "q92upVHTtvBb",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-02-20",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "ZtHdDjV9aBKp",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-06-06",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "JOrGvUwpDc1X",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-08-30",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "Aju3qz8DA4Xg",
+    "patient_id": "b2BA13cV",
+    "visit_id": "o9hUSYoTJy",
+    "date": "2023-12-25",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "NAJ1RWp8JniS",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "wyWtFFCggy",
+    "date": "2023-10-22",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "C4mI2DXRhzai",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "wyWtFFCggy",
+    "date": "2023-05-29",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "yfKg30nKWX6i",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "OI5bIrNaPb",
+    "date": "2023-03-29",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "vvqQ9Vp9c3F4",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "OI5bIrNaPb",
+    "date": "2023-10-08",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "kEP4ds9FJY2D",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-02-25",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "o2ihzqIN87hB",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-08-28",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "iBg9Xz7sWI2S",
+    "patient_id": "1fuU8upK",
+    "visit_id": "gKCfWRyJVv",
+    "date": "2023-11-15",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "5wxllsKFs8Hp",
+    "patient_id": "1fuU8upK",
+    "visit_id": "gKCfWRyJVv",
+    "date": "2023-06-17",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "H5nNK2YPrlWQ",
+    "patient_id": "1fuU8upK",
+    "visit_id": "4nGlsnTy2F",
+    "date": "2023-03-23",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "yw2Bur0zrjvc",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "17GJyXzJe2",
+    "date": "2023-02-18",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "PzDoq9BmooTJ",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-02-24",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "ghOfHdYIIuG5",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-08-14",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "ycb4Wj85evzG",
+    "patient_id": "oemhRKdP",
+    "visit_id": "PZZuyG2KIw",
+    "date": "2023-04-15",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "K3wLbEpKcAZ5",
+    "patient_id": "oemhRKdP",
+    "visit_id": "PZZuyG2KIw",
+    "date": "2023-05-05",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "InJn3CurgDBM",
+    "patient_id": "oemhRKdP",
+    "visit_id": "Ci4H6tN0XY",
+    "date": "2023-07-05",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "Q2zT7lym8Qw9",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-01-31",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "6Q9dyFiQ1xBA",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-10-18",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "t8Ks4U6rFmCx",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "npDWD3Zloh",
+    "date": "2023-11-07",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "O07y6Zi1KVgM",
+    "patient_id": "4JNrYg39",
+    "visit_id": "S0WKm9UG8h",
+    "date": "2023-11-11",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "Tf0c1JThjNYG",
+    "patient_id": "4JNrYg39",
+    "visit_id": "9NAXlRF3Gl",
+    "date": "2023-09-26",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "D2pVLV6AEeIW",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-03-15",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "32bU09TX3CtR",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-04-19",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "2pIsJGBs7jqf",
+    "patient_id": "a3qHprS4",
+    "visit_id": "EJdmevNt14",
+    "date": "2023-08-09",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "k1i3ZVcZrGGf",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-12-05",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "mLETi9eywEON",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-03-10",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "9FSD5NsivFBh",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-09-02",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "2xvpDO4Ayoch",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-09-18",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "RyHzjgTjYjul",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-01-18",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "O1JFCiolfKct",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-11-21",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "dnPpRKVZvSeU",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-11-03",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "h2BfTnMimC0r",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "xCg5XL4kdE",
+    "date": "2023-06-11",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "wYPq829AGklp",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "uQhnEOMe0A",
+    "date": "2023-11-15",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "PV6k6owra4C3",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "wFIeu7CJ36",
+    "date": "2023-10-11",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "HyAdjLXMOWbZ",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "wFIeu7CJ36",
+    "date": "2023-04-17",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "9UXcK7zGlc1V",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-10-04",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "UYnEPfy54Sh4",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-06-13",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "uNuKPVMMbQmQ",
+    "patient_id": "8JM94zD7",
+    "visit_id": "FE2jbqQwAG",
+    "date": "2023-01-28",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "lEG0Aw1ZCJHs",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "7S7LdoFqOs",
+    "date": "2023-11-02",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "zbDh1pbG6OIr",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "7S7LdoFqOs",
+    "date": "2023-04-02",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "QoewwhchnudO",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "V7Dr1SPe41",
+    "date": "2023-03-02",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "o2gbJhWavjUj",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "82xbTDP1JS",
+    "date": "2023-04-14",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "rpwYMIAjx2sn",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "CEbC03T3du",
+    "date": "2023-02-23",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "a0PGWTeHnSNp",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "CEbC03T3du",
+    "date": "2023-10-13",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "E9RmVzpUYo5s",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "Z2P8a1P2PR",
+    "date": "2023-11-08",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "m1sGbb2NzKbn",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-02-18",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "y7vrf57Ew38d",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-01-25",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "XFYcqr6Gs2EX",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-05-29",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "AzpPAQDy4mZZ",
+    "patient_id": "xjQJie7U",
+    "visit_id": "ejAjGmZtm4",
+    "date": "2023-11-15",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "eqi1YGaop0ym",
+    "patient_id": "xjQJie7U",
+    "visit_id": "ejAjGmZtm4",
+    "date": "2023-06-09",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "EFRrAlPjRqRc",
+    "patient_id": "q8GfPlSS",
+    "visit_id": "V3KUOCfdiX",
+    "date": "2023-06-28",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "tyQTOlWbItNo",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "7r321yvRAj",
+    "date": "2023-03-31",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "LJOYReNBrnG9",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-12-06",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "iGQQm2VzGHN9",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-12-16",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "hfpWu3Oh0eCb",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-12-22",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "iXkPTMCV9GJh",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-07-21",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "vsby6FGYOEVL",
+    "patient_id": "vfuZuDSv",
+    "visit_id": "vdeJL8dnwi",
+    "date": "2023-08-11",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "2SylfkMnue1s",
+    "patient_id": "vfuZuDSv",
+    "visit_id": "vdeJL8dnwi",
+    "date": "2023-10-29",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "RTYAiuiexTrh",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2023-05-16",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "QG3y3kIJnWk5",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "Agl6GknwJ6",
+    "date": "2023-04-08",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "K9w7YsQScqeq",
+    "patient_id": "CHtLuplg",
+    "visit_id": "lwMidnYQyp",
+    "date": "2023-12-06",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "DnT8q4YrWxhI",
+    "patient_id": "CHtLuplg",
+    "visit_id": "lwMidnYQyp",
+    "date": "2023-06-25",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "ngl7GRSDHc4Z",
+    "patient_id": "BIHjkVza",
+    "visit_id": "57niPR2Uwa",
+    "date": "2023-11-27",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "SBPTWdQiYpoL",
+    "patient_id": "BIHjkVza",
+    "visit_id": "husW7fGd3V",
+    "date": "2023-09-01",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "CwhAxs1QR8dQ",
+    "patient_id": "BIHjkVza",
+    "visit_id": "Yz8iLklPzH",
+    "date": "2023-01-23",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "oPkPfwvHjqrr",
+    "patient_id": "BIHjkVza",
+    "visit_id": "Yz8iLklPzH",
+    "date": "2023-05-11",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "xq3tOhqstBTS",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "b0upoUmvts",
+    "date": "2023-09-13",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "dHm7FdNexVLj",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "b0upoUmvts",
+    "date": "2023-04-18",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "9CKgABdDtW95",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "nKplu9iegw",
+    "date": "2023-09-27",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "sACOthEbUk0k",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-10-12",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "4KK7SLyow8Co",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "X3HU2yS121",
+    "date": "2023-03-16",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "V9cMGzBxdPx9",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-12-13",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "FWpjVyNP4PyU",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-05-27",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "sezBdwVBbblm",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "85XuVrSZNn",
+    "date": "2023-07-13",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "BymqfUTajxMZ",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-05-20",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "IkRYskNvXcKM",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-10-01",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "yVYb7osf2MV1",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "DgFxiowmFb",
+    "date": "2023-07-01",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "oXxOeTcaqouW",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "DgFxiowmFb",
+    "date": "2023-08-02",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "ekbh6pyUSIp7",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-11-17",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "EpVHQrRRjokB",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-05-14",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "VnATDbWyyQLY",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "t7tV9jTD7T",
+    "date": "2023-08-16",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "yxubQCbME8K5",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "t7tV9jTD7T",
+    "date": "2023-08-05",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "vvQLIBUiFWiL",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-03-31",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "QiFAH7p9E0F5",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "XIo83m0V8J",
+    "date": "2023-04-08",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "4ulinSMIwPLN",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "UwftA2AQfk",
+    "date": "2023-08-30",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "Rum5PpCbzwx9",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "UwftA2AQfk",
+    "date": "2023-02-15",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "kXWZzbolUUqV",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "RQ7jiomPNl",
+    "date": "2023-11-16",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "eQbVaTSDeBlf",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-05-02",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "u67EMBn7FPk0",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-09-08",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "RiDXGFU2NXQV",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "jYHvijzIIn",
+    "date": "2023-06-08",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "I79dEAbi1jG5",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "ufQZKZQtYL",
+    "date": "2023-01-03",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "4Tru8k1lMRxY",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "ufQZKZQtYL",
+    "date": "2023-10-29",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "xeMOCg4qfMIB",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-06-18",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "eT6scBIWhdX6",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-03-08",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "Y1P5ap7535aL",
+    "patient_id": "c72C7QOF",
+    "visit_id": "Mbvkpe0GTB",
+    "date": "2023-08-06",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "rUFlyLA1oCby",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-03-17",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "8U51LqZUhu6n",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-10-04",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "41nVhBgCDOmr",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-06-20",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "S9BnGpqP7IeS",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-02-04",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "qdj3iTKFeFUd",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "tg1Wizyapi",
+    "date": "2023-01-18",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "h6MuOfEs3OMd",
+    "patient_id": "lk76ocfe",
+    "visit_id": "E01jRtXkIw",
+    "date": "2023-01-11",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "d0d9jwjBeEmv",
+    "patient_id": "lk76ocfe",
+    "visit_id": "E01jRtXkIw",
+    "date": "2023-08-23",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "322kVxRsMm0G",
+    "patient_id": "lk76ocfe",
+    "visit_id": "i0nzADYxKx",
+    "date": "2023-01-14",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "kCCzSOcGfMUg",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "Tq9oGK2Ssm",
+    "date": "2023-05-22",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "oVOQldiBssuZ",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "tB07AMNL5X",
+    "date": "2023-11-23",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "51Jxixuo8Xqb",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "tB07AMNL5X",
+    "date": "2023-02-15",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "7GjM4LmS0IAc",
+    "patient_id": "p9RtLsMX",
+    "visit_id": "6sbR24gASe",
+    "date": "2023-09-27",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "lzYD8Qybjksq",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "jL1aCPC0go",
+    "date": "2023-05-16",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "EfN4J14wqDEs",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-09-24",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "zDXRK8YBK8YD",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-09-17",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "CzXXtzb1uKq7",
+    "patient_id": "Soe2BqxV",
+    "visit_id": "YprYjTJxJN",
+    "date": "2023-04-27",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "XK0oFiog7o9A",
+    "patient_id": "Soe2BqxV",
+    "visit_id": "YprYjTJxJN",
+    "date": "2023-12-21",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "tZ6REpQA6L5i",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-11-13",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "MQZDBstQf66w",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "RFU88HFscV",
+    "date": "2023-11-03",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "jFbUJQA2GbPl",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "RFU88HFscV",
+    "date": "2023-12-10",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "HrRg6Wk0Itqq",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-07-06",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "ou8XJdWkVObk",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-07-20",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "YmIhkeCYE2sg",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-03-14",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "MyT5L8dLx0kp",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-06-11",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "nML2OfzVDEho",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-11-15",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "uBg7dcwwMgBc",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "oNhJv0vlFj",
+    "date": "2023-02-02",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "R3R4QDbTUs3z",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-02-06",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "ByfHjBTDruvu",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-10-01",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "1jiTMgHauX8v",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "tdUVR2gKgs",
+    "date": "2023-01-08",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "rt2liYgw5RnH",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "tdUVR2gKgs",
+    "date": "2023-06-08",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "VIkEDhO9uPLx",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "JlXTLIrpVj",
+    "date": "2023-01-23",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "2nsb4rWIMAKX",
+    "patient_id": "ksazCEYh",
+    "visit_id": "72Sg2AbWSf",
+    "date": "2023-03-09",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "468i8rC9kS6y",
+    "patient_id": "ksazCEYh",
+    "visit_id": "72Sg2AbWSf",
+    "date": "2023-07-13",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "PA4w2va6Iy8I",
+    "patient_id": "ksazCEYh",
+    "visit_id": "pL1kXbUT7i",
+    "date": "2023-04-20",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "M1HnwTIYo4vs",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-04-28",
+    "diagnosis": "Asthma"
+  },
+  {
+    "diagnosis_id": "a2jyUT0h2fsi",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-06-30",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "KuX7vLAW1ama",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "Vlf5XMp7wS",
+    "date": "2023-07-20",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "ti5QnNziE7oB",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "soAalBcigd",
+    "date": "2023-01-29",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "2KOGNNNj3jhj",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-11-03",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "VTjE7Yztwlj7",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "yKZod8QGPt",
+    "date": "2023-02-17",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "6GUaTudw3OjN",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "KBZWGBvDfq",
+    "date": "2023-07-23",
+    "diagnosis": "Hypertension"
+  },
+  {
+    "diagnosis_id": "zgEZuwvgIx7x",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "fzfNOCugwD",
+    "date": "2023-02-26",
+    "diagnosis": "Diabetes"
+  },
+  {
+    "diagnosis_id": "7JDjrNu91g0q",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-11-25",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "Mm4t5ZmEffVY",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-10-17",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "DHYR2TvztyMN",
+    "patient_id": "egTabhc7",
+    "visit_id": "vR6NdMim4H",
+    "date": "2023-08-28",
+    "diagnosis": "Healthy"
+  },
+  {
+    "diagnosis_id": "Vp3M54pCT97O",
+    "patient_id": "egTabhc7",
+    "visit_id": "vR6NdMim4H",
+    "date": "2023-04-17",
+    "diagnosis": "Infection"
+  },
+  {
+    "diagnosis_id": "WOR3uY9kMBhC",
+    "patient_id": "egTabhc7",
+    "visit_id": "41p9bTp6uB",
+    "date": "2023-11-22",
+    "diagnosis": "Healthy"
+  }
+]

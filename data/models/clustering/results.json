@@ -1,0 +1,19 @@
+{
+  "KMeans": {
+    "metrics": {
+      "n_clusters": 4,
+      "n_noise": 0,
+      "n_samples": 500,
+      "silhouette_score": 0.05994529402180427
+    },
+    "model_type": "KMeans"
+  },
+  "DBSCAN": {
+    "metrics": {
+      "n_clusters": 0,
+      "n_noise": 500,
+      "n_samples": 500
+    },
+    "model_type": "DBSCAN"
+  }
+}

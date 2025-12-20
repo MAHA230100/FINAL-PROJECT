@@ -1,8 +1,23 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+
+# Try loading from data directory first (for Docker), then root
+if os.path.exists('/app/data/.env'):
+    load_dotenv('/app/data/.env')
+    print("✅ Loaded .env from /app/data/.env")
+elif os.path.exists('data/.env'):
+    load_dotenv('data/.env')
+    print("✅ Loaded .env from data/.env")
+else:
+    load_dotenv()  # Try default locations
+    print("ℹ️ Loaded .env from default location")
 
 # Import route modules
 from .routes import predictions, data, eda, models, ai_tools
+from .routes.patients import router as patients_router
+from .ai import router as ai_router_v2 
 
 app = FastAPI(title="HealthAI API", version="0.1.0")
 
@@ -21,12 +36,12 @@ app.include_router(data.router)
 app.include_router(eda.router)
 app.include_router(models.router)
 app.include_router(ai_tools.router)
-
+app.include_router(patients_router)  # ADDED: patient endpoints
+app.include_router(ai_router_v2)  # ADDED: AI v2 endpoints
 
 @app.get("/health")
 def health():
     return {"status": "ok", "message": "HealthAI API is running"}
-
 
 @app.get("/")
 def root():
@@ -39,6 +54,7 @@ def root():
             "data": "/data", 
             "eda": "/eda",
             "models": "/model",
-            "ai_tools": "/ai-tools"
+            "ai_tools": "/ai-tools",
+            "patients": "/patients"  # now in endpoint map
         }
     }

@@ -32,11 +32,11 @@ ENV/
 .ipynb_checkpoints/
 
 # Data and models
-/data/
-outputs/
-artifacts/
-models/
-logs/
+# /data/
+# outputs/
+# artifacts/
+# models/
+# logs/
 
 # OS
 .DS_Store

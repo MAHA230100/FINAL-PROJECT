@@ -1,0 +1,238 @@
+{
+    "dataset_info": {
+        "shape": [
+            500,
+            21
+        ],
+        "columns": [
+            "patient_id",
+            "age",
+            "gender",
+            "admission_type",
+            "admission_location",
+            "insurance",
+            "language",
+            "marital_status",
+            "drg_type",
+            "diagnosis",
+            "comorbidities",
+            "lab_results",
+            "vitals_bp",
+            "vitals_hr",
+            "previous_admissions",
+            "length_of_stay",
+            "risk_label",
+            "outcome",
+            "image_path",
+            "modality",
+            "body_part"
+        ],
+        "dtypes": {
+            "patient_id": "int64",
+            "age": "int64",
+            "gender": "category",
+            "admission_type": "category",
+            "admission_location": "category",
+            "insurance": "category",
+            "language": "category",
+            "marital_status": "category",
+            "drg_type": "category",
+            "diagnosis": "category",
+            "comorbidities": "category",
+            "lab_results": "float64",
+            "vitals_bp": "int64",
+            "vitals_hr": "int64",
+            "previous_admissions": "int64",
+            "length_of_stay": "float64",
+            "risk_label": "category",
+            "outcome": "category",
+            "image_path": "object",
+            "modality": "category",
+            "body_part": "category"
+        },
+        "memory_usage": "74887"
+    },
+    "basic_stats": {
+        "patient_id": {
+            "count": 500.0,
+            "mean": 250.5,
+            "std": 144.4818327679989,
+            "min": 1.0,
+            "25%": 125.75,
+            "50%": 250.5,
+            "75%": 375.25,
+            "max": 500.0
+        },
+        "age": {
+            "count": 500.0,
+            "mean": 52.93,
+            "std": 21.009519266265926,
+            "min": 18.0,
+            "25%": 34.0,
+            "50%": 52.0,
+            "75%": 71.0,
+            "max": 89.0
+        },
+        "lab_results": {
+            "count": 500.0,
+            "mean": 100.10718,
+            "std": 15.14042010280358,
+            "min": 55.13,
+            "25%": 90.47,
+            "50%": 99.53,
+            "75%": 109.77,
+            "max": 158.89
+        },
+        "vitals_bp": {
+            "count": 500.0,
+            "mean": 124.408,
+            "std": 20.074948146537576,
+            "min": 90.0,
+            "25%": 107.0,
+            "50%": 124.0,
+            "75%": 142.0,
+            "max": 159.0
+        },
+        "vitals_hr": {
+            "count": 500.0,
+            "mean": 90.78,
+            "std": 17.044078185763077,
+            "min": 60.0,
+            "25%": 77.0,
+            "50%": 90.5,
+            "75%": 105.0,
+            "max": 119.0
+        },
+        "previous_admissions": {
+            "count": 500.0,
+            "mean": 1.88,
+            "std": 1.4372652722882617,
+            "min": 0.0,
+            "25%": 1.0,
+            "50%": 2.0,
+            "75%": 3.0,
+            "max": 4.0
+        },
+        "length_of_stay": {
+            "count": 500.0,
+            "mean": 10.187400000000002,
+            "std": 5.483542113289222,
+            "min": 1.05,
+            "25%": 5.5874999999999995,
+            "50%": 10.03,
+            "75%": 15.065000000000001,
+            "max": 19.95
+        }
+    },
+    "missing_values": {
+        "patient_id": 0,
+        "age": 0,
+        "gender": 0,
+        "admission_type": 0,
+        "admission_location": 0,
+        "insurance": 0,
+        "language": 0,
+        "marital_status": 0,
+        "drg_type": 0,
+        "diagnosis": 0,
+        "comorbidities": 0,
+        "lab_results": 0,
+        "vitals_bp": 0,
+        "vitals_hr": 0,
+        "previous_admissions": 0,
+        "length_of_stay": 0,
+        "risk_label": 0,
+        "outcome": 0,
+        "image_path": 0,
+        "modality": 0,
+        "body_part": 0
+    },
+    "unique_values": {
+        "patient_id": 500,
+        "age": 72,
+        "gender": 3,
+        "admission_type": 3,
+        "admission_location": 4,
+        "insurance": 4,
+        "language": 5,
+        "marital_status": 4,
+        "drg_type": 4,
+        "diagnosis": 6,
+        "comorbidities": 4,
+        "lab_results": 475,
+        "vitals_bp": 70,
+        "vitals_hr": 60,
+        "previous_admissions": 5,
+        "length_of_stay": 441,
+        "risk_label": 3,
+        "outcome": 3,
+        "image_path": 500,
+        "modality": 4,
+        "body_part": 4
+    },
+    "correlation_matrix": {
+        "patient_id": {
+            "patient_id": 1.0,
+            "age": -0.018308107694532373,
+            "lab_results": -0.04693302361793042,
+            "vitals_bp": 0.026000250934569848,
+            "vitals_hr": 0.025116020761290277,
+            "previous_admissions": -0.09465198742273111,
+            "length_of_stay": -0.013251705313538907
+        },
+        "age": {
+            "patient_id": -0.018308107694532373,
+            "age": 1.0,
+            "lab_results": 0.05357839125975432,
+            "vitals_bp": -0.02825096976443743,
+            "vitals_hr": 0.029477990589818388,
+            "previous_admissions": -0.04421310702131687,
+            "length_of_stay": 0.029635340826802303
+        },
+        "lab_results": {
+            "patient_id": -0.04693302361793042,
+            "age": 0.05357839125975432,
+            "lab_results": 1.0,
+            "vitals_bp": -0.015231033170167052,
+            "vitals_hr": -0.04386305350882151,
+            "previous_admissions": -0.0038318981957401604,
+            "length_of_stay": -0.0408135518241811
+        },
+        "vitals_bp": {
+            "patient_id": 0.026000250934569848,
+            "age": -0.02825096976443743,
+            "lab_results": -0.015231033170167052,
+            "vitals_bp": 1.0,
+            "vitals_hr": 0.02493818957211652,
+            "previous_admissions": 0.024898490654607294,
+            "length_of_stay": 0.03570618541781051
+        },
+        "vitals_hr": {
+            "patient_id": 0.025116020761290277,
+            "age": 0.029477990589818388,
+            "lab_results": -0.04386305350882151,
+            "vitals_bp": 0.02493818957211652,
+            "vitals_hr": 1.0,
+            "previous_admissions": 0.0574937660332955,
+            "length_of_stay": 0.018274865299428174
+        },
+        "previous_admissions": {
+            "patient_id": -0.09465198742273111,
+            "age": -0.04421310702131687,
+            "lab_results": -0.0038318981957401604,
+            "vitals_bp": 0.024898490654607294,
+            "vitals_hr": 0.0574937660332955,
+            "previous_admissions": 1.0,
+            "length_of_stay": -0.014868905336236466
+        },
+        "length_of_stay": {
+            "patient_id": -0.013251705313538907,
+            "age": 0.029635340826802303,
+            "lab_results": -0.0408135518241811,
+            "vitals_bp": 0.03570618541781051,
+            "vitals_hr": 0.018274865299428174,
+            "previous_admissions": -0.014868905336236466,
+            "length_of_stay": 1.0
+        }
+    }
+}

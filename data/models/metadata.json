@@ -1,0 +1,114 @@
+{
+  "feature_columns": [
+    "age",
+    "gender",
+    "admission_type",
+    "admission_location",
+    "insurance",
+    "language",
+    "marital_status",
+    "drg_type",
+    "comorbidities",
+    "lab_results",
+    "vitals_bp",
+    "vitals_hr",
+    "previous_admissions",
+    "risk_score"
+  ],
+  "label_encoders": {
+    "gender": [
+      "Female",
+      "Male",
+      "Other"
+    ],
+    "admission_type": [
+      "Elective",
+      "Emergency",
+      "Urgent"
+    ],
+    "admission_location": [
+      "Clinic Referral",
+      "Emergency Room",
+      "Physician Referral",
+      "Transfer from Hospital"
+    ],
+    "insurance": [
+      "Medicaid",
+      "Medicare",
+      "Private",
+      "Self-pay"
+    ],
+    "language": [
+      "Arabic",
+      "Chinese",
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "marital_status": [
+      "Divorced",
+      "Married",
+      "Single",
+      "Widowed"
+    ],
+    "drg_type": [
+      "DRG-A",
+      "DRG-B",
+      "DRG-C",
+      "HCFA"
+    ],
+    "comorbidities": [
+      "Asthma",
+      "COPD",
+      "Diabetes",
+      "Hypertension"
+    ]
+  },
+  "scaler_params": {
+    "mean": [
+      52.93,
+      0.984,
+      0.988,
+      1.512,
+      1.438,
+      2.01,
+      1.548,
+      1.604,
+      1.578,
+      100.10718,
+      124.408,
+      90.78,
+      1.88,
+      0.511209
+    ],
+    "scale": [
+      20.98849923172212,
+      0.8097802170959724,
+      0.8147735881826312,
+      1.1233236399186124,
+      1.1234571642924354,
+      1.4345382532369082,
+      1.136528046288344,
+      1.118563364320502,
+      1.0217220757133518,
+      15.125272104911039,
+      20.054863150866925,
+      17.027025577005514,
+      1.4358272876638052,
+      0.11986530840489253
+    ]
+  },
+  "dataset_info": {
+    "n_samples": 500,
+    "n_features": 14,
+    "classification_classes": [
+      "Recovered",
+      "Readmitted",
+      "Deceased"
+    ],
+    "regression_range": [
+      1.05,
+      19.95
+    ]
+  }
+}

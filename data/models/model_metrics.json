@@ -1,0 +1,9 @@
+{
+    "classification": null,
+    "regression": {
+        "rmse": 5.967583388592068,
+        "mae": 5.126024,
+        "r2_score": -0.11596130951565331
+    },
+    "training_date": "2025-12-14T17:20:55.748724"
+}

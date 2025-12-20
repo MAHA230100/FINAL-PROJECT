@@ -10,9 +10,13 @@ services:
       - ${PWD}/api:/app/api
       - api_venv:/opt/venv
       - ${PWD}/data:/app/data
+      - ${PWD}/.env:/app/data/.env
     environment:
       - ENVIRONMENT=development
       - PYTHONUNBUFFERED=1
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    env_file:
+      - .env
     command: >
       bash -c "python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload"
 

@@ -1,0 +1,2918 @@
+[
+  {
+    "vital_id": "aLSZXLwcUoVQ",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "56CPhLotgw",
+    "date": "2023-06-06",
+    "bp": "103/80",
+    "pulse": 93,
+    "temp": 101.2
+  },
+  {
+    "vital_id": "yBzKJZc8Im6R",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "56CPhLotgw",
+    "date": "2023-06-22",
+    "bp": "112/71",
+    "pulse": 74,
+    "temp": 101.2
+  },
+  {
+    "vital_id": "GmD8W46SZ2yN",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "56CPhLotgw",
+    "date": "2023-09-21",
+    "bp": "137/82",
+    "pulse": 72,
+    "temp": 102.8
+  },
+  {
+    "vital_id": "IUBdwcdzNXxe",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "1pXz5soydZ",
+    "date": "2023-02-01",
+    "bp": "107/75",
+    "pulse": 107,
+    "temp": 101.9
+  },
+  {
+    "vital_id": "BmYkxMT7hhFD",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "1pXz5soydZ",
+    "date": "2023-11-22",
+    "bp": "138/85",
+    "pulse": 108,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "zJzKp6U7oiBx",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "1pXz5soydZ",
+    "date": "2023-07-30",
+    "bp": "115/72",
+    "pulse": 99,
+    "temp": 99.9
+  },
+  {
+    "vital_id": "xQWLQKSCVpCm",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-09-06",
+    "bp": "122/60",
+    "pulse": 92,
+    "temp": 98.3
+  },
+  {
+    "vital_id": "9ZUC5a5IcUPv",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-01-08",
+    "bp": "103/73",
+    "pulse": 61,
+    "temp": 101.1
+  },
+  {
+    "vital_id": "QUVes8g1VbiM",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-06-01",
+    "bp": "135/88",
+    "pulse": 106,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "NnczduurZPBW",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-07-29",
+    "bp": "127/62",
+    "pulse": 80,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "4APTHv87Kkad",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "MVagKVU8oS",
+    "date": "2023-09-10",
+    "bp": "139/64",
+    "pulse": 106,
+    "temp": 99.1
+  },
+  {
+    "vital_id": "dn1U3ugcBpxm",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "MVagKVU8oS",
+    "date": "2023-01-31",
+    "bp": "134/87",
+    "pulse": 109,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "ZOMLl5IIZhZ1",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "MVagKVU8oS",
+    "date": "2023-08-31",
+    "bp": "117/71",
+    "pulse": 72,
+    "temp": 104.0
+  },
+  {
+    "vital_id": "EygqCrM5lhd0",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "MVagKVU8oS",
+    "date": "2023-11-08",
+    "bp": "127/80",
+    "pulse": 89,
+    "temp": 103.4
+  },
+  {
+    "vital_id": "aPiFPr6tHmwb",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "WRPUTASaYM",
+    "date": "2023-08-22",
+    "bp": "104/75",
+    "pulse": 63,
+    "temp": 103.8
+  },
+  {
+    "vital_id": "4q4T9X6f7DrC",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "WRPUTASaYM",
+    "date": "2023-12-19",
+    "bp": "130/81",
+    "pulse": 104,
+    "temp": 99.0
+  },
+  {
+    "vital_id": "uvsp7W6AZfND",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "WRPUTASaYM",
+    "date": "2023-05-20",
+    "bp": "122/86",
+    "pulse": 83,
+    "temp": 97.0
+  },
+  {
+    "vital_id": "uRDPhYB5xGQT",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-12-31",
+    "bp": "117/75",
+    "pulse": 74,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "iiKyhnj6ykFg",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-11-02",
+    "bp": "121/89",
+    "pulse": 103,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "WVSeDcBh83bw",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-06-04",
+    "bp": "136/90",
+    "pulse": 98,
+    "temp": 97.6
+  },
+  {
+    "vital_id": "u4WOC9qT95ri",
+    "patient_id": "uoVe8nmL",
+    "visit_id": "4LdvyHdeGj",
+    "date": "2023-08-26",
+    "bp": "129/60",
+    "pulse": 102,
+    "temp": 99.0
+  },
+  {
+    "vital_id": "eItUheJvwRdP",
+    "patient_id": "uoVe8nmL",
+    "visit_id": "4LdvyHdeGj",
+    "date": "2023-03-24",
+    "bp": "134/86",
+    "pulse": 107,
+    "temp": 97.9
+  },
+  {
+    "vital_id": "uyWMDdZ8q7hN",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-06-22",
+    "bp": "113/85",
+    "pulse": 78,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "zlUKPMZ6HsKP",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-04-10",
+    "bp": "123/72",
+    "pulse": 61,
+    "temp": 102.0
+  },
+  {
+    "vital_id": "aWOnsaa6a6bB",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-12-19",
+    "bp": "126/64",
+    "pulse": 82,
+    "temp": 98.0
+  },
+  {
+    "vital_id": "r78IVQRBm5Ie",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-09-02",
+    "bp": "116/62",
+    "pulse": 80,
+    "temp": 98.9
+  },
+  {
+    "vital_id": "3qIPfEyIQCCh",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-04-25",
+    "bp": "124/63",
+    "pulse": 100,
+    "temp": 99.1
+  },
+  {
+    "vital_id": "5RxO2vjY63Kx",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-08-09",
+    "bp": "109/60",
+    "pulse": 77,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "zNcSa2yybcPw",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-12-22",
+    "bp": "102/69",
+    "pulse": 88,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "QAWpDvN0lfBd",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-05-03",
+    "bp": "112/63",
+    "pulse": 86,
+    "temp": 98.1
+  },
+  {
+    "vital_id": "H76EXYtKHMoX",
+    "patient_id": "b2BA13cV",
+    "visit_id": "o9hUSYoTJy",
+    "date": "2023-04-15",
+    "bp": "111/71",
+    "pulse": 69,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "Gl8cIe8UO8cO",
+    "patient_id": "b2BA13cV",
+    "visit_id": "o9hUSYoTJy",
+    "date": "2023-11-13",
+    "bp": "117/90",
+    "pulse": 92,
+    "temp": 100.8
+  },
+  {
+    "vital_id": "99QWXCpwGGG4",
+    "patient_id": "b2BA13cV",
+    "visit_id": "o9hUSYoTJy",
+    "date": "2023-02-15",
+    "bp": "102/63",
+    "pulse": 69,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "0iVDeAOfB95d",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "wyWtFFCggy",
+    "date": "2023-10-22",
+    "bp": "127/82",
+    "pulse": 72,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "nP7cqm1tLaXi",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "wyWtFFCggy",
+    "date": "2023-08-28",
+    "bp": "101/89",
+    "pulse": 72,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "kObrrrFrNG6r",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "wyWtFFCggy",
+    "date": "2023-03-30",
+    "bp": "140/80",
+    "pulse": 76,
+    "temp": 101.0
+  },
+  {
+    "vital_id": "FdjKdAliZ0Cp",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "OI5bIrNaPb",
+    "date": "2023-08-04",
+    "bp": "134/81",
+    "pulse": 75,
+    "temp": 103.1
+  },
+  {
+    "vital_id": "W1pmrQ03VrTJ",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "OI5bIrNaPb",
+    "date": "2023-10-08",
+    "bp": "116/86",
+    "pulse": 107,
+    "temp": 97.9
+  },
+  {
+    "vital_id": "at9gYdd3vfHp",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-07-05",
+    "bp": "139/71",
+    "pulse": 100,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "W3o2asCVwnxE",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-11-15",
+    "bp": "128/73",
+    "pulse": 70,
+    "temp": 100.4
+  },
+  {
+    "vital_id": "BIXLT3ZXNXUu",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-03-25",
+    "bp": "105/85",
+    "pulse": 70,
+    "temp": 97.6
+  },
+  {
+    "vital_id": "nZJGOJg2x7Yb",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-06-27",
+    "bp": "130/81",
+    "pulse": 61,
+    "temp": 98.4
+  },
+  {
+    "vital_id": "PqkjgZd6Clod",
+    "patient_id": "1fuU8upK",
+    "visit_id": "gKCfWRyJVv",
+    "date": "2023-09-06",
+    "bp": "132/63",
+    "pulse": 61,
+    "temp": 98.5
+  },
+  {
+    "vital_id": "pnFUy9mEbGOs",
+    "patient_id": "1fuU8upK",
+    "visit_id": "gKCfWRyJVv",
+    "date": "2023-07-14",
+    "bp": "120/84",
+    "pulse": 110,
+    "temp": 99.4
+  },
+  {
+    "vital_id": "FEuepaRTj83U",
+    "patient_id": "1fuU8upK",
+    "visit_id": "4nGlsnTy2F",
+    "date": "2023-02-11",
+    "bp": "122/90",
+    "pulse": 82,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "zFe7JUWxaT89",
+    "patient_id": "1fuU8upK",
+    "visit_id": "4nGlsnTy2F",
+    "date": "2023-12-27",
+    "bp": "137/74",
+    "pulse": 94,
+    "temp": 102.1
+  },
+  {
+    "vital_id": "kR2JNaD5ZhFP",
+    "patient_id": "1fuU8upK",
+    "visit_id": "4nGlsnTy2F",
+    "date": "2023-11-11",
+    "bp": "140/71",
+    "pulse": 98,
+    "temp": 97.4
+  },
+  {
+    "vital_id": "leNbIfIhgnJX",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "17GJyXzJe2",
+    "date": "2024-01-01",
+    "bp": "118/86",
+    "pulse": 103,
+    "temp": 101.6
+  },
+  {
+    "vital_id": "hNYLmjFzv2KC",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "17GJyXzJe2",
+    "date": "2023-06-23",
+    "bp": "123/63",
+    "pulse": 62,
+    "temp": 97.6
+  },
+  {
+    "vital_id": "I0w5kJsQrqq1",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "17GJyXzJe2",
+    "date": "2023-08-23",
+    "bp": "126/76",
+    "pulse": 61,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "GhqDprcyOjnP",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-09-07",
+    "bp": "130/78",
+    "pulse": 73,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "Pbgc1haABy6v",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-02-06",
+    "bp": "125/88",
+    "pulse": 109,
+    "temp": 102.2
+  },
+  {
+    "vital_id": "ZeuCZT1dxvM6",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-09-03",
+    "bp": "112/63",
+    "pulse": 104,
+    "temp": 103.1
+  },
+  {
+    "vital_id": "rYDRFYptcDMS",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-10-23",
+    "bp": "132/68",
+    "pulse": 62,
+    "temp": 99.3
+  },
+  {
+    "vital_id": "VLGAiEf2AAPU",
+    "patient_id": "oemhRKdP",
+    "visit_id": "PZZuyG2KIw",
+    "date": "2023-02-17",
+    "bp": "125/60",
+    "pulse": 72,
+    "temp": 99.0
+  },
+  {
+    "vital_id": "AVv2Vtj66KV2",
+    "patient_id": "oemhRKdP",
+    "visit_id": "PZZuyG2KIw",
+    "date": "2023-11-27",
+    "bp": "110/79",
+    "pulse": 66,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "JGrMD9XQElc0",
+    "patient_id": "oemhRKdP",
+    "visit_id": "PZZuyG2KIw",
+    "date": "2023-01-29",
+    "bp": "117/82",
+    "pulse": 61,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "oJgYjuhOx09o",
+    "patient_id": "oemhRKdP",
+    "visit_id": "Ci4H6tN0XY",
+    "date": "2023-01-23",
+    "bp": "124/79",
+    "pulse": 88,
+    "temp": 97.4
+  },
+  {
+    "vital_id": "Okh7JCbcPhKP",
+    "patient_id": "oemhRKdP",
+    "visit_id": "Ci4H6tN0XY",
+    "date": "2023-03-30",
+    "bp": "117/86",
+    "pulse": 64,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "ssICJMCgzbPe",
+    "patient_id": "oemhRKdP",
+    "visit_id": "Ci4H6tN0XY",
+    "date": "2023-05-27",
+    "bp": "107/65",
+    "pulse": 80,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "6m9VfcbfNN2R",
+    "patient_id": "oemhRKdP",
+    "visit_id": "Ci4H6tN0XY",
+    "date": "2023-01-11",
+    "bp": "113/80",
+    "pulse": 110,
+    "temp": 97.6
+  },
+  {
+    "vital_id": "Mes4nTRdAsdM",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-04-16",
+    "bp": "105/81",
+    "pulse": 71,
+    "temp": 103.4
+  },
+  {
+    "vital_id": "WUvKRcnncTRP",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-10-18",
+    "bp": "108/74",
+    "pulse": 110,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "M2G3HCakkcPS",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-02-01",
+    "bp": "135/81",
+    "pulse": 87,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "ouH0OFxdn6Df",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-12-09",
+    "bp": "119/78",
+    "pulse": 71,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "PirElgxQZSqL",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "npDWD3Zloh",
+    "date": "2023-04-24",
+    "bp": "116/66",
+    "pulse": 101,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "5tXQnHMuNbop",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "npDWD3Zloh",
+    "date": "2023-11-18",
+    "bp": "101/67",
+    "pulse": 89,
+    "temp": 103.1
+  },
+  {
+    "vital_id": "Hgz2TpMCaURF",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "npDWD3Zloh",
+    "date": "2023-07-29",
+    "bp": "124/64",
+    "pulse": 69,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "uYn1HYpHWFIU",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "npDWD3Zloh",
+    "date": "2023-12-17",
+    "bp": "101/69",
+    "pulse": 109,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "hsrnGJJoA4yw",
+    "patient_id": "4JNrYg39",
+    "visit_id": "S0WKm9UG8h",
+    "date": "2023-06-16",
+    "bp": "137/71",
+    "pulse": 106,
+    "temp": 103.7
+  },
+  {
+    "vital_id": "X5xAFfPY1RwH",
+    "patient_id": "4JNrYg39",
+    "visit_id": "S0WKm9UG8h",
+    "date": "2023-10-10",
+    "bp": "136/66",
+    "pulse": 84,
+    "temp": 101.3
+  },
+  {
+    "vital_id": "NVqMFURU6GPh",
+    "patient_id": "4JNrYg39",
+    "visit_id": "9NAXlRF3Gl",
+    "date": "2023-01-31",
+    "bp": "139/88",
+    "pulse": 85,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "dvRuKRbNaF09",
+    "patient_id": "4JNrYg39",
+    "visit_id": "9NAXlRF3Gl",
+    "date": "2023-01-02",
+    "bp": "124/65",
+    "pulse": 67,
+    "temp": 101.6
+  },
+  {
+    "vital_id": "puEnrrJ5cvad",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-01-28",
+    "bp": "130/90",
+    "pulse": 63,
+    "temp": 103.4
+  },
+  {
+    "vital_id": "EPAW1dmu98bW",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-02-08",
+    "bp": "139/87",
+    "pulse": 92,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "Cekjg14iat4z",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-03-27",
+    "bp": "112/80",
+    "pulse": 101,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "BdcAX7mGo9GK",
+    "patient_id": "a3qHprS4",
+    "visit_id": "EJdmevNt14",
+    "date": "2023-01-25",
+    "bp": "135/64",
+    "pulse": 68,
+    "temp": 98.4
+  },
+  {
+    "vital_id": "sDmJU5cl0AZq",
+    "patient_id": "a3qHprS4",
+    "visit_id": "EJdmevNt14",
+    "date": "2023-04-03",
+    "bp": "133/68",
+    "pulse": 93,
+    "temp": 101.1
+  },
+  {
+    "vital_id": "ER4byxEZNfjA",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-01-09",
+    "bp": "109/83",
+    "pulse": 87,
+    "temp": 102.8
+  },
+  {
+    "vital_id": "8PjF3rHFa7VS",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-09-09",
+    "bp": "135/85",
+    "pulse": 92,
+    "temp": 103.4
+  },
+  {
+    "vital_id": "MnHR4V0mW2Ii",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-12-10",
+    "bp": "139/63",
+    "pulse": 68,
+    "temp": 103.1
+  },
+  {
+    "vital_id": "CGsaBNBzadG1",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-08-16",
+    "bp": "105/82",
+    "pulse": 103,
+    "temp": 101.4
+  },
+  {
+    "vital_id": "8iEqqfjNclXD",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-05-02",
+    "bp": "101/74",
+    "pulse": 75,
+    "temp": 101.8
+  },
+  {
+    "vital_id": "V8ORPAUx4O1z",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-04-17",
+    "bp": "133/85",
+    "pulse": 71,
+    "temp": 102.2
+  },
+  {
+    "vital_id": "b4u9Nxby3dI8",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-11-01",
+    "bp": "120/64",
+    "pulse": 68,
+    "temp": 98.6
+  },
+  {
+    "vital_id": "3oCgW0oMRF8n",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-08-03",
+    "bp": "124/85",
+    "pulse": 78,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "JmiGwoVgYI9q",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-03-08",
+    "bp": "125/73",
+    "pulse": 92,
+    "temp": 103.9
+  },
+  {
+    "vital_id": "G7ooJi4dJyyV",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-04-01",
+    "bp": "117/88",
+    "pulse": 76,
+    "temp": 99.1
+  },
+  {
+    "vital_id": "uaafZe7Ry3TX",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-07-30",
+    "bp": "115/66",
+    "pulse": 110,
+    "temp": 100.8
+  },
+  {
+    "vital_id": "kFnjyc3Hrlo0",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-07-22",
+    "bp": "113/69",
+    "pulse": 88,
+    "temp": 102.0
+  },
+  {
+    "vital_id": "IYUfEm3RJ8W8",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-05-08",
+    "bp": "118/74",
+    "pulse": 84,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "nqfprX7QjaJJ",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-02-23",
+    "bp": "138/68",
+    "pulse": 99,
+    "temp": 97.4
+  },
+  {
+    "vital_id": "big00mY5nZMw",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-04-23",
+    "bp": "132/82",
+    "pulse": 85,
+    "temp": 100.8
+  },
+  {
+    "vital_id": "ybwFXkr9QBal",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-02-24",
+    "bp": "118/77",
+    "pulse": 62,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "iDdjyawsu5Tw",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "xCg5XL4kdE",
+    "date": "2023-01-27",
+    "bp": "122/81",
+    "pulse": 85,
+    "temp": 99.4
+  },
+  {
+    "vital_id": "riz2WkA4yICw",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "xCg5XL4kdE",
+    "date": "2023-03-15",
+    "bp": "114/87",
+    "pulse": 64,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "0HJ2o7hZ6q6v",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "xCg5XL4kdE",
+    "date": "2023-07-04",
+    "bp": "119/73",
+    "pulse": 78,
+    "temp": 103.5
+  },
+  {
+    "vital_id": "M7J0F9Ol6Put",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "uQhnEOMe0A",
+    "date": "2023-03-10",
+    "bp": "107/82",
+    "pulse": 89,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "Rkm7VICpEf7t",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "uQhnEOMe0A",
+    "date": "2023-04-20",
+    "bp": "116/69",
+    "pulse": 98,
+    "temp": 99.9
+  },
+  {
+    "vital_id": "NPxOOAw1sAix",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "wFIeu7CJ36",
+    "date": "2023-09-23",
+    "bp": "138/78",
+    "pulse": 81,
+    "temp": 100.2
+  },
+  {
+    "vital_id": "vh7FTRTQXG4R",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "wFIeu7CJ36",
+    "date": "2023-08-18",
+    "bp": "110/69",
+    "pulse": 60,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "bxxiGVwlJcFa",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-01-17",
+    "bp": "113/82",
+    "pulse": 108,
+    "temp": 102.2
+  },
+  {
+    "vital_id": "r5OGj954J7fa",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-10-20",
+    "bp": "100/74",
+    "pulse": 79,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "DKCJbkQ1WdfF",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-04-17",
+    "bp": "122/72",
+    "pulse": 81,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "4PIDRqO6ckRu",
+    "patient_id": "8JM94zD7",
+    "visit_id": "FE2jbqQwAG",
+    "date": "2023-02-03",
+    "bp": "132/68",
+    "pulse": 109,
+    "temp": 101.1
+  },
+  {
+    "vital_id": "V2MfORkpNM54",
+    "patient_id": "8JM94zD7",
+    "visit_id": "FE2jbqQwAG",
+    "date": "2023-03-28",
+    "bp": "118/60",
+    "pulse": 93,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "ujd5aYZ3tZPR",
+    "patient_id": "8JM94zD7",
+    "visit_id": "FE2jbqQwAG",
+    "date": "2023-09-17",
+    "bp": "104/73",
+    "pulse": 105,
+    "temp": 98.8
+  },
+  {
+    "vital_id": "nPK9RkUDmKoV",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "7S7LdoFqOs",
+    "date": "2023-08-16",
+    "bp": "122/77",
+    "pulse": 66,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "LWClp1X8j1jb",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "7S7LdoFqOs",
+    "date": "2023-10-19",
+    "bp": "106/61",
+    "pulse": 87,
+    "temp": 99.5
+  },
+  {
+    "vital_id": "vTkp0xkggpQQ",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "V7Dr1SPe41",
+    "date": "2023-08-24",
+    "bp": "110/64",
+    "pulse": 107,
+    "temp": 101.0
+  },
+  {
+    "vital_id": "FNFKUzZUx3Hc",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "V7Dr1SPe41",
+    "date": "2023-07-02",
+    "bp": "109/65",
+    "pulse": 99,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "tip1p5pzBwJ2",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "82xbTDP1JS",
+    "date": "2023-09-21",
+    "bp": "102/63",
+    "pulse": 104,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "mTaOp98ZOv1X",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "82xbTDP1JS",
+    "date": "2023-09-21",
+    "bp": "108/88",
+    "pulse": 109,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "H65S1yJSaZXY",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "82xbTDP1JS",
+    "date": "2023-05-17",
+    "bp": "101/67",
+    "pulse": 103,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "XlJCRxE6QtEs",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "CEbC03T3du",
+    "date": "2023-08-31",
+    "bp": "137/60",
+    "pulse": 109,
+    "temp": 98.8
+  },
+  {
+    "vital_id": "3vWvaqndy5bt",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "CEbC03T3du",
+    "date": "2023-12-25",
+    "bp": "127/72",
+    "pulse": 81,
+    "temp": 100.7
+  },
+  {
+    "vital_id": "0iLNRTSvg7wc",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "CEbC03T3du",
+    "date": "2023-07-27",
+    "bp": "135/65",
+    "pulse": 108,
+    "temp": 100.7
+  },
+  {
+    "vital_id": "pl55ATVkBv6P",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "Z2P8a1P2PR",
+    "date": "2023-11-09",
+    "bp": "137/81",
+    "pulse": 89,
+    "temp": 104.0
+  },
+  {
+    "vital_id": "oeMmq6bNg9Uk",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "Z2P8a1P2PR",
+    "date": "2023-07-29",
+    "bp": "120/75",
+    "pulse": 64,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "gKnylWOcrSUf",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "Z2P8a1P2PR",
+    "date": "2023-07-18",
+    "bp": "132/74",
+    "pulse": 68,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "D6EGcGglmrT7",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-10-28",
+    "bp": "124/74",
+    "pulse": 64,
+    "temp": 100.4
+  },
+  {
+    "vital_id": "xVz5rWA3XhHT",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-01-14",
+    "bp": "125/67",
+    "pulse": 60,
+    "temp": 97.7
+  },
+  {
+    "vital_id": "U5Mu7UMRCW2F",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-09-14",
+    "bp": "139/64",
+    "pulse": 91,
+    "temp": 102.4
+  },
+  {
+    "vital_id": "FZz9ApM2bnM8",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-09-02",
+    "bp": "128/90",
+    "pulse": 104,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "nNoXA0eMr6Rg",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-04-15",
+    "bp": "132/74",
+    "pulse": 72,
+    "temp": 98.9
+  },
+  {
+    "vital_id": "Bm3YfgPOG2bW",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-02-06",
+    "bp": "102/75",
+    "pulse": 89,
+    "temp": 103.1
+  },
+  {
+    "vital_id": "frp1R8GeN5rT",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-06-22",
+    "bp": "107/78",
+    "pulse": 63,
+    "temp": 101.3
+  },
+  {
+    "vital_id": "3hVIJakWeUkq",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-10-20",
+    "bp": "104/70",
+    "pulse": 104,
+    "temp": 98.6
+  },
+  {
+    "vital_id": "MKszKqFsSSrY",
+    "patient_id": "xjQJie7U",
+    "visit_id": "ejAjGmZtm4",
+    "date": "2023-10-14",
+    "bp": "101/88",
+    "pulse": 96,
+    "temp": 102.1
+  },
+  {
+    "vital_id": "aQ17i2qNWlmv",
+    "patient_id": "xjQJie7U",
+    "visit_id": "ejAjGmZtm4",
+    "date": "2023-09-10",
+    "bp": "127/77",
+    "pulse": 76,
+    "temp": 100.0
+  },
+  {
+    "vital_id": "8OlAslJ28Tsr",
+    "patient_id": "q8GfPlSS",
+    "visit_id": "V3KUOCfdiX",
+    "date": "2023-01-19",
+    "bp": "122/86",
+    "pulse": 81,
+    "temp": 100.7
+  },
+  {
+    "vital_id": "ldCkqbEKfhO2",
+    "patient_id": "q8GfPlSS",
+    "visit_id": "V3KUOCfdiX",
+    "date": "2023-10-31",
+    "bp": "137/69",
+    "pulse": 95,
+    "temp": 102.1
+  },
+  {
+    "vital_id": "srw4v29lKVSu",
+    "patient_id": "q8GfPlSS",
+    "visit_id": "V3KUOCfdiX",
+    "date": "2023-06-30",
+    "bp": "105/61",
+    "pulse": 83,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "KXh5gJClqhNp",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "7r321yvRAj",
+    "date": "2023-02-22",
+    "bp": "132/67",
+    "pulse": 101,
+    "temp": 99.2
+  },
+  {
+    "vital_id": "ifIN6mSjDFbK",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "7r321yvRAj",
+    "date": "2023-05-27",
+    "bp": "129/63",
+    "pulse": 69,
+    "temp": 100.5
+  },
+  {
+    "vital_id": "YI7aFIY6xL8I",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-06-20",
+    "bp": "124/81",
+    "pulse": 63,
+    "temp": 100.4
+  },
+  {
+    "vital_id": "d5NhZe5oYEeM",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-08-03",
+    "bp": "106/60",
+    "pulse": 64,
+    "temp": 101.6
+  },
+  {
+    "vital_id": "F4LH971BSoPq",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-08-18",
+    "bp": "105/72",
+    "pulse": 99,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "WhaNYqTDr43l",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-03-25",
+    "bp": "124/67",
+    "pulse": 98,
+    "temp": 99.2
+  },
+  {
+    "vital_id": "RgXTg9mbtpNb",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-07-18",
+    "bp": "111/77",
+    "pulse": 109,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "EF9JSOO900Rl",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-09-14",
+    "bp": "103/69",
+    "pulse": 93,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "G1kPFmQJqPLb",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-09-12",
+    "bp": "117/64",
+    "pulse": 94,
+    "temp": 101.1
+  },
+  {
+    "vital_id": "K0SKLGJCgh0U",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-04-08",
+    "bp": "131/78",
+    "pulse": 75,
+    "temp": 100.0
+  },
+  {
+    "vital_id": "qQc3rWUEWDRJ",
+    "patient_id": "vfuZuDSv",
+    "visit_id": "vdeJL8dnwi",
+    "date": "2023-01-09",
+    "bp": "116/85",
+    "pulse": 102,
+    "temp": 101.8
+  },
+  {
+    "vital_id": "8BHjGByEti92",
+    "patient_id": "vfuZuDSv",
+    "visit_id": "vdeJL8dnwi",
+    "date": "2023-03-20",
+    "bp": "106/85",
+    "pulse": 108,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "hri8ZqgI3EYa",
+    "patient_id": "vfuZuDSv",
+    "visit_id": "vdeJL8dnwi",
+    "date": "2023-05-11",
+    "bp": "130/67",
+    "pulse": 66,
+    "temp": 101.6
+  },
+  {
+    "vital_id": "pAUqQn7YtFsg",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2023-03-14",
+    "bp": "115/72",
+    "pulse": 97,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "DooKEZwqs5iW",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2023-12-11",
+    "bp": "127/81",
+    "pulse": 70,
+    "temp": 97.4
+  },
+  {
+    "vital_id": "ZwsG8xsFidWu",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2023-06-04",
+    "bp": "113/79",
+    "pulse": 78,
+    "temp": 102.3
+  },
+  {
+    "vital_id": "3c2ILuENtz6Y",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2023-04-10",
+    "bp": "112/90",
+    "pulse": 89,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "2YclNh7jQd9H",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "Agl6GknwJ6",
+    "date": "2023-09-30",
+    "bp": "105/77",
+    "pulse": 76,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "StzXa13p6rwz",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "Agl6GknwJ6",
+    "date": "2023-09-16",
+    "bp": "135/89",
+    "pulse": 86,
+    "temp": 98.5
+  },
+  {
+    "vital_id": "dljdLD9FL4HQ",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "Agl6GknwJ6",
+    "date": "2023-08-09",
+    "bp": "132/73",
+    "pulse": 103,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "kBpXdvFhFSHk",
+    "patient_id": "CHtLuplg",
+    "visit_id": "lwMidnYQyp",
+    "date": "2023-07-25",
+    "bp": "118/75",
+    "pulse": 104,
+    "temp": 99.1
+  },
+  {
+    "vital_id": "AMxfwod2fx5x",
+    "patient_id": "CHtLuplg",
+    "visit_id": "lwMidnYQyp",
+    "date": "2023-02-15",
+    "bp": "104/69",
+    "pulse": 74,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "z1MVasCfi2mU",
+    "patient_id": "BIHjkVza",
+    "visit_id": "57niPR2Uwa",
+    "date": "2023-07-12",
+    "bp": "126/77",
+    "pulse": 95,
+    "temp": 99.9
+  },
+  {
+    "vital_id": "6P1XQlwHB8Ot",
+    "patient_id": "BIHjkVza",
+    "visit_id": "57niPR2Uwa",
+    "date": "2023-07-02",
+    "bp": "121/88",
+    "pulse": 75,
+    "temp": 99.5
+  },
+  {
+    "vital_id": "dpQFX1j2kIEl",
+    "patient_id": "BIHjkVza",
+    "visit_id": "husW7fGd3V",
+    "date": "2023-03-15",
+    "bp": "121/78",
+    "pulse": 107,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "fi17GfKxH1QQ",
+    "patient_id": "BIHjkVza",
+    "visit_id": "husW7fGd3V",
+    "date": "2023-12-05",
+    "bp": "107/87",
+    "pulse": 62,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "kxBEYkAZz6YI",
+    "patient_id": "BIHjkVza",
+    "visit_id": "husW7fGd3V",
+    "date": "2023-06-12",
+    "bp": "116/73",
+    "pulse": 104,
+    "temp": 103.5
+  },
+  {
+    "vital_id": "HWustCsWNIoq",
+    "patient_id": "BIHjkVza",
+    "visit_id": "husW7fGd3V",
+    "date": "2023-02-03",
+    "bp": "131/78",
+    "pulse": 83,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "mQb5qRPkxwHK",
+    "patient_id": "BIHjkVza",
+    "visit_id": "Yz8iLklPzH",
+    "date": "2023-12-04",
+    "bp": "130/87",
+    "pulse": 95,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "2EAcDrxwvKvD",
+    "patient_id": "BIHjkVza",
+    "visit_id": "Yz8iLklPzH",
+    "date": "2023-10-16",
+    "bp": "126/90",
+    "pulse": 108,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "ZASPMe5I2NFG",
+    "patient_id": "BIHjkVza",
+    "visit_id": "Yz8iLklPzH",
+    "date": "2023-08-11",
+    "bp": "120/83",
+    "pulse": 63,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "LgnGVlhsM0LC",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "b0upoUmvts",
+    "date": "2023-01-16",
+    "bp": "117/76",
+    "pulse": 94,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "6N4A771Y1cdC",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "b0upoUmvts",
+    "date": "2023-10-21",
+    "bp": "114/83",
+    "pulse": 110,
+    "temp": 101.1
+  },
+  {
+    "vital_id": "6YdsDp1UlHn0",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "b0upoUmvts",
+    "date": "2023-12-06",
+    "bp": "137/67",
+    "pulse": 81,
+    "temp": 102.9
+  },
+  {
+    "vital_id": "BrB1VN8KBH8t",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "nKplu9iegw",
+    "date": "2023-10-16",
+    "bp": "123/82",
+    "pulse": 104,
+    "temp": 97.9
+  },
+  {
+    "vital_id": "Lr2KHscwrjh9",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "nKplu9iegw",
+    "date": "2023-10-14",
+    "bp": "115/80",
+    "pulse": 98,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "wsZXpkDBCGnE",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-03-06",
+    "bp": "123/77",
+    "pulse": 67,
+    "temp": 103.1
+  },
+  {
+    "vital_id": "jifGH2BgP2Rb",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-08-07",
+    "bp": "107/81",
+    "pulse": 102,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "TwvhaqqTDjGB",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-02-19",
+    "bp": "135/81",
+    "pulse": 87,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "tBngNW1XrbYB",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-01-10",
+    "bp": "110/80",
+    "pulse": 77,
+    "temp": 97.0
+  },
+  {
+    "vital_id": "d4nFuPkF7yqb",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "X3HU2yS121",
+    "date": "2023-09-17",
+    "bp": "130/88",
+    "pulse": 69,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "R19oZBWXl9JP",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "X3HU2yS121",
+    "date": "2023-03-25",
+    "bp": "123/71",
+    "pulse": 68,
+    "temp": 98.4
+  },
+  {
+    "vital_id": "YcIgQEEAyOb7",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-10-17",
+    "bp": "107/79",
+    "pulse": 97,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "M9QM96nYQpwu",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-08-04",
+    "bp": "114/88",
+    "pulse": 61,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "7Dk02cigNilm",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-08-24",
+    "bp": "118/82",
+    "pulse": 81,
+    "temp": 101.1
+  },
+  {
+    "vital_id": "zPWOKsxJPME6",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "85XuVrSZNn",
+    "date": "2023-11-16",
+    "bp": "139/90",
+    "pulse": 100,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "2fEW6XZXYhZv",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "85XuVrSZNn",
+    "date": "2023-03-04",
+    "bp": "126/71",
+    "pulse": 69,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "JhI3cR1EzxWO",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-07-21",
+    "bp": "107/80",
+    "pulse": 93,
+    "temp": 97.0
+  },
+  {
+    "vital_id": "Q1awKRQGYAet",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-09-19",
+    "bp": "133/62",
+    "pulse": 92,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "jyaLEbzEsnEH",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-05-26",
+    "bp": "136/78",
+    "pulse": 62,
+    "temp": 100.0
+  },
+  {
+    "vital_id": "i8LP6usUcOMN",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-02-15",
+    "bp": "140/80",
+    "pulse": 64,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "KXBBzCTS8h9j",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "DgFxiowmFb",
+    "date": "2023-06-13",
+    "bp": "120/89",
+    "pulse": 63,
+    "temp": 97.9
+  },
+  {
+    "vital_id": "r5zt4dKmuCkO",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "DgFxiowmFb",
+    "date": "2023-11-04",
+    "bp": "110/76",
+    "pulse": 97,
+    "temp": 102.2
+  },
+  {
+    "vital_id": "gziqXDF4yYfj",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-04-15",
+    "bp": "130/85",
+    "pulse": 99,
+    "temp": 101.9
+  },
+  {
+    "vital_id": "w9UH4rNiJQPP",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-02-03",
+    "bp": "118/67",
+    "pulse": 62,
+    "temp": 98.4
+  },
+  {
+    "vital_id": "TR069s9ZdPi0",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-03-13",
+    "bp": "136/60",
+    "pulse": 82,
+    "temp": 98.0
+  },
+  {
+    "vital_id": "NyogzVvv9ZNV",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-04-30",
+    "bp": "102/74",
+    "pulse": 91,
+    "temp": 97.9
+  },
+  {
+    "vital_id": "OihbVKVs5c5N",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "t7tV9jTD7T",
+    "date": "2023-03-02",
+    "bp": "122/69",
+    "pulse": 89,
+    "temp": 98.0
+  },
+  {
+    "vital_id": "qPIOsatsoWlA",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "t7tV9jTD7T",
+    "date": "2023-07-27",
+    "bp": "109/66",
+    "pulse": 85,
+    "temp": 102.1
+  },
+  {
+    "vital_id": "Ga1d0GCqgVJg",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "t7tV9jTD7T",
+    "date": "2023-08-02",
+    "bp": "137/89",
+    "pulse": 100,
+    "temp": 99.3
+  },
+  {
+    "vital_id": "KaTFgIMDUt8G",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-07-11",
+    "bp": "131/84",
+    "pulse": 83,
+    "temp": 102.8
+  },
+  {
+    "vital_id": "Y6ZEMX4x4Nrj",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-12-05",
+    "bp": "129/82",
+    "pulse": 86,
+    "temp": 97.6
+  },
+  {
+    "vital_id": "xuIGvjxyWULo",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-02-28",
+    "bp": "119/67",
+    "pulse": 105,
+    "temp": 102.2
+  },
+  {
+    "vital_id": "5HvbYRX5pzTs",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-08-24",
+    "bp": "102/61",
+    "pulse": 67,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "U2UNNVC05N6r",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "XIo83m0V8J",
+    "date": "2023-09-11",
+    "bp": "137/73",
+    "pulse": 102,
+    "temp": 101.0
+  },
+  {
+    "vital_id": "XzsDuTFbhGf6",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "XIo83m0V8J",
+    "date": "2023-05-25",
+    "bp": "117/74",
+    "pulse": 77,
+    "temp": 102.0
+  },
+  {
+    "vital_id": "I8RkwFhq7eBQ",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "XIo83m0V8J",
+    "date": "2023-03-20",
+    "bp": "110/87",
+    "pulse": 76,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "AtJfGnmL6Vaw",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "UwftA2AQfk",
+    "date": "2023-12-01",
+    "bp": "126/87",
+    "pulse": 60,
+    "temp": 100.7
+  },
+  {
+    "vital_id": "f3qnNHDeIIVh",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "UwftA2AQfk",
+    "date": "2023-04-11",
+    "bp": "101/65",
+    "pulse": 86,
+    "temp": 102.4
+  },
+  {
+    "vital_id": "z2nyRWkOhvlx",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "UwftA2AQfk",
+    "date": "2023-10-25",
+    "bp": "100/76",
+    "pulse": 93,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "xSJk30PU4Za7",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "RQ7jiomPNl",
+    "date": "2023-03-29",
+    "bp": "125/76",
+    "pulse": 75,
+    "temp": 103.9
+  },
+  {
+    "vital_id": "4SsengPUynCW",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "RQ7jiomPNl",
+    "date": "2023-03-14",
+    "bp": "138/69",
+    "pulse": 109,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "0WYaFL54QKUv",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "RQ7jiomPNl",
+    "date": "2023-06-02",
+    "bp": "133/69",
+    "pulse": 80,
+    "temp": 98.3
+  },
+  {
+    "vital_id": "soSZT56wSAZu",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "RQ7jiomPNl",
+    "date": "2023-05-20",
+    "bp": "128/82",
+    "pulse": 106,
+    "temp": 100.4
+  },
+  {
+    "vital_id": "qj9Hh4nbQtNu",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-10-14",
+    "bp": "118/66",
+    "pulse": 99,
+    "temp": 103.3
+  },
+  {
+    "vital_id": "Ik3N0kgr3YlZ",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-07-28",
+    "bp": "106/84",
+    "pulse": 79,
+    "temp": 98.8
+  },
+  {
+    "vital_id": "uXbDB72U9LuZ",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-03-21",
+    "bp": "108/67",
+    "pulse": 78,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "3RMlt58StqUt",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-05-08",
+    "bp": "138/84",
+    "pulse": 98,
+    "temp": 103.9
+  },
+  {
+    "vital_id": "BrD69EvAVptJ",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "jYHvijzIIn",
+    "date": "2023-03-22",
+    "bp": "132/74",
+    "pulse": 106,
+    "temp": 99.0
+  },
+  {
+    "vital_id": "EMjkDg0T26gV",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "jYHvijzIIn",
+    "date": "2023-10-03",
+    "bp": "114/76",
+    "pulse": 76,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "f6AGjmnJjztE",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "jYHvijzIIn",
+    "date": "2023-05-20",
+    "bp": "118/78",
+    "pulse": 67,
+    "temp": 99.4
+  },
+  {
+    "vital_id": "bNa1OaRABv7c",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "ufQZKZQtYL",
+    "date": "2023-11-08",
+    "bp": "108/64",
+    "pulse": 75,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "vgnyVpD0PjWX",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "ufQZKZQtYL",
+    "date": "2023-03-30",
+    "bp": "110/66",
+    "pulse": 62,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "dDSUSCTGB62n",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "ufQZKZQtYL",
+    "date": "2023-03-31",
+    "bp": "124/60",
+    "pulse": 65,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "Vh2jrAdWa0Xd",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-04-23",
+    "bp": "107/63",
+    "pulse": 78,
+    "temp": 98.6
+  },
+  {
+    "vital_id": "HrUTkrCAxOOu",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-08-18",
+    "bp": "107/84",
+    "pulse": 61,
+    "temp": 99.2
+  },
+  {
+    "vital_id": "0rJadec37DgL",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-08-15",
+    "bp": "132/69",
+    "pulse": 107,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "k8s5eItoeaqh",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-05-08",
+    "bp": "103/78",
+    "pulse": 90,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "M4lFzGEBymKS",
+    "patient_id": "c72C7QOF",
+    "visit_id": "Mbvkpe0GTB",
+    "date": "2023-11-28",
+    "bp": "129/60",
+    "pulse": 70,
+    "temp": 100.2
+  },
+  {
+    "vital_id": "5kFtiGOHSRMN",
+    "patient_id": "c72C7QOF",
+    "visit_id": "Mbvkpe0GTB",
+    "date": "2023-12-13",
+    "bp": "121/82",
+    "pulse": 108,
+    "temp": 98.4
+  },
+  {
+    "vital_id": "w6kgfthtK4Rz",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-05-24",
+    "bp": "139/72",
+    "pulse": 63,
+    "temp": 102.9
+  },
+  {
+    "vital_id": "0XMfYgVovrDJ",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-04-08",
+    "bp": "109/62",
+    "pulse": 73,
+    "temp": 98.3
+  },
+  {
+    "vital_id": "gTiDVc1BclYw",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-07-17",
+    "bp": "103/70",
+    "pulse": 86,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "oRwlYH2nd9J9",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-03-06",
+    "bp": "115/74",
+    "pulse": 69,
+    "temp": 99.3
+  },
+  {
+    "vital_id": "Xp4uSWp78zj7",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-07-27",
+    "bp": "119/76",
+    "pulse": 89,
+    "temp": 102.1
+  },
+  {
+    "vital_id": "iHRgHdaxJVn0",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-05-29",
+    "bp": "102/63",
+    "pulse": 60,
+    "temp": 103.4
+  },
+  {
+    "vital_id": "XsMaLniwNm19",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-10-01",
+    "bp": "133/85",
+    "pulse": 94,
+    "temp": 101.6
+  },
+  {
+    "vital_id": "ZlAsL8TJP7xV",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "tg1Wizyapi",
+    "date": "2023-06-18",
+    "bp": "113/88",
+    "pulse": 96,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "ke5DtHGt03tx",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "tg1Wizyapi",
+    "date": "2023-12-05",
+    "bp": "105/60",
+    "pulse": 98,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "La0u4PpNJDG9",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "tg1Wizyapi",
+    "date": "2023-04-07",
+    "bp": "106/68",
+    "pulse": 88,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "Cgi3N6rA1awP",
+    "patient_id": "lk76ocfe",
+    "visit_id": "E01jRtXkIw",
+    "date": "2023-04-15",
+    "bp": "128/89",
+    "pulse": 100,
+    "temp": 97.1
+  },
+  {
+    "vital_id": "Cv38cOjbQhFo",
+    "patient_id": "lk76ocfe",
+    "visit_id": "E01jRtXkIw",
+    "date": "2023-07-31",
+    "bp": "125/74",
+    "pulse": 80,
+    "temp": 101.4
+  },
+  {
+    "vital_id": "d6mjkktA8Umd",
+    "patient_id": "lk76ocfe",
+    "visit_id": "i0nzADYxKx",
+    "date": "2023-05-17",
+    "bp": "139/90",
+    "pulse": 82,
+    "temp": 98.6
+  },
+  {
+    "vital_id": "Zt7gyJAl67SA",
+    "patient_id": "lk76ocfe",
+    "visit_id": "i0nzADYxKx",
+    "date": "2023-08-27",
+    "bp": "134/78",
+    "pulse": 91,
+    "temp": 97.8
+  },
+  {
+    "vital_id": "aiIhVKnzMcPm",
+    "patient_id": "lk76ocfe",
+    "visit_id": "i0nzADYxKx",
+    "date": "2023-08-25",
+    "bp": "111/60",
+    "pulse": 81,
+    "temp": 102.0
+  },
+  {
+    "vital_id": "on2Bng4gu5bC",
+    "patient_id": "lk76ocfe",
+    "visit_id": "i0nzADYxKx",
+    "date": "2023-03-20",
+    "bp": "100/78",
+    "pulse": 102,
+    "temp": 103.6
+  },
+  {
+    "vital_id": "Dc3DtXwbh8Om",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "Tq9oGK2Ssm",
+    "date": "2023-02-21",
+    "bp": "103/62",
+    "pulse": 109,
+    "temp": 103.4
+  },
+  {
+    "vital_id": "mNXPSiKthrZB",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "Tq9oGK2Ssm",
+    "date": "2023-02-06",
+    "bp": "120/60",
+    "pulse": 79,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "0g4gSNbumX3w",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "Tq9oGK2Ssm",
+    "date": "2023-07-31",
+    "bp": "105/73",
+    "pulse": 61,
+    "temp": 99.3
+  },
+  {
+    "vital_id": "4zZZiBXRdYEh",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "tB07AMNL5X",
+    "date": "2023-02-11",
+    "bp": "130/72",
+    "pulse": 85,
+    "temp": 100.2
+  },
+  {
+    "vital_id": "4Icr9Xz3UD9n",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "tB07AMNL5X",
+    "date": "2023-11-15",
+    "bp": "114/79",
+    "pulse": 103,
+    "temp": 100.4
+  },
+  {
+    "vital_id": "nLMvL1KYOV7t",
+    "patient_id": "p9RtLsMX",
+    "visit_id": "6sbR24gASe",
+    "date": "2023-09-04",
+    "bp": "101/60",
+    "pulse": 63,
+    "temp": 98.6
+  },
+  {
+    "vital_id": "tlFNSS99SJl2",
+    "patient_id": "p9RtLsMX",
+    "visit_id": "6sbR24gASe",
+    "date": "2023-07-09",
+    "bp": "138/78",
+    "pulse": 83,
+    "temp": 103.9
+  },
+  {
+    "vital_id": "5Pz34OsTAoTg",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "jL1aCPC0go",
+    "date": "2023-07-26",
+    "bp": "101/64",
+    "pulse": 93,
+    "temp": 98.4
+  },
+  {
+    "vital_id": "UsScWbTcgd4m",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "jL1aCPC0go",
+    "date": "2023-06-08",
+    "bp": "130/67",
+    "pulse": 75,
+    "temp": 100.8
+  },
+  {
+    "vital_id": "77XA7ROJTrA3",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-07-15",
+    "bp": "116/68",
+    "pulse": 104,
+    "temp": 101.7
+  },
+  {
+    "vital_id": "fzceBj51LARB",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-08-08",
+    "bp": "139/65",
+    "pulse": 81,
+    "temp": 101.3
+  },
+  {
+    "vital_id": "yAHQRXV6yZ1J",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-12-18",
+    "bp": "126/72",
+    "pulse": 99,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "jUxQPWF2VV5o",
+    "patient_id": "Soe2BqxV",
+    "visit_id": "YprYjTJxJN",
+    "date": "2023-03-03",
+    "bp": "113/86",
+    "pulse": 97,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "GgvaxZ1OQWLy",
+    "patient_id": "Soe2BqxV",
+    "visit_id": "YprYjTJxJN",
+    "date": "2023-04-20",
+    "bp": "118/66",
+    "pulse": 107,
+    "temp": 99.6
+  },
+  {
+    "vital_id": "kffHbqTsxTjI",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-07-18",
+    "bp": "135/76",
+    "pulse": 72,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "OkMF5dQR14Ga",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-01-08",
+    "bp": "130/81",
+    "pulse": 88,
+    "temp": 101.0
+  },
+  {
+    "vital_id": "KoqlQ6gdAEDu",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-08-04",
+    "bp": "121/82",
+    "pulse": 100,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "rIpBzeZS2uiv",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-05-12",
+    "bp": "112/90",
+    "pulse": 107,
+    "temp": 100.7
+  },
+  {
+    "vital_id": "jmxTYqIU7GBq",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "RFU88HFscV",
+    "date": "2023-02-02",
+    "bp": "102/66",
+    "pulse": 71,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "Qjm2W8Ft9utP",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "RFU88HFscV",
+    "date": "2023-03-22",
+    "bp": "133/64",
+    "pulse": 87,
+    "temp": 102.1
+  },
+  {
+    "vital_id": "ApihufO9Ep4b",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "RFU88HFscV",
+    "date": "2023-07-21",
+    "bp": "128/63",
+    "pulse": 92,
+    "temp": 100.6
+  },
+  {
+    "vital_id": "4QOa6zwu7HAr",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-01-19",
+    "bp": "114/78",
+    "pulse": 73,
+    "temp": 102.9
+  },
+  {
+    "vital_id": "nnvoSqf7yXFP",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-05-07",
+    "bp": "135/76",
+    "pulse": 91,
+    "temp": 102.7
+  },
+  {
+    "vital_id": "83GGqgiyUUtF",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-04-05",
+    "bp": "102/84",
+    "pulse": 83,
+    "temp": 97.7
+  },
+  {
+    "vital_id": "d4j4B1zVpmv3",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-02-12",
+    "bp": "128/90",
+    "pulse": 69,
+    "temp": 100.8
+  },
+  {
+    "vital_id": "0tulyiBPgLVS",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-02-18",
+    "bp": "122/71",
+    "pulse": 100,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "uPY53y7Aqdab",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-09-30",
+    "bp": "104/63",
+    "pulse": 64,
+    "temp": 103.8
+  },
+  {
+    "vital_id": "8vvXbuagfe9k",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-02-13",
+    "bp": "127/74",
+    "pulse": 95,
+    "temp": 97.3
+  },
+  {
+    "vital_id": "e1xrK6UZi2R1",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-07-08",
+    "bp": "101/82",
+    "pulse": 81,
+    "temp": 97.9
+  },
+  {
+    "vital_id": "dm1K9YnJbRGm",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-06-08",
+    "bp": "130/64",
+    "pulse": 62,
+    "temp": 102.7
+  },
+  {
+    "vital_id": "KBbuEn39gDcK",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-01-03",
+    "bp": "120/73",
+    "pulse": 100,
+    "temp": 102.5
+  },
+  {
+    "vital_id": "uxMdjJmoo0wp",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-06-24",
+    "bp": "106/63",
+    "pulse": 91,
+    "temp": 101.6
+  },
+  {
+    "vital_id": "vApBafMTL7to",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-05-04",
+    "bp": "129/81",
+    "pulse": 85,
+    "temp": 101.8
+  },
+  {
+    "vital_id": "sl3ZFmj0sBP3",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-11-28",
+    "bp": "105/84",
+    "pulse": 106,
+    "temp": 103.7
+  },
+  {
+    "vital_id": "hNcXF6cr9Eqp",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-02-15",
+    "bp": "102/78",
+    "pulse": 110,
+    "temp": 101.2
+  },
+  {
+    "vital_id": "ndIybhiL7dIg",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-06-03",
+    "bp": "134/89",
+    "pulse": 99,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "PhoFiPqtyj1E",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "oNhJv0vlFj",
+    "date": "2023-02-08",
+    "bp": "116/65",
+    "pulse": 104,
+    "temp": 98.1
+  },
+  {
+    "vital_id": "yUnpN9j4bkUn",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "oNhJv0vlFj",
+    "date": "2023-07-14",
+    "bp": "136/60",
+    "pulse": 61,
+    "temp": 100.2
+  },
+  {
+    "vital_id": "IgwdsqjbxKkd",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-10-14",
+    "bp": "136/90",
+    "pulse": 80,
+    "temp": 98.7
+  },
+  {
+    "vital_id": "VtPjGbVGeraP",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-04-15",
+    "bp": "130/90",
+    "pulse": 109,
+    "temp": 102.3
+  },
+  {
+    "vital_id": "rkvvUCtjRA7i",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-02-02",
+    "bp": "132/64",
+    "pulse": 87,
+    "temp": 103.8
+  },
+  {
+    "vital_id": "tfdUN8QHPYEa",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-11-01",
+    "bp": "116/85",
+    "pulse": 73,
+    "temp": 103.5
+  },
+  {
+    "vital_id": "xcR95PsgvWdv",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "tdUVR2gKgs",
+    "date": "2023-09-06",
+    "bp": "133/67",
+    "pulse": 61,
+    "temp": 97.2
+  },
+  {
+    "vital_id": "gbEPHsZKChcb",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "tdUVR2gKgs",
+    "date": "2023-08-14",
+    "bp": "105/64",
+    "pulse": 93,
+    "temp": 99.7
+  },
+  {
+    "vital_id": "E2Z9lfbfIFFb",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "JlXTLIrpVj",
+    "date": "2023-01-09",
+    "bp": "137/81",
+    "pulse": 85,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "WKB6oeq4reY9",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "JlXTLIrpVj",
+    "date": "2023-12-22",
+    "bp": "114/64",
+    "pulse": 68,
+    "temp": 103.6
+  },
+  {
+    "vital_id": "rnCC76sDCxFs",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "JlXTLIrpVj",
+    "date": "2023-01-07",
+    "bp": "118/75",
+    "pulse": 78,
+    "temp": 103.0
+  },
+  {
+    "vital_id": "527ma1Lh3BfU",
+    "patient_id": "ksazCEYh",
+    "visit_id": "72Sg2AbWSf",
+    "date": "2023-04-15",
+    "bp": "101/79",
+    "pulse": 109,
+    "temp": 101.2
+  },
+  {
+    "vital_id": "Dui0ligZw7Au",
+    "patient_id": "ksazCEYh",
+    "visit_id": "72Sg2AbWSf",
+    "date": "2023-01-12",
+    "bp": "104/90",
+    "pulse": 76,
+    "temp": 100.3
+  },
+  {
+    "vital_id": "FtjppIr7nieX",
+    "patient_id": "ksazCEYh",
+    "visit_id": "pL1kXbUT7i",
+    "date": "2023-08-11",
+    "bp": "102/61",
+    "pulse": 84,
+    "temp": 101.0
+  },
+  {
+    "vital_id": "siwbcqUVDXoT",
+    "patient_id": "ksazCEYh",
+    "visit_id": "pL1kXbUT7i",
+    "date": "2023-04-30",
+    "bp": "118/70",
+    "pulse": 90,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "e3HUe1MscO0x",
+    "patient_id": "ksazCEYh",
+    "visit_id": "pL1kXbUT7i",
+    "date": "2023-11-11",
+    "bp": "140/83",
+    "pulse": 70,
+    "temp": 101.3
+  },
+  {
+    "vital_id": "IOcs7X8hDy1v",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-12-18",
+    "bp": "101/86",
+    "pulse": 90,
+    "temp": 100.7
+  },
+  {
+    "vital_id": "OUfdR6TBgIgU",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-01-01",
+    "bp": "111/76",
+    "pulse": 65,
+    "temp": 98.9
+  },
+  {
+    "vital_id": "s8OSEZLX6auE",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-03-28",
+    "bp": "136/79",
+    "pulse": 72,
+    "temp": 98.0
+  },
+  {
+    "vital_id": "WuSgk7zRUpFV",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "Vlf5XMp7wS",
+    "date": "2023-01-05",
+    "bp": "105/78",
+    "pulse": 81,
+    "temp": 97.8
+  },
+  {
+    "vital_id": "rWePUcue7gcL",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "Vlf5XMp7wS",
+    "date": "2023-02-19",
+    "bp": "114/87",
+    "pulse": 108,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "fE2jf8JUi6IW",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "soAalBcigd",
+    "date": "2023-01-20",
+    "bp": "122/66",
+    "pulse": 87,
+    "temp": 104.0
+  },
+  {
+    "vital_id": "qodui9MZBu4F",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "soAalBcigd",
+    "date": "2023-10-13",
+    "bp": "125/68",
+    "pulse": 87,
+    "temp": 99.3
+  },
+  {
+    "vital_id": "CtD6V6UQ8fD1",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "soAalBcigd",
+    "date": "2023-12-31",
+    "bp": "112/63",
+    "pulse": 92,
+    "temp": 99.8
+  },
+  {
+    "vital_id": "xmukLP5asnPa",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-07-06",
+    "bp": "130/85",
+    "pulse": 93,
+    "temp": 101.9
+  },
+  {
+    "vital_id": "FRk9pa2gYBkg",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-03-31",
+    "bp": "134/84",
+    "pulse": 109,
+    "temp": 103.0
+  },
+  {
+    "vital_id": "HHgsYWy31w7M",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-06-10",
+    "bp": "119/83",
+    "pulse": 69,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "OazF8gTLYGdA",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-07-20",
+    "bp": "122/67",
+    "pulse": 69,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "oQGZ2zM49v4F",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "yKZod8QGPt",
+    "date": "2023-12-10",
+    "bp": "139/75",
+    "pulse": 98,
+    "temp": 102.4
+  },
+  {
+    "vital_id": "8SiaSQ5H1S3V",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "yKZod8QGPt",
+    "date": "2023-09-03",
+    "bp": "112/71",
+    "pulse": 90,
+    "temp": 99.4
+  },
+  {
+    "vital_id": "VgmBVgY0WQbt",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "yKZod8QGPt",
+    "date": "2023-10-25",
+    "bp": "120/87",
+    "pulse": 95,
+    "temp": 100.1
+  },
+  {
+    "vital_id": "oMnvFW1CcAC7",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "KBZWGBvDfq",
+    "date": "2023-01-31",
+    "bp": "126/87",
+    "pulse": 71,
+    "temp": 98.2
+  },
+  {
+    "vital_id": "mTsvo1zF395B",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "KBZWGBvDfq",
+    "date": "2023-04-08",
+    "bp": "134/65",
+    "pulse": 82,
+    "temp": 101.9
+  },
+  {
+    "vital_id": "YSv2sezztzSY",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "KBZWGBvDfq",
+    "date": "2023-07-10",
+    "bp": "113/74",
+    "pulse": 74,
+    "temp": 97.5
+  },
+  {
+    "vital_id": "43ZE2OSM3VZH",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "KBZWGBvDfq",
+    "date": "2023-07-30",
+    "bp": "135/84",
+    "pulse": 109,
+    "temp": 103.2
+  },
+  {
+    "vital_id": "UhjrMp17WbiZ",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "fzfNOCugwD",
+    "date": "2023-03-04",
+    "bp": "120/75",
+    "pulse": 110,
+    "temp": 103.9
+  },
+  {
+    "vital_id": "cmvpZSxVA5IG",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "fzfNOCugwD",
+    "date": "2023-08-01",
+    "bp": "134/79",
+    "pulse": 80,
+    "temp": 103.5
+  },
+  {
+    "vital_id": "NfsmiPo0YuAu",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-11-04",
+    "bp": "107/75",
+    "pulse": 64,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "lRg2Ns5YVMZ8",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-06-01",
+    "bp": "137/83",
+    "pulse": 90,
+    "temp": 102.6
+  },
+  {
+    "vital_id": "jdsvnQe06Hxm",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-06-15",
+    "bp": "118/89",
+    "pulse": 97,
+    "temp": 97.1
+  },
+  {
+    "vital_id": "b6CWyr1IkAhF",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-08-11",
+    "bp": "105/64",
+    "pulse": 102,
+    "temp": 97.4
+  },
+  {
+    "vital_id": "wUMZzzKf5KOp",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-04-14",
+    "bp": "107/61",
+    "pulse": 63,
+    "temp": 97.0
+  },
+  {
+    "vital_id": "yIsHEqf0bkqB",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-05-21",
+    "bp": "140/90",
+    "pulse": 83,
+    "temp": 103.0
+  },
+  {
+    "vital_id": "r6Hgyw8e1AdZ",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-04-17",
+    "bp": "132/86",
+    "pulse": 73,
+    "temp": 103.6
+  },
+  {
+    "vital_id": "peGKugh7Shli",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-04-05",
+    "bp": "107/87",
+    "pulse": 72,
+    "temp": 101.5
+  },
+  {
+    "vital_id": "l4OinYdydIVb",
+    "patient_id": "egTabhc7",
+    "visit_id": "vR6NdMim4H",
+    "date": "2023-12-07",
+    "bp": "111/63",
+    "pulse": 91,
+    "temp": 103.9
+  },
+  {
+    "vital_id": "bRu2vUWYB9dV",
+    "patient_id": "egTabhc7",
+    "visit_id": "vR6NdMim4H",
+    "date": "2023-04-07",
+    "bp": "112/81",
+    "pulse": 66,
+    "temp": 100.9
+  },
+  {
+    "vital_id": "mbE78mNsiqok",
+    "patient_id": "egTabhc7",
+    "visit_id": "41p9bTp6uB",
+    "date": "2023-03-22",
+    "bp": "106/61",
+    "pulse": 91,
+    "temp": 102.8
+  },
+  {
+    "vital_id": "1y2YFjwWikej",
+    "patient_id": "egTabhc7",
+    "visit_id": "41p9bTp6uB",
+    "date": "2023-10-13",
+    "bp": "134/87",
+    "pulse": 102,
+    "temp": 99.1
+  }
+]

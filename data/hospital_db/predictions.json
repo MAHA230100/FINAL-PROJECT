@@ -1,0 +1,2104 @@
+[
+  {
+    "prediction_id": "TfA8bcwfedFU",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "56CPhLotgw",
+    "date": "2023-03-19",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "KEv1LurfUhHd",
+    "patient_id": "HCkUCHFb",
+    "visit_id": "1pXz5soydZ",
+    "date": "2023-02-12",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "Swm2lSaMTCw6",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-09-07",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "Lyu3kohEkc9Y",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "HeNqOhGUum",
+    "date": "2023-03-13",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "OfWR3xCqdcUu",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "MVagKVU8oS",
+    "date": "2023-06-03",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "NxjpO7ZQV51A",
+    "patient_id": "LzGlDZvz",
+    "visit_id": "WRPUTASaYM",
+    "date": "2023-09-05",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "Qr3wltC1w9YB",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-04-11",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "yUhnj25wlWDc",
+    "patient_id": "AXZCYzjh",
+    "visit_id": "RFYWJCW3FC",
+    "date": "2023-05-14",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "3ElNOnRrO8no",
+    "patient_id": "uoVe8nmL",
+    "visit_id": "4LdvyHdeGj",
+    "date": "2023-05-01",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "TQ4RxPlW4my1",
+    "patient_id": "uoVe8nmL",
+    "visit_id": "4LdvyHdeGj",
+    "date": "2023-10-03",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "wRhNZuzz10pR",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-09-20",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "CY8VXLhBKAen",
+    "patient_id": "dNFvPBm6",
+    "visit_id": "4Lun7P5043",
+    "date": "2023-09-21",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "k1Tjtuoj3Cw1",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-12-07",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "csYXHRoqrtYh",
+    "patient_id": "b2BA13cV",
+    "visit_id": "aspxPvGdjJ",
+    "date": "2023-05-08",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "DUpvqIrMXIxb",
+    "patient_id": "b2BA13cV",
+    "visit_id": "o9hUSYoTJy",
+    "date": "2023-02-14",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "xzaAfSthcmAz",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "wyWtFFCggy",
+    "date": "2023-04-27",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "QgX7mHoJ5eaB",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "OI5bIrNaPb",
+    "date": "2023-11-26",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "FjCGR2smBI9P",
+    "patient_id": "UxWAJUAF",
+    "visit_id": "GQtFbigqfg",
+    "date": "2023-02-13",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "b8rFlMJ7UPo9",
+    "patient_id": "1fuU8upK",
+    "visit_id": "gKCfWRyJVv",
+    "date": "2023-10-08",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "1vj2RS9Y5vT3",
+    "patient_id": "1fuU8upK",
+    "visit_id": "4nGlsnTy2F",
+    "date": "2023-05-23",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "69cHmwUPWg33",
+    "patient_id": "1fuU8upK",
+    "visit_id": "4nGlsnTy2F",
+    "date": "2023-12-14",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "LLTwJyUzd2LD",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "17GJyXzJe2",
+    "date": "2023-07-03",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "cDPOS9zKEKff",
+    "patient_id": "ien2Tv9v",
+    "visit_id": "7lkt9bn6GD",
+    "date": "2023-02-27",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "tKK4JNbi5CoY",
+    "patient_id": "oemhRKdP",
+    "visit_id": "PZZuyG2KIw",
+    "date": "2023-03-14",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "7EJebfPk04Ap",
+    "patient_id": "oemhRKdP",
+    "visit_id": "Ci4H6tN0XY",
+    "date": "2023-08-03",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "mwxK5eM17SbX",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "qMkHVSlNla",
+    "date": "2023-02-06",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "g312aYoWaoks",
+    "patient_id": "Hb4ITQbE",
+    "visit_id": "npDWD3Zloh",
+    "date": "2023-06-22",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "cNL9eKzNKV49",
+    "patient_id": "4JNrYg39",
+    "visit_id": "S0WKm9UG8h",
+    "date": "2023-03-30",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "VAiqNh3ED2rP",
+    "patient_id": "4JNrYg39",
+    "visit_id": "9NAXlRF3Gl",
+    "date": "2023-08-21",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "KpfCxXZCkaGj",
+    "patient_id": "4JNrYg39",
+    "visit_id": "9NAXlRF3Gl",
+    "date": "2023-04-02",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "f6NhAl1wU55y",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-11-09",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "j9Q3vBtnHcxv",
+    "patient_id": "4JNrYg39",
+    "visit_id": "xCN5pO5I8q",
+    "date": "2023-08-18",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "4czRIdscqvYy",
+    "patient_id": "a3qHprS4",
+    "visit_id": "EJdmevNt14",
+    "date": "2023-06-03",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "1RQl6QP3HM4x",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-07-28",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "UTjpmwySiS7O",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "gn1wkWVoFM",
+    "date": "2023-01-02",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "cXXmmTPUm0n1",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "nQhA5BhYXw",
+    "date": "2023-03-24",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "nlthMD6NiQao",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-01-20",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "ShDqHCavoj5r",
+    "patient_id": "0Qdrrhfw",
+    "visit_id": "5DBXrjAcGf",
+    "date": "2023-02-19",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "58Q2mQjwyIL1",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-08-17",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "7hijO30tswgG",
+    "patient_id": "e7dWGeK3",
+    "visit_id": "ReZLp1MMPk",
+    "date": "2023-11-16",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "90p8E5GoDiLX",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "xCg5XL4kdE",
+    "date": "2023-05-10",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "a3AmLiIdzkkK",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "xCg5XL4kdE",
+    "date": "2023-10-01",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "DJ7RT9looKCG",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "uQhnEOMe0A",
+    "date": "2023-11-09",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "1N8WcDq0aV7U",
+    "patient_id": "qPreQ0UA",
+    "visit_id": "wFIeu7CJ36",
+    "date": "2023-10-22",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "colUAGClUqfL",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-08-28",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "ePjyvnqqurrE",
+    "patient_id": "8JM94zD7",
+    "visit_id": "aQFuXa1qN4",
+    "date": "2023-11-16",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "fUzBh1Oes8jc",
+    "patient_id": "8JM94zD7",
+    "visit_id": "FE2jbqQwAG",
+    "date": "2023-10-06",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "BaB8M0gvzoNj",
+    "patient_id": "8JM94zD7",
+    "visit_id": "FE2jbqQwAG",
+    "date": "2023-01-18",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "FvUwZV77ncpX",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "7S7LdoFqOs",
+    "date": "2023-04-06",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "nE1lz3RAlo9v",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "V7Dr1SPe41",
+    "date": "2023-02-16",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "jprLu7i5lIP6",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "82xbTDP1JS",
+    "date": "2023-02-05",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "qr8i2bHZbluA",
+    "patient_id": "ZCDWptaI",
+    "visit_id": "82xbTDP1JS",
+    "date": "2023-11-24",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "v60eLxcNJajH",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "CEbC03T3du",
+    "date": "2023-08-08",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "huR3jLDytfMA",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "Z2P8a1P2PR",
+    "date": "2023-05-25",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "VJXuBmgXNoO2",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "Z2P8a1P2PR",
+    "date": "2023-11-07",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "HMPV00UXaAGD",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-11-21",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "4aYzHBSs7qG5",
+    "patient_id": "ZsFAXX9B",
+    "visit_id": "pHrtl31AIM",
+    "date": "2023-01-17",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "vlsDsT8DApgH",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-06-23",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "W5lu654KQ8DL",
+    "patient_id": "06Z3QZke",
+    "visit_id": "iGrIRd7vG2",
+    "date": "2023-10-06",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "4csIeXeEwI6s",
+    "patient_id": "xjQJie7U",
+    "visit_id": "ejAjGmZtm4",
+    "date": "2023-07-21",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "i2UtYdf6qEWq",
+    "patient_id": "q8GfPlSS",
+    "visit_id": "V3KUOCfdiX",
+    "date": "2023-10-03",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "VlYOGv2n0leq",
+    "patient_id": "q8GfPlSS",
+    "visit_id": "V3KUOCfdiX",
+    "date": "2023-08-14",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "qPBmKSrFzW9l",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "7r321yvRAj",
+    "date": "2023-07-17",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "3BcuQ4ScjxF8",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-02-21",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "CxG03WjouS6b",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "JGjOeCXScC",
+    "date": "2023-12-26",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "HJN6jv490HsA",
+    "patient_id": "GZpkV4Kp",
+    "visit_id": "G4OuB0SHK6",
+    "date": "2023-09-18",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "Z5SBmcoCoczQ",
+    "patient_id": "vfuZuDSv",
+    "visit_id": "vdeJL8dnwi",
+    "date": "2023-08-29",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "B6nvwYwFP84n",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2023-06-17",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "32LzTf2YPuYD",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "oVUVtodR5K",
+    "date": "2024-01-01",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "wxhqH9KV7002",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "Agl6GknwJ6",
+    "date": "2023-05-31",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "pGkNOICBf0Wy",
+    "patient_id": "x0nJCDn5",
+    "visit_id": "Agl6GknwJ6",
+    "date": "2023-06-15",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "c13lZniCjT7X",
+    "patient_id": "CHtLuplg",
+    "visit_id": "lwMidnYQyp",
+    "date": "2023-06-19",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "Dx2dSaUCrAu3",
+    "patient_id": "BIHjkVza",
+    "visit_id": "57niPR2Uwa",
+    "date": "2023-08-30",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "Cv8jiY5aKeGT",
+    "patient_id": "BIHjkVza",
+    "visit_id": "57niPR2Uwa",
+    "date": "2023-03-18",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "FROSipRqZeIQ",
+    "patient_id": "BIHjkVza",
+    "visit_id": "husW7fGd3V",
+    "date": "2023-08-20",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "XxkXB8DmxuWS",
+    "patient_id": "BIHjkVza",
+    "visit_id": "Yz8iLklPzH",
+    "date": "2023-12-03",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "Meh11a268DCS",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "b0upoUmvts",
+    "date": "2023-01-28",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "FTqoENY3IazS",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "nKplu9iegw",
+    "date": "2023-05-13",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "N1qfNx8lZ7yY",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "nKplu9iegw",
+    "date": "2023-07-03",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "S0AEKZuCOSwT",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-06-22",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "if83oEFiaq3g",
+    "patient_id": "5OUKuNhj",
+    "visit_id": "i5NvQoXQch",
+    "date": "2023-10-07",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "Q8YDPquCOyyZ",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "X3HU2yS121",
+    "date": "2023-02-20",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "HVLLQX757Wtb",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-03-13",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "KUGKoqDTYX0q",
+    "patient_id": "CC2Q8IHm",
+    "visit_id": "Mj9oGV4i3W",
+    "date": "2023-02-20",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "LcNFLNoXAtHU",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "85XuVrSZNn",
+    "date": "2023-09-07",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "8Fdn0KTCG5hf",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "85XuVrSZNn",
+    "date": "2023-04-09",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "RoXGhGqupktM",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "CyNBtCVFbw",
+    "date": "2023-07-05",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "9Bklse17p6os",
+    "patient_id": "YoZenbUZ",
+    "visit_id": "DgFxiowmFb",
+    "date": "2023-11-22",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "BNL5zkiTbOWC",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-12-02",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "PRWvJWyvmM9D",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "wJQkuI8Mt2",
+    "date": "2023-05-25",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "kc5szD6Nx6qN",
+    "patient_id": "eByzJXBZ",
+    "visit_id": "t7tV9jTD7T",
+    "date": "2023-04-23",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "glcVUPghLTMT",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-08-10",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "0KiL2ZbTM4Fv",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "FzpRv7topy",
+    "date": "2023-02-06",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "qp2c03WbHkwS",
+    "patient_id": "hTnWj1aF",
+    "visit_id": "XIo83m0V8J",
+    "date": "2023-04-13",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "C1no6TUcLC09",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "UwftA2AQfk",
+    "date": "2023-09-15",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "NDxly5LehIv7",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "RQ7jiomPNl",
+    "date": "2023-03-02",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "xAPbXv9jlmOf",
+    "patient_id": "ryQoDtCd",
+    "visit_id": "t2wyYoYMHn",
+    "date": "2023-09-30",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "IlwugRfHEjYP",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "jYHvijzIIn",
+    "date": "2023-12-04",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "cn2ABD966yfw",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "ufQZKZQtYL",
+    "date": "2023-10-15",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "haX6Sukbbqp6",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-03-25",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "poR6cywShNi3",
+    "patient_id": "BbdSBYS1",
+    "visit_id": "XOJpvd1kTP",
+    "date": "2023-03-11",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "YgvdVL6qsfr8",
+    "patient_id": "c72C7QOF",
+    "visit_id": "Mbvkpe0GTB",
+    "date": "2023-09-09",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "vG63Li0ZNZfF",
+    "patient_id": "c72C7QOF",
+    "visit_id": "Mbvkpe0GTB",
+    "date": "2023-07-12",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "QmGSHWD8kDCm",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "IjCdoOgQ3T",
+    "date": "2023-04-16",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "rxRBHpxgcewF",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-01-06",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "RnDasfvcmBaL",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "hzyZ0sMELI",
+    "date": "2023-05-24",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "kHaCcjmeypmC",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "tg1Wizyapi",
+    "date": "2023-09-09",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "Y3Sa4AoQYy3O",
+    "patient_id": "8Rh4Jbd0",
+    "visit_id": "tg1Wizyapi",
+    "date": "2023-06-09",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "RRczxliZUytv",
+    "patient_id": "lk76ocfe",
+    "visit_id": "E01jRtXkIw",
+    "date": "2023-08-04",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "boAUZgXgYS9g",
+    "patient_id": "lk76ocfe",
+    "visit_id": "E01jRtXkIw",
+    "date": "2023-06-11",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "lQKgkyxcwWcF",
+    "patient_id": "lk76ocfe",
+    "visit_id": "i0nzADYxKx",
+    "date": "2023-10-05",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "bps7yjKAX4La",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "Tq9oGK2Ssm",
+    "date": "2023-03-27",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "MFz45LaHouEQ",
+    "patient_id": "RCv8a5TE",
+    "visit_id": "tB07AMNL5X",
+    "date": "2023-07-06",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "28cZWDdMRznQ",
+    "patient_id": "p9RtLsMX",
+    "visit_id": "6sbR24gASe",
+    "date": "2023-08-28",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "wCmy6F5IV1iI",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "jL1aCPC0go",
+    "date": "2023-07-13",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "JI2DE0FNTzv1",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "jL1aCPC0go",
+    "date": "2023-12-10",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "2X9PR84SHB1y",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-11-27",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "aq9PzMDS1Kh3",
+    "patient_id": "Ln7RPCuc",
+    "visit_id": "IYE3dveBk9",
+    "date": "2023-02-08",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "EziX0V7qgpYC",
+    "patient_id": "Soe2BqxV",
+    "visit_id": "YprYjTJxJN",
+    "date": "2023-07-26",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "BOF53dLnzuqB",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-11-27",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "XRiIJWFekJE4",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "YURuhMTbGl",
+    "date": "2023-06-24",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "Btbj4bZ2WmiT",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "RFU88HFscV",
+    "date": "2023-03-08",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "3xuOVSDsyuLt",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-01-22",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "snuc95US2E3J",
+    "patient_id": "wSqUQYEK",
+    "visit_id": "u1UhwDrG3p",
+    "date": "2023-07-29",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "364Ovo2IqT57",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-04-20",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "0pHzTvYnM97J",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "QkGYYda0sY",
+    "date": "2023-05-01",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "9DAVJoGWFJjf",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-06-04",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "IPltv6yGqZMw",
+    "patient_id": "YuLkSG7E",
+    "visit_id": "UtdmR3ABtF",
+    "date": "2023-01-17",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "PBdAeSP4sbkh",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-09-03",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "7Yum1b03wTAD",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "d1UALABnvw",
+    "date": "2023-08-31",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "gJFHUJhFGwFy",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "oNhJv0vlFj",
+    "date": "2023-05-07",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "TkipaBf6P6Yd",
+    "patient_id": "YQyMxKEU",
+    "visit_id": "oNhJv0vlFj",
+    "date": "2023-08-10",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "9W3s0njJgX1H",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "Z0BKjjDg3E",
+    "date": "2023-11-27",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "CLNZpDxeMEYy",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "tdUVR2gKgs",
+    "date": "2023-01-27",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "OB4o9GIRQzzZ",
+    "patient_id": "v0xrkKQv",
+    "visit_id": "JlXTLIrpVj",
+    "date": "2023-04-27",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "UMWwQOAiBq5i",
+    "patient_id": "ksazCEYh",
+    "visit_id": "72Sg2AbWSf",
+    "date": "2023-02-10",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "SLBoTutkIhuO",
+    "patient_id": "ksazCEYh",
+    "visit_id": "pL1kXbUT7i",
+    "date": "2023-08-28",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "PIIahRmD7vTJ",
+    "patient_id": "ksazCEYh",
+    "visit_id": "pL1kXbUT7i",
+    "date": "2023-04-27",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "f0Xg3RSfiBHF",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-08-18",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "ZuJqmCxgV3M0",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "osI5hTxmR2",
+    "date": "2023-02-23",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "xQaLCoyMzQ7M",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "Vlf5XMp7wS",
+    "date": "2023-10-09",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "8or5S5P9nDAh",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "Vlf5XMp7wS",
+    "date": "2023-04-13",
+    "model": "CohortTagger",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "4Ypg4VIlAEDw",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "soAalBcigd",
+    "date": "2023-05-02",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "OUgftVqzaSRj",
+    "patient_id": "xLLe2TBh",
+    "visit_id": "soAalBcigd",
+    "date": "2023-02-08",
+    "model": "LOSAnalyzer",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "dE18QCBLC7pZ",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-12-25",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "mCPWhXPsTBnL",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "IfppLa6GI4",
+    "date": "2023-06-13",
+    "model": "CohortTagger",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "YU31HHgxLSdU",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "yKZod8QGPt",
+    "date": "2023-01-06",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "7jjQiKa4J78M",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "yKZod8QGPt",
+    "date": "2023-10-07",
+    "model": "LOSAnalyzer",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "LKhkqjwP4hga",
+    "patient_id": "Jcn6twqC",
+    "visit_id": "KBZWGBvDfq",
+    "date": "2023-02-10",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "AWQnEHWvPeDW",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "fzfNOCugwD",
+    "date": "2023-11-08",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "b6pRi4qkttlj",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-04-16",
+    "model": "DiseasePredictor",
+    "result": "High Risk"
+  },
+  {
+    "prediction_id": "QauQLDUkZr0H",
+    "patient_id": "t0CWnBwb",
+    "visit_id": "SMR5QySxCK",
+    "date": "2023-03-01",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "h9W1yhLh5P7q",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-10-02",
+    "model": "LOSAnalyzer",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "aRrVlOB4PCr1",
+    "patient_id": "egTabhc7",
+    "visit_id": "ia6InvMxIz",
+    "date": "2023-06-12",
+    "model": "DiseasePredictor",
+    "result": "Low Risk"
+  },
+  {
+    "prediction_id": "t98aLGExZUqB",
+    "patient_id": "egTabhc7",
+    "visit_id": "vR6NdMim4H",
+    "date": "2023-03-01",
+    "model": "DiseasePredictor",
+    "result": "Normal"
+  },
+  {
+    "prediction_id": "rSJ9NZPq3eLm",
+    "patient_id": "egTabhc7",
+    "visit_id": "41p9bTp6uB",
+    "date": "2023-04-05",
+    "model": "CohortTagger",
+    "result": "Low Risk"
+  },
+  {
+    "id": "5ec54add-3de6-4ce7-93aa-8a1a6d5fa75e",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessor",
+    "result": {
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        }
+      },
+      "risk_summary": {
+        "patient_id": "HCkUCHFb",
+        "overall_risk_score": 0.123,
+        "overall_risk_level": "Low",
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        },
+        "infection_risk": {
+          "risk_score": 0.0,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Basic infection control",
+            "Patient education on hygiene",
+            "Standard monitoring"
+          ]
+        },
+        "assessment_date": "2025-12-14T13:11:08.950781",
+        "recommendations": {
+          "immediate_actions": [
+            "Routine monitoring",
+            "Standard care protocols"
+          ],
+          "monitoring_plan": [
+            "Standard vital sign monitoring",
+            "Routine assessments"
+          ],
+          "follow_up_plan": [
+            "Standard follow-up",
+            "Routine assessments"
+          ]
+        }
+      }
+    },
+    "timestamp": "2025-12-14T13:11:08.953797"
+  },
+  {
+    "id": "ad71d756-e2d8-4520-a899-d11eab21ccbf",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:29.894011"
+  },
+  {
+    "id": "6954f8a0-799f-4f43-a1ab-47b5d89e0779",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:43.882734"
+  },
+  {
+    "id": "0c878ccb-247c-4051-a597-e838fc736eb2",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf nothign to say...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:53.843508"
+  },
+  {
+    "id": "2b4e9254-c105-441b-aee9-847ee84c5830",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf nothign to say...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:54.667954"
+  },
+  {
+    "id": "e73ab215-e775-4b80-b03a-e6bf412170d5",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Summary of clinical notes: Patient history suggests chronic conditions. He is ok to discharge asdfsadf nothign to say...",
+      "key_findings": [
+        "Stable Vitals",
+        "Medication Adherence Good",
+        "Follow-up Required"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:11:55.100034"
+  },
+  {
+    "id": "cba1323b-ecee-4a95-bf13-db1df33d4dcc",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "No acute abnormalities detected",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "Left Lower Lobe",
+        "Cardiac Silhouette"
+      ]
+    },
+    "timestamp": "2025-12-14T13:12:39.049334"
+  },
+  {
+    "id": "921950a2-354d-4574-be52-09ea64c63de8",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "sentiment": "Positive",
+      "score": 0.85,
+      "topics": [
+        "Nurse Attitude",
+        "Wait Time"
+      ]
+    },
+    "timestamp": "2025-12-14T13:13:08.134490"
+  },
+  {
+    "id": "d79cef0d-ae1a-45bf-910e-291232424132",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:43:24.251954"
+  },
+  {
+    "id": "a351af08-4c22-498e-a668-f5983181a313",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessor",
+    "result": {
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        }
+      },
+      "risk_summary": {
+        "patient_id": "HCkUCHFb",
+        "overall_risk_score": 0.123,
+        "overall_risk_level": "Low",
+        "mortality_risk": {
+          "risk_score": 0.03,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Routine monitoring",
+            "Standard care protocols",
+            "Patient education",
+            "Regular reassessment"
+          ]
+        },
+        "readmission_risk": {
+          "risk_score": 0.34,
+          "risk_level": "Low",
+          "risk_factors": [
+            "Non-home discharge",
+            "No follow-up scheduled"
+          ],
+          "recommendations": [
+            "Routine discharge planning",
+            "Standard follow-up",
+            "Patient education"
+          ]
+        },
+        "infection_risk": {
+          "risk_score": 0.0,
+          "risk_level": "Low",
+          "risk_factors": [],
+          "recommendations": [
+            "Basic infection control",
+            "Patient education on hygiene",
+            "Standard monitoring"
+          ]
+        },
+        "assessment_date": "2025-12-14T13:45:10.114871",
+        "recommendations": {
+          "immediate_actions": [
+            "Routine monitoring",
+            "Standard care protocols"
+          ],
+          "monitoring_plan": [
+            "Standard vital sign monitoring",
+            "Routine assessments"
+          ],
+          "follow_up_plan": [
+            "Standard follow-up",
+            "Routine assessments"
+          ]
+        }
+      }
+    },
+    "timestamp": "2025-12-14T13:45:10.116186"
+  },
+  {
+    "id": "5d3351f4-9c42-41fb-97b9-07fce4ab43f1",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T13:45:38.915478"
+  },
+  {
+    "id": "648eea9e-da97-408c-be30-edd5529cffa4",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-14T14:23:45.304258"
+  },
+  {
+    "id": "e85a3676-85f3-4f94-8cf1-27d78537f137",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "Analysis Complete",
+      "report_text": "[MOCK] Processing query for the patient: 'Generate a detailed, clinically plausible simulated X-Ray report for Patient David Brown, 24 years old.. Assume findings consistent with their history/diagnoses if any. Provide sections: Clinical Indication, Technique, Findings, Impression.'. (Simulated response - Add GOOGLE_API_KEY to enable Real AI)",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "lungs",
+        "heart"
+      ]
+    },
+    "timestamp": "2025-12-14T16:19:58.211440"
+  },
+  {
+    "id": "9ecdf734-0825-479b-9364-0166ea516b8d",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "[MOCK] Feedback Analysis: Sentiment is positive. Key detail: 'Analyze the sentimen...'.",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-14T16:20:24.463410"
+  },
+  {
+    "id": "957bf1fe-4156-4eb2-b621-ba8f0dabd028",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "[MOCK] Feedback Analysis: Sentiment is positive. Key detail: 'Analyze the sentimen...'.",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-14T16:20:41.473470"
+  },
+  {
+    "id": "37c66a44-e9aa-4621-b195-7b832b4d4b36",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-15T09:50:48.917997"
+  },
+  {
+    "id": "75e26f5d-70d1-40eb-b135-15e60d4b87ab",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:50:57.702490"
+  },
+  {
+    "id": "fb796a8f-96d6-43f5-9424-bc7e10223100",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:11.947850"
+  },
+  {
+    "id": "f623e96c-f9e6-4d71-aa3d-fd6f4f16a791",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:12.815095"
+  },
+  {
+    "id": "6fc26085-b686-4b68-b7e4-269138739140",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:13.243081"
+  },
+  {
+    "id": "c3b1589f-1ffe-4cb8-9499-2f36c5f23510",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "[MOCK] Summary for the patient: Patient condition appears stable based on available notes. Suggested monitoring for vitals.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-15T09:51:13.749567"
+  },
+  {
+    "id": "55bafd76-592e-4c8f-8783-e38522832dd1",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "[MOCK] Feedback Analysis: Sentiment is positive. Key detail: 'Analyze the sentimen...'.",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-15T09:51:19.371550"
+  },
+  {
+    "id": "1628520c-2ece-4a40-9ca8-207225bbe729",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-20T13:41:11.472698"
+  },
+  {
+    "id": "0018f13e-8dc9-4b91-8169-6e220932fc10",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-20T13:41:34.750389"
+  },
+  {
+    "id": "2b85ca80-48f6-4545-b8c6-a1ada6c473ed",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 75,
+      "overall_risk_score": 75,
+      "overall_risk_level": "High (AI Estimated)",
+      "risk_assessment": {
+        "mortality": "High"
+      },
+      "risk_summary": "See detailed analysis.",
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "See analysis for details"
+      ]
+    },
+    "timestamp": "2025-12-20T13:41:35.547040"
+  },
+  {
+    "id": "d47862d4-dc09-4197-a2e3-65f9051bc19e",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 50,
+      "overall_risk_score": 50,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for mortality details"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for readmission details"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 50,
+        "overall_risk_level": "Medium",
+        "total_factors": 2
+      },
+      "analysis": "[MOCK] Risk Assessment for David Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "mortality",
+        "readmission"
+      ]
+    },
+    "timestamp": "2025-12-20T13:44:33.769377"
+  },
+  {
+    "id": "b4f7d630-cc43-40ee-b38b-1cd2e4266e07",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 50,
+      "overall_risk_score": 50,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for mortality details"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for readmission details"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 50,
+        "overall_risk_level": "Medium",
+        "total_factors": 2
+      },
+      "analysis": "[MOCK] Risk Assessment for Bob Brown: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "mortality",
+        "readmission"
+      ]
+    },
+    "timestamp": "2025-12-20T13:44:41.801993"
+  },
+  {
+    "id": "98f071a8-9a55-4861-85cc-d7c6000269b3",
+    "patient_id": "CC2Q8IHm",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 50,
+      "overall_risk_score": 50,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for mortality details"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 50,
+          "recommendations": [
+            "See comprehensive analysis for readmission details"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 50,
+        "overall_risk_level": "Medium",
+        "total_factors": 2
+      },
+      "analysis": "[MOCK] Risk Assessment for John Martinez: Moderate risk of readmission due to age and history. Recommend follow-up in 7 days.",
+      "factors": [
+        "mortality",
+        "readmission"
+      ]
+    },
+    "timestamp": "2025-12-20T13:44:46.305225"
+  },
+  {
+    "id": "4f46eaeb-7581-46e0-abc7-d202ae34d940",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 30,
+      "overall_risk_score": 30,
+      "overall_risk_level": "Low",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for mortality specific guidance"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for readmission specific guidance"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 30,
+        "overall_risk_level": "Low",
+        "total_factors": 2,
+        "key_factors": [
+          "Abnormal BP (0)",
+          "Existing comorbidities"
+        ]
+      },
+      "analysis": "**CLINICAL RISK ASSESSMENT REPORT**\n\n**Patient:** David Brown  \n**Age/Gender:** 24 / Female (Note: Potential demographic data discrepancy)  \n**Date of Assessment:** October 26, 2023  \n**Base Risk Score:** 30/100 (Low)\n\n---\n\n### 1. Clinical Analysis of Risk Profile\nThe patient presents a highly irregular clinical profile characterized by a significant discrepancy between vital sign data and historical data. \n*   **The Primary Clinical Red Flag:** The recorded Blood Pressure of **0 mmHg**. This is physiologically inconsistent with a heart rate of 99 bpm in an ambulatory setting. Clinically, a BP of 0 indicates either a state of pulseless electrical activity (PEA)/cardiac arrest or, more likely, a **critical data entry error or equipment failure**. \n*   **Laboratory Trends:** The patient has a history of fluctuating CBC results (Normal to High) and a recent \"High\" Lipid Panel. In a 24-year-old, persistent \"High\" CBC results (likely leukocytosis or erythrocytosis) and early-onset dyslipidemia require diagnostic clarity to rule out inflammatory conditions or familial hypercholesterolemia.\n*   **Overall Status:** Despite the \"Low\" base risk score, the technical anomalies (BP 0) and lab abnormalities suggest an incomplete clinical picture that may mask underlying risks.\n\n---\n\n### 2. Contribution of Risk Factors\n\n*   **Age (24):** Acts as a significant protective factor. Young patients typically have higher physiological reserves and lower baseline mortality risks for chronic conditions.\n*   **Vitals (BP 0, HR 99):** \n    *   **BP:** As recorded, this is the highest possible risk indicator (incompatible with life). However, if treated as a data error, it indicates a lack of reliable hemodynamic monitoring.\n    *   **HR:** 99 bpm is at the ceiling of the normal resting range (60-100 bpm). This may indicate pain, anxiety, dehydration, or early systemic compensation.\n*   **Previous Admissions (0):** Strong negative predictor for readmission. A \"clean\" hospital history suggests no chronic, poorly managed conditions requiring frequent acute stabilization.\n*   **Comorbidities (None Known):** Lower mortality risk; however, the \"High\" Lipid Panel suggests a developing comorbidity (Dyslipidemia) that is not yet formally diagnosed.\n*   **Lab Results:** The transition of CBC from High to Normal and back to High suggests an intermittent inflammatory process or a reactive hematologic response.\n\n---\n\n### 3. Risk-Specific Recommendations\n\n#### **Mortality Risk (Assessment: Low - *Pending Vital Correction*)**\n*   **Immediate Action:** Re-measure Blood Pressure manually using a calibrated sphygmomanometer. If BP remains critically low (hypotension/shock), immediate ICU transfer is required.\n*   **Cardiac Screening:** Given the \"High\" Lipid Panel at age 24, perform a baseline EKG to assess for any secondary effects of potential cardiovascular stress.\n\n#### **Readmission Risk (Assessment: Low)**\n*   **Diagnostic Completion:** Ensure the \"Unknown\" admission type is clarified. If this visit is for an acute issue related to the \"High\" CBC (e.g., infection or blood disorder), ensure a full course of treatment is established before discharge to prevent a \"bounce-back.\"\n*   **Care Coordination:** Update the patient\u2019s record to resolve the gender/name discrepancy to ensure appropriate gender-specific screenings and reference ranges for future labs.\n\n---\n\n### 4. Preventive Measures and Monitoring Protocols\n\n*   **Hemodynamic Monitoring:** Implement Q4H (every 4 hours) vital sign checks until a stable, physiological BP baseline is established.\n*   **Hematologic Investigation:** Order a CBC with Differential to determine which cell line is \"High\" (Neutrophils? Red Cells? Platelets?). This will differentiate between infection, stress, or a primary bone marrow issue.\n*   **Metabolic Management:** \n    *   Initiate dietary counseling (Therapeutic Lifestyle Changes) for the High Lipid Panel.\n    *   Calculate a 10-year CVD risk score (though usually applied to older patients, it helps frame the lipid urgency).\n*   **Data Integrity Protocol:** Flag the medical record for \"Data Quality Review\" to correct the non-physiological BP entry and demographic inconsistencies.\n\n---\n\n### 5. Estimated Timeline for Follow-Up\n\n*   **Immediate (Within 1 Hour):** Re-assessment of vitals (BP and Orthostatics).\n*   **Short-Term (24\u201348 Hours):** Review of CBC with Differential and metabolic panel.\n*   **Mid-Term (1\u20132 Weeks):** Outpatient follow-up with a Primary Care Physician (PCP) to discuss the lipid panel results and initiate a long-term management plan for dyslipidemia.\n*   **Long-Term (3 Months):** Repeat Lipid Panel and CBC to assess the efficacy of interventions or the persistence of abnormalities.",
+      "factors": [
+        "Abnormal BP (0)",
+        "Existing comorbidities"
+      ],
+      "patient_snapshot": {
+        "age": 24,
+        "vitals_bp": 0,
+        "vitals_hr": 99,
+        "previous_admissions": 0,
+        "comorbidity_count": 1
+      }
+    },
+    "timestamp": "2025-12-20T15:22:13.340354"
+  },
+  {
+    "id": "bec4ef31-ff9b-43de-8e70-8702d285bf1b",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 30,
+      "overall_risk_score": 30,
+      "overall_risk_level": "Low",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for mortality specific guidance"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Low",
+          "score": 30,
+          "recommendations": [
+            "See comprehensive analysis for readmission specific guidance"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 30,
+        "overall_risk_level": "Low",
+        "total_factors": 2,
+        "key_factors": [
+          "Abnormal BP (0)",
+          "Existing comorbidities"
+        ]
+      },
+      "analysis": "**CLINICAL RISK ASSESSMENT**\n\n**Patient:** David Brown\n**Age/Gender:** 24 / Female\n**Risk Score:** 30/100 (Low-Intermediate)\n**Date of Assessment:** October 26, 2023\n\n---\n\n### 1. Detailed Clinical Analysis\nThe patient\u2019s profile presents a paradoxical clinical picture. While the calculated risk score is low (30/100), primarily driven by young age and a lack of chronic comorbidities, there are critical data anomalies and acute indicators that require immediate attention. \n\nThe most significant finding is a recorded **Blood Pressure of 0 mmHg** alongside a **Heart Rate of 99 bpm**. In a clinical setting, a BP of 0 in a conscious patient with a detectable pulse indicates either a catastrophic medical emergency (e.g., profound shock) or, more likely, a significant data entry error or equipment failure. Furthermore, the history of a \"High\" CBC (Leukocytosis) and \"High\" Lipids in a 24-year-old suggests an underlying inflammatory process or a genetic predisposition to cardiovascular disease (e.g., Familial Hypercholesterolemia).\n\n---\n\n### 2. Risk Factor Contribution Analysis\n\n*   **Age (24 Years):** Acts as a significant protective factor. Physiologic reserve is generally high, which contributes to the \"Low\" base risk score.\n*   **Vitals (BP 0 / HR 99):** \n    *   **BP:** If accurate, this indicates pulseless electrical activity or profound circulatory collapse. If inaccurate, it represents a \"data quality risk,\" which can lead to inappropriate clinical decision-making.\n    *   **HR:** 99 bpm is borderline tachycardic. In the context of the reported low BP, this may be a compensatory mechanism to maintain cardiac output.\n*   **Previous Admissions (0):** This lowers the statistical likelihood of readmission, as it suggests no history of chronic, brittle conditions requiring frequent stabilization.\n*   **Comorbidities (None Known):** Contributes to a low mortality risk profile but may also indicate a \"healthy user bias\" or a lack of recent primary care screening.\n*   **Lab Trends:** The transition of CBC from \"Normal\" to \"High\" (May 2023) suggests an acute or subacute event (infection, inflammation, or hematologic stress) that warrants investigation.\n\n---\n\n### 3. Risk Type Recommendations\n\n#### **Mortality Risk: Low (Statistical) / Critical (Clinical)**\n*   **Assessment:** Statistically, mortality is low due to age. However, the reported BP of 0 mmHg necessitates an immediate \"Code Blue\" or Rapid Response assessment until the data is verified.\n*   **Recommendation:** Immediate manual verification of blood pressure using a sphygmomanometer. Assess for signs of perfusion (capillary refill, mental status, skin temperature).\n\n#### **Readmission Risk: Low**\n*   **Assessment:** Without a primary diagnosis or previous admission history, the risk of returning within 30 days is low. \n*   **Recommendation:** Ensure the \"Unknown\" admission type is clarified. If the patient is being admitted for the first time for a \"High CBC\" or hypertensive/hypotensive crisis, establish a clear transition-of-care plan to prevent a secondary admission.\n\n---\n\n### 4. Preventive Measures and Monitoring Protocols\n\n*   **Immediate Monitoring:**\n    *   **Continuous Cardiac Monitoring:** To evaluate the heart rate of 99 bpm and screen for arrhythmias.\n    *   **Orthostatic Vitals:** Once a baseline BP is established, check for orthostatic hypotension to explain the \"0 mmHg\" reading (potentially a syncopal episode).\n*   **Diagnostic Follow-up:**\n    *   **Repeat CBC with Differential:** To determine if the \"High\" result is due to neutrophils (infection), eosinophils (allergy/parasites), or other cell lines.\n    *   **Repeat Lipid Panel (Fasting):** Given the patient\u2019s young age, \"High\" lipids require a cardiovascular risk assessment and potentially a screening for genetic lipid disorders.\n*   **Preventive Measure:** Counseling on lifestyle modifications if the lipid panel remains high, and screening for secondary causes of hypertension/hypotension.\n\n---\n\n### 5. Estimated Timeline for Follow-up\n\n*   **Vital Sign Re-verification:** **Immediately (Within minutes).**\n*   **Acute Lab Review (CBC):** Within **24\u201348 hours** to ensure the inflammatory process is resolving.\n*   **Outpatient Primary Care:** Within **2 weeks** to discuss the high lipid panel and establish a baseline for blood pressure management.\n*   **Cardiology Referral:** Within **4 weeks** if lipid levels remain high or if the BP anomaly is determined to be a cardiovascular syncopal event.\n\n***\n\n**AI Disclaimer:** *This assessment is based on provided data and should be reviewed by a licensed medical professional. A recorded blood pressure of 0 mmHg is a clinical emergency.*",
+      "factors": [
+        "Abnormal BP (0)",
+        "Existing comorbidities"
+      ],
+      "patient_snapshot": {
+        "age": 24,
+        "vitals_bp": 0,
+        "vitals_hr": 99,
+        "previous_admissions": 0,
+        "comorbidity_count": 1
+      }
+    },
+    "timestamp": "2025-12-20T15:22:42.286540"
+  },
+  {
+    "id": "1c014169-99c6-41e6-95ff-13020e3f37c6",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Risk Assessment",
+    "result": {
+      "risk_score": 40,
+      "overall_risk_score": 40,
+      "overall_risk_level": "Medium",
+      "risk_assessment": {
+        "mortality_risk": {
+          "risk_level": "Medium",
+          "score": 40,
+          "recommendations": [
+            "See comprehensive analysis for mortality specific guidance"
+          ]
+        },
+        "readmission_risk": {
+          "risk_level": "Medium",
+          "score": 40,
+          "recommendations": [
+            "See comprehensive analysis for readmission specific guidance"
+          ]
+        }
+      },
+      "risk_summary": {
+        "overall_risk_score": 40,
+        "overall_risk_level": "Medium",
+        "total_factors": 2,
+        "key_factors": [
+          "Abnormal BP (0)",
+          "Existing comorbidities"
+        ]
+      },
+      "analysis": "### Clinical Risk Assessment: Bob Brown (Ref: 4Lun7P5043)\n\n**Date of Assessment:** October 26, 2023\n**Clinical Status:** Acute/Critical (Pending Vitals Verification)\n**Overall Risk Score:** 40/100 (Medium - *Note: Subject to immediate escalation based on vital signs*)\n\n---\n\n### 1. Detailed Clinical Analysis of Risk Profile\nThe patient, a 54-year-old female, presents with a paradoxical clinical profile. While the patient has no recorded history of hospital admissions or known comorbidities, the current physiological data is highly alarming. \n\nThe primary clinical concern is a **recorded Blood Pressure (BP) of 0 mmHg**. Clinically, a BP of 0 is incompatible with life (asystole or extreme shock), yet the heart rate is documented as a stable 80 bpm. This suggests one of two scenarios:\n1.  **Technical/Data Entry Error:** A failure in the sphygmomanometer or an error in manual entry.\n2.  **Critical Hemodynamic Collapse:** Non-pulsatile flow (rare) or a state of profound shock requiring immediate emergency intervention.\n\nDespite the \"Normal\" HbA1c (indicating glycemic control), the \"Medium\" risk score of 40/100 is likely driven by the severity of the BP reading and the unknown nature of the current admission.\n\n---\n\n### 2. Risk Factor Contribution Analysis\n\n*   **Age (54 years):** Puts the patient in a demographic where the incidence of cardiovascular disease and metabolic syndrome increases. However, without comorbidities, age alone contributes only moderately to the risk score.\n*   **Vital Signs (BP 0 mmHg / HR 80 bpm):** \n    *   The **BP of 0** is the most significant risk driver. If accurate, mortality risk is 100%. If an error, it represents a failure in clinical monitoring protocols.\n    *   The **HR of 80** is normal, which contradicts the BP reading, suggesting the patient is likely stable but improperly monitored.\n*   **Previous Admissions (0):** This is a strong negative predictor for readmission. A \"clean\" hospital history usually suggests a higher baseline of health and lower frailty.\n*   **Comorbidities:** The profile states \"None Known,\" yet the \"Calculated Risk Factors\" identify \"Existing comorbidities.\" This discrepancy suggests there may be undocumented conditions (e.g., undiagnosed hypertension or silent ischemia) that the AI model is flagging based on the current acute presentation.\n\n---\n\n### 3. Specific Recommendations by Risk Type\n\n#### **Mortality Risk: HIGH (Pending Verification)**\n*   **Immediate Action:** Perform an manual BP check (auscultation) immediately to rule out equipment failure.\n*   **Diagnostic Escalation:** If BP remains critically low despite a normal HR, assess for obstructive shock (e.g., pulmonary embolism) or distributive shock.\n*   **Cardiac Monitoring:** Place the patient on continuous 3-lead or 12-lead ECG monitoring to evaluate cardiac rhythm stability.\n\n#### **Readmission Risk: LOW to MODERATE**\n*   **Data Clarification:** The \"Unknown\" admission type must be clarified. If this is an elective procedure, readmission risk is low. If this is an emergency department visit for syncope (fainting), the risk of readmission within 30 days is significantly higher.\n*   **Social Determinants:** Assess the patient's home support system, as this is the first recorded clinical interaction.\n\n---\n\n### 4. Preventive Measures and Monitoring Protocols\n\n*   **Hemodynamic Stabilization:** \n    *   Establish large-bore IV access immediately.\n    *   Initiate orthostatic vital sign checks once the patient is stabilized to assess for autonomic dysfunction.\n*   **Comprehensive Screening:** Given the age of 54, perform a baseline lipid panel, renal function test (Creatinine/GFR), and a screening EKG to ensure the \"None Known\" comorbidity status is accurate.\n*   **Digital Health Integration:** If the BP of 0 was a data entry error, implement automated vitals syncing from the monitor to the Electronic Health Record (EHR) to prevent \"alert fatigue\" or false risk scoring in the future.\n\n---\n\n### 5. Estimated Timeline for Follow-up\n\n*   **Immediate (0\u201330 minutes):** Re-measurement of all vital signs and physical assessment for signs of perfusion (capillary refill, mental status).\n*   **Short-term (24\u201348 hours):** If the patient is stable, conduct a full internal medicine review to identify any \"hidden\" comorbidities that contributed to the 40/100 risk score.\n*   **Long-term (2\u20134 weeks):** Primary care follow-up to establish a baseline for blood pressure and cardiovascular health maintenance, given the HbA1c was last checked in August.\n\n**Disclaimer:** *This assessment is based on provided data. The BP reading of 0 mmHg is a critical value that requires immediate human clinical verification.*",
+      "factors": [
+        "Abnormal BP (0)",
+        "Existing comorbidities"
+      ],
+      "patient_snapshot": {
+        "age": 54,
+        "vitals_bp": 0,
+        "vitals_hr": 80,
+        "previous_admissions": 0,
+        "comorbidity_count": 1
+      }
+    },
+    "timestamp": "2025-12-20T15:23:04.436077"
+  },
+  {
+    "id": "e86196d2-d194-4842-a0b9-72421c60710a",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Here is the summary and extraction of key medical terms from the note:\n\n**Summary:**\nThe patient is advised to engage in daily walking as part of their physical activity routine.\n\n**Key Medical Terms:**\n*   **Walking (Ambulation):** The act of moving from place to place by foot.\n*   **Daily (Frequency):** The prescribed interval for the activity.\n*   **Patient:** The individual receiving medical care or advice.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-20T15:23:43.393333"
+  },
+  {
+    "id": "4a57932c-2a89-4d92-b182-9d895e192230",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Here is a summary and the key medical terms from the clinical note provided:\n\n**Summary**\nThe patient has been advised to engage in a daily regimen of walking as part of their physical activity plan.\n\n**Key Medical Terms**\n*   **Ambulation:** The medical term for the act of walking or moving about.\n*   **Physical Activity:** Body movement that expends energy, often prescribed for cardiovascular or metabolic health.\n*   **Frequency (Daily):** The prescribed rate at which the activity should be performed.",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-20T15:24:08.303980"
+  },
+  {
+    "id": "6e31371d-22c3-4103-bc30-db3809d23435",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "Analysis Complete",
+      "report_text": "This is a simulated medical report for educational and illustrative purposes.\n\n***\n\n**DEPARTMENT OF RADIOLOGY: DIAGNOSTIC IMAGING**\n\n**PATIENT NAME:** Brown, Bob\n**PATIENT ID:** #8821-BB\n**AGE:** 54 years\n**DATE OF EXAM:** October 26, 2023\n**EXAMINATION:** X-ray Chest, PA and Lateral (2 Views)\n\n**CLINICAL INDICATION:**\nA 54-year-old male with a history of hypertension and a persistent non-productive cough lasting three weeks. Patient reports a 30 pack-year history of cigarette smoking. Evaluate for acute infiltrate, malignancy, or signs of chronic obstructive pulmonary disease (COPD).\n\n**TECHNIQUE:**\nStandard posteroanterior (PA) and lateral projections of the chest were obtained at full inspiration. \n\n**FINDINGS:**\n\n*   **Lungs and Airways:** The lungs are hyperinflated, evidenced by flattening of the hemidiaphragms and an increased retrosternal clear space on the lateral view. There is a mild increase in interstitial markings bilaterally, particularly in the lower lobes. No focal consolidation, suspicious pulmonary nodules, or masses are identified. The trachea is midline and the bronchial tree is patent.\n*   **Cardiac and Mediastinum:** The cardiomediastinal silhouette is within the upper limits of normal in size. The transverse diameter of the heart is borderline enlarged (cardiothoracic ratio of approximately 52%). The aorta appears mildly ectatic with calcification noted along the aortic arch, consistent with atherosclerotic change. The hila are not enlarged.\n*   **Pleura:** The costophrenic angles are sharp and clear. There is no evidence of pleural effusion or pneumothorax.\n*   **Osseous Structures and Soft Tissues:** Mild degenerative changes are noted in the visualized thoracic spine, characterized by small anterior osteophytes. The visualized ribs and clavicles are intact. No suspicious soft tissue abnormalities are identified.\n\n**IMPRESSION:**\n\n1.  **No acute cardiopulmonary process.** There is no evidence of pneumonia, pulmonary edema, or tension pneumothorax.\n2.  **Chronic Pulmonary Changes:** Lung hyperinflation and increased interstitial markings are suggestive of underlying chronic obstructive pulmonary disease (COPD)/emphysema, correlating with the patient's clinical history.\n3.  **Atherosclerotic Disease:** Mild aortic ectasia and calcification of the aortic arch, common in the setting of the patient\u2019s known hypertension.\n4.  **Cardiomegaly:** Borderline enlargement of the cardiac silhouette; clinical correlation for signs of congestive heart failure is recommended, though no acute pulmonary vascular congestion is present currently.\n\n**ELECTRONICALLY SIGNED BY:**\n*Jonathan R. Miller, MD*\nBoard Certified Radiologist\nDate: 10/26/2023, 14:45 EST\n\n***\n\n**Disclaimer:** *This document is a simulation created for a persona and does not represent a real medical diagnosis or a real patient. If you or someone you know is experiencing medical symptoms, please consult a licensed healthcare professional.*",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "lungs",
+        "heart"
+      ]
+    },
+    "timestamp": "2025-12-20T15:24:25.437318"
+  },
+  {
+    "id": "e94487fb-705e-45fe-93e7-6f10df9cd300",
+    "patient_id": "dNFvPBm6",
+    "tool_name": "Feedback Analysis",
+    "result": {
+      "raw_analysis": "```json\n{\n  \"sentiment\": \"Positive\",\n  \"score\": 0.85,\n  \"topics\": [\n    \"Room service\",\n    \"Hospitality\"\n  ]\n}\n```",
+      "sentiment": "Mixed",
+      "score": 0.5,
+      "topics": [
+        "General Feedback"
+      ]
+    },
+    "timestamp": "2025-12-20T15:25:20.190111"
+  },
+  {
+    "id": "15a4e775-fdd9-4a9e-a3a3-4583c6c20610",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Image Diagnostics",
+    "result": {
+      "finding": "Analysis Complete",
+      "report_text": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 7.208583327s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 7\n}\n]",
+      "confidence": 0.98,
+      "regions_of_interest": [
+        "lungs",
+        "heart"
+      ]
+    },
+    "timestamp": "2025-12-20T15:44:52.806519"
+  },
+  {
+    "id": "4967f4c9-e300-446d-af2a-512f81317c3d",
+    "patient_id": "HCkUCHFb",
+    "tool_name": "Notes Summarizer",
+    "result": {
+      "summary": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 714.552295ms. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n}\n]",
+      "key_findings": [
+        "See summary for details"
+      ],
+      "sentiment": "Neutral"
+    },
+    "timestamp": "2025-12-20T15:44:59.293449"
+  }
+]

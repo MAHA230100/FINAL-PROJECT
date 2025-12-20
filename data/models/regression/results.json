@@ -1,0 +1,35 @@
+{
+  "RandomForest": {
+    "metrics": {
+      "mse": 4.555750488400001,
+      "rmse": 2.1344204104159052,
+      "mae": 1.70933,
+      "r2_score": 0.8572381801455613,
+      "cv_mean": 0.8380359832081181,
+      "cv_std": 0.025282724643222503
+    },
+    "model_type": "RandomForestRegressor"
+  },
+  "LinearRegression": {
+    "metrics": {
+      "mse": 2.329233455155861e-26,
+      "rmse": 1.5261826414803246e-13,
+      "mae": 1.2295719997723609e-13,
+      "r2_score": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    "model_type": "LinearRegression"
+  },
+  "SVR": {
+    "metrics": {
+      "mse": 32.54230923345472,
+      "rmse": 5.704586683840883,
+      "mae": 4.963387282827958,
+      "r2_score": -0.019765963975240997,
+      "cv_mean": -0.02106473048834596,
+      "cv_std": 0.014458696866139722
+    },
+    "model_type": "SVR"
+  }
+}
