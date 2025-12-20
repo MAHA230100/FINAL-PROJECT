@@ -41,15 +41,11 @@ def render_patient_selector(api_base: str):
             index = keys.index(current_label)
 
     # 4. Selectbox
-    # Prepare key for session state syncing
+    # Note: We rely on the 'index' parameter and external callbacks (like in dashboard.py) 
+    # to sync this widget. Manually overwriting the session state key here can 
+    # interfere with manual user selection in the sidebar.
     selectbox_key = "patient_selector_box"
     
-    # Sync widget state with current_patient if set externally
-    if current:
-        current_label = f"{current['name']} ({current['patient_id']})"
-        if current_label in patient_options and st.session_state.get(selectbox_key) != current_label:
-            st.session_state[selectbox_key] = current_label
-
     selected_label = st.sidebar.selectbox(
         "Select Patient",
         options=list(patient_options.keys()),
