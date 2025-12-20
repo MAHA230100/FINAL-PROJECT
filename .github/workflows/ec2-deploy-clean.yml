@@ -107,17 +107,19 @@ jobs:
 
             # Create data directory and .env file
             echo "🔐 Setting up environment variables in data/.env..."
-            mkdir -p data
-            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > data/.env
-            echo "API_BASE_URL=http://localhost:8000" >> data/.env
-            chmod 600 data/.env
+            sudo mkdir -p data
+            sudo rm -f data/.env
+            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" | sudo tee data/.env > /dev/null
+            echo "API_BASE_URL=http://localhost:8000" | sudo tee -a data/.env > /dev/null
+            sudo chmod 600 data/.env
             echo "✅ data/.env created"
 
             # Create root .env file
             echo "🔐 Setting up environment variables in root .env..."
-            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > .env
-            echo "API_BASE_URL=http://localhost:8000" >> .env
-            chmod 600 .env
+            sudo rm -f .env
+            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" | sudo tee .env > /dev/null
+            echo "API_BASE_URL=http://localhost:8000" | sudo tee -a .env > /dev/null
+            sudo chmod 600 .env
             echo "✅ root .env created"
 
             # Export variables for this session
