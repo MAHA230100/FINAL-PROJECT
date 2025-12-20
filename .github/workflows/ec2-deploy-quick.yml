@@ -29,17 +29,15 @@ jobs:
       - name: Fix data directory permissions
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << 'ENDPERM'
-            # Create project dir if it doesn't exist
-            mkdir -p ${{ secrets.PROJECT_DIR }}
-            cd ${{ secrets.PROJECT_DIR }}
+            echo "🔧 Ensuring project directory exists and has correct ownership..."
+            sudo mkdir -p ${{ secrets.PROJECT_DIR }}
+            sudo chown ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} ${{ secrets.PROJECT_DIR }}
             
-            echo "🔧 Fixing data directory permissions for rsync..."
+            cd ${{ secrets.PROJECT_DIR }}
             if [ -d "data" ]; then
+              echo "🔧 Resetting data directory permissions..."
               sudo chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/
-              sudo chmod -R 755 data/
-            else
-              mkdir -p data
-              chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/
+              sudo chmod -R 775 data/
             fi
             echo "✅ Permissions fixed"
           ENDPERM
@@ -47,6 +45,7 @@ jobs:
       - name: Copy code to EC2
         run: |
           rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
+            --rsync-path="sudo rsync" \
             --exclude '.git' \
             --exclude '.github' \
             --exclude '.gitignore' \
