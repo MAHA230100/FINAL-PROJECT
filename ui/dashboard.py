@@ -231,12 +231,21 @@ if selected_page == "home":
                     st.write(f"**Contact:** {temp_patient.get('contact', 'N/A')}")
                     st.write(f"**Admitted:** {temp_patient.get('date_of_admission', 'N/A')}")
             
-            if st.button("🚀 Set as Active Patient Context", key="btn_activate_lookup", type="primary", use_container_width=True):
-                st.session_state['current_patient'] = temp_patient
-                # Sync sidebar widget key immediately
-                st.session_state['patient_selector_box'] = f"{temp_patient['name']} ({temp_patient['patient_id']})"
+            # Use callback to update state safely BEFORE the sidebar is rendered in the next run
+            def activate_patient_callback(p):
+                st.session_state['current_patient'] = p
+                # Update sidebar selector key so it picks up the change immediately on rerun
+                st.session_state['patient_selector_box'] = f"{p['name']} ({p['patient_id']})"
                 st.session_state['temp_lookup_patient'] = None
-                st.rerun()
+                st.toast(f"✅ Context switched to {p['name']}")
+
+            st.button(
+                "🚀 Set as Active Patient Context", 
+                key="btn_activate_lookup", 
+                use_container_width=True,
+                on_click=activate_patient_callback,
+                args=(temp_patient,)
+            )
 
 elif selected_page == "disease_prediction":
     show_disease_prediction(API_BASE)
