@@ -143,7 +143,7 @@ if selected_page == "home":
                     if res.status_code == 200:
                         st.session_state['current_patient'] = res.json()
                         st.success("Loaded!")
-                        st.experimental_rerun()
+                        st.rerun()
                     else:
                         st.error("Not found.")
                 except Exception as e:

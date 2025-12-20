@@ -9,9 +9,13 @@ def show_data_display():
     st.title("📊 Data Display")
     st.markdown("Explore your raw and cleaned datasets with comprehensive insights.")
     
+    # Standardize data root
+    DATA_ROOT = Path("/app/data") if os.getenv("ENVIRONMENT") == "production" else Path("data")
+    
     # Check for processed data
-    cleaned_data_path = Path("data/cleaned")
-    eda_results_path = Path("data/eda_results")
+    cleaned_data_path = DATA_ROOT / "cleaned"
+    eda_results_path = DATA_ROOT / "eda_results"
+    raw_data_path = DATA_ROOT / "raw"
     
     # # API-based data operations
     # st.subheader("🌐 API Data Operations")
@@ -87,7 +91,6 @@ def show_data_display():
     with data_tabs[0]:
         st.subheader("📁 Raw Data Overview")
         
-        raw_data_path = Path("data/raw")
         if raw_data_path.exists():
             st.write("**Available Raw Data Files:**")
             

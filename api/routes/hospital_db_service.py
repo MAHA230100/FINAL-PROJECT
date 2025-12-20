@@ -4,7 +4,8 @@ from typing import Optional, Dict, Any, List
 from uuid import uuid4
 
 # --- Robust: Ensure /hospital_db/ exists and all .json table files exist ---
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data/hospital_db')
+BASE_DATA_DIR = "/app/data" if os.getenv("ENVIRONMENT") == "production" else os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data')
+DB_PATH = os.path.join(BASE_DATA_DIR, 'hospital_db')
 TABLES = [
     'patients.json',
     'visits.json',
