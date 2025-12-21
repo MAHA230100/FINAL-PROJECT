@@ -7,6 +7,16 @@ on:
         description: 'Reason for deployment'
         required: true
         default: 'Quick deployment of latest changes'
+      env_api_key:
+        description: 'Select Google API Key'
+        required: true
+        default: 'GOOGLE_API_KEY'
+        type: choice
+        options:
+          - GOOGLE_API_KEY
+          - GOOGLE_API_KEY_01
+          - GOOGLE_API_KEY_02
+          - GOOGLE_API_KEY_03
 
 jobs:
   quick-deploy:
@@ -66,33 +76,36 @@ jobs:
             ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:${{ secrets.PROJECT_DIR }}
 
       - name: Quick Deploy
+        env:
+          SELECTED_API_KEY: ${{ secrets[github.event.inputs.env_api_key] }}
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << 'ENDSSH'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << ENDSSH
             set -e
             PROJECT_DIR=${{ secrets.PROJECT_DIR }}
-            cd $PROJECT_DIR
+            cd \$PROJECT_DIR
             
             echo "🚀 Starting quick deployment..."
+            echo "📍 Using API Key Environment: ${{ github.event.inputs.env_api_key }}"
             
             # Create data directory if it doesn't exist
             mkdir -p data
             
             # Create .env file in data directory
             echo "🔐 Setting up environment variables in data/.env..."
-            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > data/.env
+            echo "GOOGLE_API_KEY=$SELECTED_API_KEY" > data/.env
             echo "API_BASE_URL=http://localhost:8000" >> data/.env
             chmod 600 data/.env
             echo "✅ data/.env created"
             
             # Create .env file in root directory (for backup/safety)
             echo "🔐 Setting up environment variables in root .env..."
-            echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > .env
+            echo "GOOGLE_API_KEY=$SELECTED_API_KEY" > .env
             echo "API_BASE_URL=http://localhost:8000" >> .env
             chmod 600 .env
             echo "✅ root .env created"
             
             # Export environment variable for this session
-            export GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}"
+            export GOOGLE_API_KEY="$SELECTED_API_KEY"
             export API_BASE_URL="http://localhost:8000"
             
             # Stop and recreate containers
