@@ -458,11 +458,36 @@ def analyze_image(req: ImageAnalysisRequest):
         final_data = _enrich_patient_data(req.patient_id, None)
         patient_desc = f"Patient {final_data.get('name')}, {final_data.get('age')} years old."
         
-        prompt = (
-            f"Generate a detailed, clinically plausible simulated {req.image_type} report for {patient_desc}. "
-            "Assume findings consistent with their history/diagnoses if any. "
-            "Provide sections: Clinical Indication, Technique, Findings, Impression."
-        )
+        prompt = f"""
+                You are a medical imaging analysis assistant.
+                
+                You MUST base your analysis ONLY on the visual content of the provided image.
+                Do NOT rely on patient demographics, history, or assumptions unless the image itself supports them.
+                
+                If the image:
+                - Is NOT a medical image
+                - Is unrelated to the specified modality ({req.image_type})
+                - Is low quality, obstructed, or insufficient for diagnosis
+                
+                You MUST clearly state this and DO NOT fabricate findings.
+                
+                Task:
+                Analyze the uploaded image and generate a clinically realistic report ONLY if appropriate.
+                
+                Image type expected: {req.image_type}
+                
+                If valid, structure the report strictly with these sections:
+                1. Clinical Indication (state "Not provided" if unknown)
+                2. Technique (describe what is visibly evident from the image)
+                3. Findings (ONLY what can be visually confirmed)
+                4. Impression (conservative, evidence-based)
+                
+                If invalid, return:
+                "Image is not suitable for medical diagnostic interpretation."
+                
+                Output must be factual, cautious, and clinically responsible.
+                """
+
         
         report_text = llm_service.generate_response(prompt)
         
