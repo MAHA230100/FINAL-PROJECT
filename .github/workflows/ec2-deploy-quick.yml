@@ -10,8 +10,8 @@ on:
       env_api_key:
         description: 'Select Google API Key'
         required: true
-        default: 'GOOGLE_API_KEY'
         type: choice
+        default: 'GOOGLE_API_KEY'
         options:
           - GOOGLE_API_KEY
           - GOOGLE_API_KEY_01
@@ -23,49 +23,68 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # --------------------------------------------------
+      # Checkout
+      # --------------------------------------------------
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # --------------------------------------------------
+      # SSH Agent Setup
+      # --------------------------------------------------
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      # - name: Debug key format
-      #   run: |
-      #     echo "${{ secrets.SSH_PRIVATE_KEY }}" > /tmp/key
-      #     chmod 600 /tmp/key
-      #     file /tmp/key
-      #     ssh-keygen -y -f /tmp/key
-      #     ssh-add -l
-      - name: Verify remote user
+      # --------------------------------------------------
+      # (Optional) Debug private key format
+      # Remove once stable
+      # --------------------------------------------------
+      - name: Debug SSH key format
         run: |
-          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} "whoami && sudo whoami"
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > /tmp/key
+          chmod 600 /tmp/key
+          ssh-keygen -y -f /tmp/key
 
+      # --------------------------------------------------
+      # Add EC2 host to known_hosts (clean + add)
+      # --------------------------------------------------
       - name: Add EC2 to known hosts
         run: |
           mkdir -p ~/.ssh
+          ssh-keygen -R ${{ secrets.EC2_HOST }} || true
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
+      # --------------------------------------------------
+      # Fix project & data directory permissions
+      # --------------------------------------------------
       - name: Fix data directory permissions
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << ENDPERM
+          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << ENDPERM
+            set -e
             echo "🔧 Ensuring project directory exists and has correct ownership..."
+
             sudo mkdir -p ${{ secrets.PROJECT_DIR }}
             sudo chown ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} ${{ secrets.PROJECT_DIR }}
-            
+
             cd ${{ secrets.PROJECT_DIR }}
+
             if [ -d "data" ]; then
               echo "🔧 Resetting data directory permissions..."
               sudo chown -R ${{ secrets.EC2_USERNAME }}:${{ secrets.EC2_USERNAME }} data/
               sudo chmod -R 775 data/
             fi
+
             echo "✅ Permissions fixed"
           ENDPERM
 
+      # --------------------------------------------------
+      # Copy code to EC2 (rsync with sudo)
+      # --------------------------------------------------
       - name: Copy code to EC2
         run: |
-          rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
+          rsync -avz \
             --rsync-path="sudo rsync" \
             --exclude '.git' \
             --exclude '.github' \
@@ -86,52 +105,46 @@ jobs:
             --exclude 'Thumbs.db' \
             ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:${{ secrets.PROJECT_DIR }}
 
+      # --------------------------------------------------
+      # Deploy on EC2
+      # --------------------------------------------------
       - name: Quick Deploy
         env:
           SELECTED_API_KEY: ${{ secrets[github.event.inputs.env_api_key] }}
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} bash << ENDSSH
-            set -e
-            PROJECT_DIR=${{ secrets.PROJECT_DIR }}
-            cd \$PROJECT_DIR
-            
-            echo "🚀 Starting quick deployment..."
-            echo "📍 Using API Key Environment: ${{ github.event.inputs.env_api_key }}"
-            
-            # Create data directory if it doesn't exist
-            mkdir -p data
-            
-            # Create .env file in data directory
-            echo "🔐 Setting up environment variables in data/.env..."
-            echo "GOOGLE_API_KEY=$SELECTED_API_KEY" > data/.env
-            echo "API_BASE_URL=http://localhost:8000" >> data/.env
-            chmod 600 data/.env
-            echo "✅ data/.env created"
-            
-            # Create .env file in root directory (for backup/safety)
-            echo "🔐 Setting up environment variables in root .env..."
-            echo "GOOGLE_API_KEY=$SELECTED_API_KEY" > .env
-            echo "API_BASE_URL=http://localhost:8000" >> .env
-            chmod 600 .env
-            echo "✅ root .env created"
-            
-            # Export environment variable for this session
-            export GOOGLE_API_KEY="$SELECTED_API_KEY"
-            export API_BASE_URL="http://localhost:8000"
-            
-            # Stop and recreate containers
-            docker compose -f docker-compose.yml -f docker-compose.prod.yml down
-            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
-            
-            # Wait for services to be ready
-            echo "⏳ Waiting for services to start..."
-            sleep 10
-            
-            # Check container status
-            echo "🔍 Checking container status..."
-            docker compose ps
-            
-            # Show recent logs
-            echo "📜 Showing recent logs..."
-            docker compose logs --tail 20
+          ssh ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} \
+            "export SELECTED_API_KEY='${SELECTED_API_KEY}'; bash" << ENDSSH
+              set -e
+
+              PROJECT_DIR=${{ secrets.PROJECT_DIR }}
+              cd \$PROJECT_DIR
+
+              echo "🚀 Starting quick deployment..."
+              echo "📍 Using API Key Environment: ${{ github.event.inputs.env_api_key }}"
+
+              # Ensure data directory
+              mkdir -p data
+
+              echo "🔐 Writing environment variables..."
+
+              echo "GOOGLE_API_KEY=\$SELECTED_API_KEY" > data/.env
+              echo "API_BASE_URL=http://localhost:8000" >> data/.env
+              chmod 600 data/.env
+
+              echo "GOOGLE_API_KEY=\$SELECTED_API_KEY" > .env
+              echo "API_BASE_URL=http://localhost:8000" >> .env
+              chmod 600 .env
+
+              # Restart containers
+              docker compose -f docker-compose.yml -f docker-compose.prod.yml down
+              docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+              echo "⏳ Waiting for services..."
+              sleep 10
+
+              echo "🔍 Container status:"
+              docker compose ps
+
+              echo "📜 Recent logs:"
+              docker compose logs --tail 20
           ENDSSH
